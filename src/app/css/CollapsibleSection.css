@@ -1,0 +1,49 @@
+/* Adds arrow to the collapsible seciont header */
+
+.panel-heading {
+  position: relative;
+}
+
+.panel-heading::after {
+  position: absolute;
+  top: 18%;
+  right: 12px;
+  font-family: "FontAwesome";
+  content: "\f107";
+  font-size: larger;
+}
+
+.panel-heading[aria-expanded="true"]::after {
+  content: "\f106";
+}
+/* --- */
+
+.designer-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e29b30;
+}
+
+.designer-section-text {
+  font-size: 16px;
+  color: rgb(28, 29, 28);
+}
+
+.designer-section-label {
+  font-size: 14px;
+  color: slategrey;
+  border: 1px solid red;
+}
+
+.designer-section-dropdown-button {
+  border: 1px solid #cfd4da;
+  color: white;
+  background-color:#546275;
+}
+
+.design-collapsible-section.container {
+  background-color: #546275;
+  color: white;
+  padding: 0;
+  border: solid 1px white;
+}

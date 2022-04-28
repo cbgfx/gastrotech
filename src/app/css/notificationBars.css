@@ -1,0 +1,50 @@
+/* [THE BASE] */
+.bar {
+    padding: 10px;
+    margin: 10px;
+    color: #333;
+    background: #fafafa;
+    border: 1px solid #ccc;
+  }
+  
+  /* [THE VARIATIONS] */
+
+    /* Add the icon:
+   <i class="ico">&#8505;</i> Information message */
+  .infoBox {
+    color: #204a8e;
+    background: #c9ddff;
+    border: 1px solid #4c699b;
+  }
+/* Add the icon:
+  <i class="ico">&#10004;</i> Successful message */
+  .successBox {
+    color: #2b7515;
+    background: #ecffd6;
+    border: 1px solid #617c42;
+  }
+
+  /* Add the icon:
+   <i class="ico">&#9888;</i> Warning message */
+  .warnBox {
+    color: #756e15;
+    background: #fffbd1;
+    border: 1px solid #87803e;
+  }
+
+  /* Add the icon:
+     <i class="ico">&#9747;</i> Error message */
+  .errorBox {
+    color: #ba3939;
+    background: #ffe0e0;
+    border: 1px solid #a33a3a;
+  }
+
+  /* [ICONS] */
+i.ico {
+    display: inline-block;
+    width: 20px;
+    text-align: center; 
+    font-style: normal;
+    font-weight: bold;
+  }

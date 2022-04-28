@@ -1,0 +1,150 @@
+body {
+  background-color: #342741;
+  color: #e29b30;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.backbody {
+  background-color: #342741;
+}
+
+.body {
+  background-color: #342741;
+  color: #e29b30;
+}
+
+#upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.contentText {
+  background-color: #342741;
+  color: #ffffff;
+  font-size: 15px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toptitle {
+  align-content: center;
+  font-family: 'Russo One', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.center {
+  color: #ffffff;
+  align-content: center;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  padding: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-gap: 1%;
+}
+
+.grid-item {
+  background-color: #342741;
+  color: #ffffff;
+  padding: 1%;
+  column-gap: 1%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.gridContent {
+  background-color: #6c008a;
+  color: #ffffff;
+  font-size: 15px;
+  width: 85%;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  color: #cec8c8;
+}
+
+a:hover, a:visited:hover {
+  color: #e29b30;
+}
+
+a:visited {
+  color: #cec8c8;
+}
+
+.table-hover tbody tr:hover td {
+    background: #e29b30;
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.blueButtonStyle {
+  background-color: #6c008a;
+  border: none;
+  color: #ffffff;
+}
+
+.metAliveButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #ffffff;
+  font-size: medium;
+}
+
+input {
+  background-color: #e29b30;
+  color: #2e4057;
+  border-color: #342741;
+  font-weight: bolder;
+}
+
+input:focus {
+  background-color: #e29b30;
+  color: #ffffff;
+  border-color: #f29b60;
+}
+
+.centerRape {
+  text-align: center;
+  align-content: center;
+	margin: auto;
+}
+
+/* Animations */
+.elementToFadeInFive {
+  -webkit-animation: fadein 500ms linear 1 forwards;
+  animation: fadein 500ms linear 1 forwards;
+}
+
+@-webkit-keyframes fadein {
+0% { opacity: 0; }
+50% { opacity: 0.5; }
+100% { opacity: 1; }
+}
+@keyframes fadein {
+0% { opacity: 0; }
+50% { opacity: 0.5; }
+100% { opacity: 1; }
+}

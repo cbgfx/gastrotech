@@ -1,0 +1,576 @@
+[
+  {
+    "name": "Lemon",
+    "yield": 2,
+    "type": "Sorbet",
+    "ingredients": [
+      {
+        "quantity": 5200,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 2450,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 225,
+        "name": "Lemon 50",
+        "qty": "grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Lemon Juice",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1,
+        "name": "Salt",
+        "qty": "pinch"
+      }
+    ]
+  },
+  {
+    "name": "Mango",
+    "yield": 2,
+    "type": "Sorbet",
+    "ingredients": [
+      {
+        "quantity": 2400,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 80,
+        "name": "Dextrose",
+        "qty": "grams"
+      },
+      {
+        "quantity": 100,
+        "name": "Fortefrutto Paste",
+        "qty": "grams"
+      },
+      {
+        "quantity": 250,
+        "name": "Fruttosa Powder",
+        "qty": "grams"
+      },
+      {
+        "quantity": 16,
+        "name": "Lemon Juice",
+        "qty": "grams"
+      },
+      {
+        "quantity": 10,
+        "name": "Salt",
+        "qty": "pinch"
+      }
+    ]
+  },
+  {
+    "name": "Raspberry",
+    "yield": 2,
+    "type": "Sorbet",
+    "ingredients": [
+      {
+        "quantity": 2400,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 80,
+        "name": "Dextrose",
+        "qty": "grams"
+      },
+      {
+        "quantity": 100,
+        "name": "Fortefrutto Paste",
+        "qty": "grams"
+      },
+      {
+        "quantity": 250,
+        "name": "Fruttosa Powder",
+        "qty": "grams"
+      },
+      {
+        "quantity": 16,
+        "name": "Lemon Juice",
+        "qty": "grams"
+      },
+      {
+        "quantity": 10,
+        "name": "Salt",
+        "qty": "pinch"
+      }
+    ]
+  },
+  {
+    "name": "Piña Colada",
+    "yield": 1,
+    "type": "Sorbet",
+    "ingredients": [
+      {
+        "quantity": 2660,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Coconut Cream",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1,
+        "name": "Pineapple Sprint",
+        "qty": "bag"
+      },
+      {
+        "quantity": 200,
+        "name": "Coconut Fortefrutto Paste",
+        "qty": "grams"
+      },
+      {
+        "quantity": 250,
+        "name": "Fruttosa Milk Free",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Fortefrutto",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Chocolate",
+    "yield": 2,
+    "type": "Sorbet",
+    "ingredients": [
+      {
+        "quantity": 6000,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1800,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 900,
+        "name": "ProntoCioco",
+        "qty": "gram"
+      },
+      {
+        "quantity": 250,
+        "name": "Fruttosa Milk Free",
+        "qty": "grams"
+      },
+      {
+        "quantity": 20,
+        "name": "Cocoa",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Yogourt",
+    "yield": 2,
+    "type": "Yoggi",
+    "ingredients": [
+      {
+        "quantity": 4840,
+        "name": "Milk",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1200,
+        "name": "Plain Yogourt",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1330,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Yossi",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Fruttosa",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Mojito",
+    "yield": 2,
+    "type": "Alcoholic",
+    "ingredients": [
+      {
+        "quantity": 2,
+        "name": "Lime Sprint",
+        "qty": "bags"
+      },
+      {
+        "quantity": 4700,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 150,
+        "name": "Base Allegra",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "White Rhum",
+        "qty": "grams"
+      },
+      {
+        "quantity": 2,
+        "name": "Fresh Mint",
+        "qty": "bunches"
+      }
+    ]
+  },
+  {
+    "name": "Apple Pie",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "3 Layers of Apple Sauce & Graham Crackers",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 50,
+        "name": "Cinnamon",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Bacio",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Handfull of Hazeluts on top",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "Choco Base",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Hazelnut Regina",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Banana",
+    "yield": 2,
+    "type": "Gelato",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Banana",
+        "qty": "grams"
+      },
+      {
+        "quantity": 4,
+        "name": "Mature Bananas",
+        "qty": "whole"
+      }
+    ]
+  },
+  {
+    "name": "Biscottino",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Biscottino 3 Layer",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base",
+        "qty": "grams"
+      },
+      {
+        "quantity": 350,
+        "name": "Biscottino",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Bubble Gum",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "A few Gum balls on top",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Bubble Gum",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Cannoli",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Broken Cannolis Shells",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 850,
+        "name": "Ricotta",
+        "qty": "grams"
+      },
+      {
+        "quantity": 100,
+        "name": "Marscarpone",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Caramel Late",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "3 Layers of Caramel Mou Sauce",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 150,
+        "name": "Caramel Late",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Cappucino",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Cocoa Powder on top",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 375,
+        "name": "Costa D'Oro",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Coconut",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Coconut shavings on top",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 400,
+        "name": "Coconut",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Cookie Dough",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Cookie Dough in 3 Layers",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 40,
+        "name": "Biscottino",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Actual Cookie DOugh",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Donatella Rock",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "3 Layers of Donatella Rock",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Donatella Rock",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Fig & Porto",
+    "yield": 1,
+    "type": "Gelato",
+    "decoration": "Fikissimo mixed in with the beater!!!!",
+    "ingredients": [
+      {
+        "quantity": 3500,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 80,
+        "name": "Taylor Fladgate 2017",
+        "qty": "grams"
+      },
+      {
+        "quantity": 60,
+        "name": "Fig",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Hazelnut",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Handfull of Hazeluts on top",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 700,
+        "name": "Hazelnut Regina",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Mint Chocolate",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "3 Layer of Chocolate Chips",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Mint",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Peanut Butter Nutella",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "3 Layer of Peanut Butter, Nutella Swirl + Peanuts (salted)",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 420,
+        "name": "Peanut Butter (Creamy)",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Pistacchio",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Sprinkle Pistachio crumbs",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 600,
+        "name": "Pistachio Med",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Oreo",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "2 Layer of Oreo Crumbs",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 60,
+        "name": "Oreo",
+        "qty": "grams"
+      }
+    ]
+  }
+]
