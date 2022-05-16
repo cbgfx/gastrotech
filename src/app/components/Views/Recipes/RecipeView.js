@@ -10,48 +10,45 @@ class RecipeView extends React.Component {
   state = { filteredDataSource: [] };
 
   componentDidMount() {
-    this.setState({ filteredDataSource: recipes });
+    var sortedDataSource = this.sortRecipe(recipes);
+    this.setState({ filteredDataSource: sortedDataSource });
   }
 
-  clickedTD = (iRecipe) => {
-    console.log("clicked", iRecipe.name);
-    this.setState({ showPopup: true });
-    return (
-      <RecipeModal
-        name={iRecipe.name}
-        type={iRecipe.yield}
-        ingredient={iRecipe.ingredients}
-        decoration={iRecipe.decoration}
-      />
-    );
+  sortRecipe = (ds) => {
+    var dataSource = ds.sort((a, b) => parseFloat(a.name) - parseFloat(b.name));
+    return dataSource;
   };
 
   textFilter = (a) => {
     var filteredItemArray = recipes.filter((items) => {
       return items.name.toLowerCase().includes(a.toLowerCase());
     });
-    this.setState({ filteredDataSource: filteredItemArray });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   alcoFilter = (a) => {
-    var newItems = recipes.filter(function (entry) {
+    var filteredItemArray = recipes.filter(function (entry) {
       return entry.type === "Alcoholic";
     });
-    this.setState({ filteredDataSource: newItems });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   gelatoFilter = (a) => {
-    var newItems = recipes.filter(function (entry) {
+    var filteredItemArray = recipes.filter(function (entry) {
       return entry.type === "Gelato";
     });
-    this.setState({ filteredDataSource: newItems });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   sorbetFilter = (a) => {
-    var newItems = recipes.filter(function (entry) {
+    var filteredItemArray = recipes.filter(function (entry) {
       return entry.type === "Sorbet";
     });
-    this.setState({ filteredDataSource: newItems });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   clearFilter = (a) => {
