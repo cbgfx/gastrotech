@@ -249,6 +249,41 @@
     ]
   },
   {
+    "name": "Rhum & Raisin",
+    "yield": 2,
+    "type": "Alcoholic",
+    "decoration": "Raisins on top",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 375,
+        "name": "Malaga",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Whisky",
+    "yield": 2,
+    "type": "Alcoholic",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Whisky of Choice",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Apple Pie",
     "yield": 2,
     "type": "Gelato",
@@ -437,7 +472,24 @@
       },
       {
         "quantity": 200,
-        "name": "Actual Cookie DOugh",
+        "name": "Actual Cookie Dough",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Choco-Chino",
+    "yield": 2,
+    "type": "Gelato",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "Chocolate Base",
+        "qty": "grams"
+      },
+      {
+        "quantity": 330,
+        "name": "Costa D'Oro",
         "qty": "grams"
       }
     ]
@@ -516,9 +568,15 @@
         "quantity": 200,
         "name": "Mint",
         "qty": "grams"
+      },
+      {
+        "quantity": 10,
+        "name": "Green Food Colouring",
+        "qty": "drops"
       }
     ]
   },
+
   {
     "name": "Peanut Butter Nutella",
     "yield": 2,
@@ -570,6 +628,42 @@
         "quantity": 60,
         "name": "Oreo",
         "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Reese's Pieces",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "3 Layers Reese's Pieces, peanut butter, chocolate drip",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 140,
+        "name": "Peanut butter",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Turkish Delight",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Cinnamon",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 7,
+        "name": "Salep Mix",
+        "qty": "bags"
       }
     ]
   }
