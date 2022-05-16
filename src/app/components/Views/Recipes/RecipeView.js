@@ -6,51 +6,57 @@ import RecipeModal from "../../Popups/RecipeModal";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/recipe.json";
 
-
 class RecipeView extends React.Component {
   state = { filteredDataSource: [] };
 
   componentDidMount() {
-    this.setState({filteredDataSource: recipes})
+    this.setState({ filteredDataSource: recipes });
   }
 
   clickedTD = (iRecipe) => {
-    console.log("clicked", iRecipe.name)
+    console.log("clicked", iRecipe.name);
     this.setState({ showPopup: true });
-    return(
+    return (
       <RecipeModal
         name={iRecipe.name}
         type={iRecipe.yield}
         ingredient={iRecipe.ingredients}
         decoration={iRecipe.decoration}
       />
-    )
+    );
+  };
+
+  textFilter = (a) => {
+    var filteredItemArray = recipes.filter((items) => {
+      return items.name.toLowerCase().includes(a.toLowerCase());
+    });
+    this.setState({ filteredDataSource: filteredItemArray });
   };
 
   alcoFilter = (a) => {
     var newItems = recipes.filter(function (entry) {
-      return entry.type === 'Alcoholic';
-  });
-  this.setState({filteredDataSource: newItems})
-  }
+      return entry.type === "Alcoholic";
+    });
+    this.setState({ filteredDataSource: newItems });
+  };
 
   gelatoFilter = (a) => {
     var newItems = recipes.filter(function (entry) {
-      return entry.type === 'Gelato';
-  });
-  this.setState({filteredDataSource: newItems})
-  }
+      return entry.type === "Gelato";
+    });
+    this.setState({ filteredDataSource: newItems });
+  };
 
   sorbetFilter = (a) => {
     var newItems = recipes.filter(function (entry) {
-      return entry.type === 'Sorbet';
-  });
-  this.setState({filteredDataSource: newItems})
-  }
+      return entry.type === "Sorbet";
+    });
+    this.setState({ filteredDataSource: newItems });
+  };
 
   clearFilter = (a) => {
-  this.setState({filteredDataSource: recipes})
-  }
+    this.setState({ filteredDataSource: recipes });
+  };
 
   /*
    */
@@ -60,10 +66,17 @@ class RecipeView extends React.Component {
       <div>
         <h2>Recipes</h2>
         <div>
-        <button onClick={()=> this.gelatoFilter("bah")}>Gelato</button>
-        <button onClick={()=> this.sorbetFilter("bah")}>Sorbet</button>
-        <button onClick={()=> this.alcoFilter("bah")}>Alcoholic</button>
-        <button onClick={()=> this.clearFilter("bah")}>Clear</button>
+          <input
+            type="ui search"
+            placeholder="Search"
+            onChange={(e) => {
+              this.textFilter(e.target.value);
+            }}
+          />
+          <button onClick={() => this.gelatoFilter("bah")}>Gelato</button>
+          <button onClick={() => this.sorbetFilter("bah")}>Sorbet</button>
+          <button onClick={() => this.alcoFilter("bah")}>Alcoholic</button>
+          <button onClick={() => this.clearFilter("bah")}>Clear</button>
         </div>
         <table className="table table-striped table-hover text-white">
           <thead>
