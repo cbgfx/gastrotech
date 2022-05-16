@@ -2,21 +2,55 @@ import React from "react";
 
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import AccountsBar from "../../Reusable_Components/NavBar/AccountsBar";
+import RecipeModal from "../../Popups/RecipeModal";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/recipe.json";
 
+
 class RecipeView extends React.Component {
-  state = { showPopup: false };
+  state = { filteredDataSource: [] };
 
-  componentDidMount() {}
-
-  showHidePopup = () => {
-    this.setState({ showPopup: !this.state.showPopup });
-  };
+  componentDidMount() {
+    this.setState({filteredDataSource: recipes})
+  }
 
   clickedTD = (iRecipe) => {
-    console.log(iRecipe);
+    console.log("clicked", iRecipe.name)
+    this.setState({ showPopup: true });
+    return(
+      <RecipeModal
+        name={iRecipe.name}
+        type={iRecipe.yield}
+        ingredient={iRecipe.ingredients}
+        decoration={iRecipe.decoration}
+      />
+    )
   };
+
+  alcoFilter = (a) => {
+    var newItems = recipes.filter(function (entry) {
+      return entry.type === 'Alcoholic';
+  });
+  this.setState({filteredDataSource: newItems})
+  }
+
+  gelatoFilter = (a) => {
+    var newItems = recipes.filter(function (entry) {
+      return entry.type === 'Gelato';
+  });
+  this.setState({filteredDataSource: newItems})
+  }
+
+  sorbetFilter = (a) => {
+    var newItems = recipes.filter(function (entry) {
+      return entry.type === 'Sorbet';
+  });
+  this.setState({filteredDataSource: newItems})
+  }
+
+  clearFilter = (a) => {
+  this.setState({filteredDataSource: recipes})
+  }
 
   /*
    */
@@ -25,6 +59,12 @@ class RecipeView extends React.Component {
     return (
       <div>
         <h2>Recipes</h2>
+        <div>
+        <button onClick={()=> this.gelatoFilter("bah")}>Gelato</button>
+        <button onClick={()=> this.sorbetFilter("bah")}>Sorbet</button>
+        <button onClick={()=> this.alcoFilter("bah")}>Alcoholic</button>
+        <button onClick={()=> this.clearFilter("bah")}>Clear</button>
+        </div>
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>
@@ -36,7 +76,7 @@ class RecipeView extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {recipes.map((rec, i) => (
+            {this.state.filteredDataSource.map((rec, i) => (
               <React.Fragment key={i}>
                 <tr onClick={() => this.clickedTD(rec)}>
                   <td>{rec.name}</td>
@@ -60,7 +100,7 @@ class RecipeView extends React.Component {
           </tbody>
           <tfoot>
             <tr>
-              <td>Recipes : {recipes.length}</td>
+              <td>Recipes : {this.state.filteredDataSource.length}</td>
             </tr>
           </tfoot>
         </table>
