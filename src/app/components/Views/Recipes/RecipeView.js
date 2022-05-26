@@ -43,6 +43,9 @@ class RecipeView extends React.Component {
       <div>
         <h2>Recipes</h2>
         <div>
+          <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
+        </div>
+        <div>
         <button onClick={()=> this.gelatoFilter("Gelato")}>Gelato</button>
         <button onClick={()=> this.gelatoFilter("Sorbet")}>Sorbet</button>
         <button onClick={()=> this.gelatoFilter("Alcoholic")}>Alcoholic</button>
