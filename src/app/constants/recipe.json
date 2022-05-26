@@ -37,12 +37,12 @@
     "type": "Base",
     "ingredients": [
       {
-        "quantity": 2500,
+        "quantity": 2000,
         "name": "Oat Milk",
         "qty": "grams"
       },
       {
-        "quantity": 300,
+        "quantity": 480,
         "name": "Sugar",
         "qty": "grams"
       },
