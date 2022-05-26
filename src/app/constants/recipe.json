@@ -32,6 +32,28 @@
     ]
   },
   {
+    "name": "Vegan",
+    "yield": 1,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 2500,
+        "name": "Oat Milk",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Vegan Base",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Sugar Base",
     "yield": 1,
     "type": "Base",
@@ -739,7 +761,7 @@
     ]
   },
   {
-    "name": "Donatella Rock",
+    "name": "Donatella Rock (Ferrero Rocher)",
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
@@ -872,6 +894,20 @@
     ]
   },
   {
+    "name": "Mount Vesuvio (Rocky Road)",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "Chocolate",
+    "decoration":"3 Layers of Brownies / Marshmallwo / Wallnuts / Chocolate Sauce",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "Chocolate Base",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Nutella",
     "yield": 2,
     "type": "Gelato",
@@ -961,6 +997,71 @@
       {
         "quantity": 140,
         "name": "Peanut butter",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Strawberry",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration":"3 Layers of Strawberry Variegato mixed in with Fork",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Skor",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration":"3 Layers Caramel Mou, Skor, and Nutella",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Tiramisu",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "3 Layers of Lady Finger dipped in Coffee",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 500,
+        "name": "Tiramisu",
+        "qty": "grams"
+      }
+    ]
+  },  
+  {
+    "name": "Vanilla Tahiti",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Vanilla Tahiti",
         "qty": "grams"
       }
     ]
