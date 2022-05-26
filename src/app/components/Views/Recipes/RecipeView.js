@@ -1,5 +1,6 @@
 import React from "react";
 
+import BlueButton from "../../Reusable_Components/BlueButton";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/recipe.json";
 
@@ -53,6 +54,7 @@ class RecipeView extends React.Component {
           <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
         </div>
         <div>
+          <BlueButton title="Alcoholic" didClick={()=> this.typeFilter("Alcoholic")} />
         <button onClick={()=> this.typeFilter("Gelato")}>Gelato</button>
         <button onClick={()=> this.typeFilter("Sorbet")}>Sorbet</button>
         <button onClick={()=> this.typeFilter("Alcoholic")}>Alcoholic</button>
