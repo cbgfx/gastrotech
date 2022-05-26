@@ -24,9 +24,16 @@ class RecipeView extends React.Component {
     this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
-  gelatoFilter = (filtType) => {
+  typeFilter = (filtType) => {
     var newItems = recipes.filter(function (entry) {
       return entry.type === filtType;
+  });
+  this.setState({filteredDataSource: newItems})
+  }
+
+  baseFilter = (filtType) => {
+    var newItems = recipes.filter(function (entry) {
+      return entry.base === filtType;
   });
   this.setState({filteredDataSource: newItems})
   }
@@ -46,12 +53,17 @@ class RecipeView extends React.Component {
           <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
         </div>
         <div>
-        <button onClick={()=> this.gelatoFilter("Gelato")}>Gelato</button>
-        <button onClick={()=> this.gelatoFilter("Sorbet")}>Sorbet</button>
-        <button onClick={()=> this.gelatoFilter("Alcoholic")}>Alcoholic</button>
-        <button onClick={()=> this.gelatoFilter("Base")}>Base</button>
-        <button onClick={()=> this.clearFilter("bah")}>Clear</button>
+        <button onClick={()=> this.typeFilter("Gelato")}>Gelato</button>
+        <button onClick={()=> this.typeFilter("Sorbet")}>Sorbet</button>
+        <button onClick={()=> this.typeFilter("Alcoholic")}>Alcoholic</button>
+        <button onClick={()=> this.typeFilter("Base")}>Base</button>
         </div>
+        <div>
+        <button onClick={()=> this.baseFilter("White Sugar")}>White Sugar</button>
+        <button onClick={()=> this.baseFilter("White Fat")}>White Fat</button>
+        <button onClick={()=> this.baseFilter("Chocolate")}>Chocolate Base</button>  
+        </div>
+        <div><button onClick={()=> this.clearFilter("bah")}>Clear</button></div>
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>

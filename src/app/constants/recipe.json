@@ -408,6 +408,7 @@
     "name": "Rhum & Raisin",
     "yield": 2,
     "type": "Alcoholic",
+    "base": "White Sugar",
     "decoration": "Raisins on top",
     "ingredients": [
       {
@@ -426,6 +427,7 @@
     "name": "Whisky",
     "yield": 2,
     "type": "Alcoholic",
+    "base": "White Sugar",
     "ingredients": [
       {
         "quantity": 7000,
@@ -440,9 +442,29 @@
     ]
   },
   {
+    "name": "Amaretto / Macaron",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "2 Layers of Amaretto Cookie Crumbs",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 350,
+        "name": "Amaretto",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Apple Pie",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "3 Layers of Apple Sauce & Graham Crackers",
     "ingredients": [
       {
@@ -461,6 +483,7 @@
     "name": "Bacio",
     "yield": 2,
     "type": "Gelato",
+    "base": "Chocolate",
     "decoration": "Handfull of Hazeluts on top",
     "ingredients": [
       {
@@ -479,6 +502,7 @@
     "name": "Banana",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "ingredients": [
       {
         "quantity": 7000,
@@ -501,6 +525,7 @@
     "name": "Turkish Delight",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Cinnamon",
     "ingredients": [
       {
@@ -519,6 +544,7 @@
     "name": "Biscottino",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Biscottino 3 Layer",
     "ingredients": [
       {
@@ -537,6 +563,7 @@
     "name": "Bubble Gum",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "A few Gum balls on top",
     "ingredients": [
       {
@@ -555,6 +582,7 @@
     "name": "Cannoli",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Broken Cannolis Shells",
     "ingredients": [
       {
@@ -575,9 +603,29 @@
     ]
   },
   {
+    "name": "Caramel",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "2 Layers of Caramel Mou Sauce",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Sucré",
+        "qty": "grams"
+      },
+      {
+        "quantity": 140,
+        "name": "Caramel",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Caramel Latte",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "3 Layers of Caramel Mou Sauce",
     "ingredients": [
       {
@@ -596,6 +644,7 @@
     "name": "Cappucino",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Cocoa Powder on top",
     "ingredients": [
       {
@@ -614,6 +663,7 @@
     "name": "Choco-Chino",
     "yield": 2,
     "type": "Gelato",
+    "base": "Chocolate",
     "ingredients": [
       {
         "quantity": 7000,
@@ -631,6 +681,7 @@
     "name": "Choco-Rasperry",
     "yield": 2,
     "type": "Gelato",
+    "base": "Chocolate",
     "ingredients": [
       {
         "quantity": 7000,
@@ -648,6 +699,7 @@
     "name": "Coconut",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Coconut shavings on top",
     "ingredients": [
       {
@@ -666,6 +718,7 @@
     "name": "Cookie Dough",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Cookie Dough in 3 Layers",
     "ingredients": [
       {
@@ -689,6 +742,7 @@
     "name": "Donatella Rock",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "3 Layers of Donatella Rock",
     "ingredients": [
       {
@@ -707,11 +761,12 @@
     "name": "Fig & Porto",
     "yield": 1,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "Fikissimo mixed in with the beater!!!!",
     "ingredients": [
       {
         "quantity": 3500,
-        "name": "White Base Grasse",
+        "name": "White Base Sucré",
         "qty": "grams"
       },
       {
@@ -730,6 +785,7 @@
     "name": "Hazelnut",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Fat",
     "decoration": "Handfull of Hazeluts on top",
     "ingredients": [
       {
@@ -748,11 +804,12 @@
     "name": "Mint Chocolate",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "3 Layer of Chocolate Chips",
     "ingredients": [
       {
         "quantity": 7000,
-        "name": "White Base Grasse",
+        "name": "White Base Sucré",
         "qty": "grams"
       },
       {
@@ -772,10 +829,11 @@
     "yield": 2,
     "type": "Gelato",
     "decoration": "Cinnamon",
+    "base": "White Sugar",
     "ingredients": [
       {
         "quantity": 7000,
-        "name": "White Base Grasse",
+        "name": "Vegan or White Base Sucré",
         "qty": "grams"
       },
       {
@@ -789,6 +847,7 @@
     "name": "Monkey Business",
     "yield": 2,
     "type": "Gelato",
+    "base": "Chocolate",
     "ingredients": [
       {
         "quantity": 7000,
@@ -816,6 +875,7 @@
     "name": "Nutella",
     "yield": 2,
     "type": "Gelato",
+    "base": "Chocolate",
     "ingredients": [
       {
         "quantity": 7000,
@@ -833,11 +893,12 @@
     "name": "Peanut Butter Nutella",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "3 Layer of Peanut Butter, Nutella Swirl + Peanuts (salted)",
     "ingredients": [
       {
         "quantity": 7000,
-        "name": "White Base Grasse",
+        "name": "White Base Sucré",
         "qty": "grams"
       },
       {
@@ -851,6 +912,7 @@
     "name": "Pistachio",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Fat",
     "decoration": "Sprinkle Pistachio crumbs",
     "ingredients": [
       {
@@ -869,11 +931,12 @@
     "name": "Oreo",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "2 Layer of Oreo Crumbs",
     "ingredients": [
       {
         "quantity": 7000,
-        "name": "White Base Grasse",
+        "name": "White Base Sucré",
         "qty": "grams"
       },
       {
@@ -887,11 +950,12 @@
     "name": "Reese's Pieces",
     "yield": 2,
     "type": "Gelato",
+    "base": "White Sugar",
     "decoration": "3 Layers Reese's Pieces, peanut butter, chocolate drip",
     "ingredients": [
       {
         "quantity": 7000,
-        "name": "White Base Grasse",
+        "name": "White Base Sucré",
         "qty": "grams"
       },
       {
