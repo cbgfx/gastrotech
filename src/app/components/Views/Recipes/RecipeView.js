@@ -1,30 +1,27 @@
 import React from "react";
 
-import NavBar from "../../Reusable_Components/NavBar/NavBar";
-import AccountsBar from "../../Reusable_Components/NavBar/AccountsBar";
-import RecipeModal from "../../Popups/RecipeModal";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/recipe.json";
-
 
 class RecipeView extends React.Component {
   state = { filteredDataSource: [] };
 
   componentDidMount() {
-    this.setState({filteredDataSource: recipes})
+    var sortedDataSource = this.sortRecipe(recipes);
+    this.setState({ filteredDataSource: sortedDataSource });
   }
 
-  clickedTD = (iRecipe) => {
-    console.log("clicked", iRecipe.name)
-    this.setState({ showPopup: true });
-    return(
-      <RecipeModal
-        name={iRecipe.name}
-        type={iRecipe.yield}
-        ingredient={iRecipe.ingredients}
-        decoration={iRecipe.decoration}
-      />
-    )
+  sortRecipe = (ds) => {
+    var dataSource = ds.sort((a, b) => parseFloat(a.name) - parseFloat(b.name));
+    return dataSource;
+  };
+
+  textFilter = (a) => {
+    var filteredItemArray = recipes.filter((items) => {
+      return items.name.toLowerCase().includes(a.toLowerCase());
+    });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   gelatoFilter = (filtType) => {
@@ -35,8 +32,8 @@ class RecipeView extends React.Component {
   }
 
   clearFilter = (a) => {
-  this.setState({filteredDataSource: recipes})
-  }
+    this.setState({ filteredDataSource: recipes });
+  };
 
   /*
    */

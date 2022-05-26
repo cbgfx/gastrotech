@@ -498,6 +498,24 @@
     ]
   },
   {
+    "name": "Turkish Delight",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Cinnamon",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 7,
+        "name": "Salep Mix",
+        "qty": "bags"
+      }
+    ]
+  },
+  {
     "name": "Biscottino",
     "yield": 2,
     "type": "Gelato",
@@ -593,6 +611,40 @@
     ]
   },
   {
+    "name": "Choco-Chino",
+    "yield": 2,
+    "type": "Gelato",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "Chocolate Base",
+        "qty": "grams"
+      },
+      {
+        "quantity": 330,
+        "name": "Costa D'Oro",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Choco-Rasperry",
+    "yield": 2,
+    "type": "Gelato",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "Chocolate Base",
+        "qty": "grams"
+      },
+      {
+        "quantity": 250,
+        "name": "Raspberry",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Coconut",
     "yield": 2,
     "type": "Gelato",
@@ -629,40 +681,6 @@
       {
         "quantity": 200,
         "name": "Actual Cookie Dough",
-        "qty": "grams"
-      }
-    ]
-  },
-  {
-    "name": "Choco-Chino",
-    "yield": 2,
-    "type": "Gelato",
-    "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "Chocolate Base",
-        "qty": "grams"
-      },
-      {
-        "quantity": 330,
-        "name": "Costa D'Oro",
-        "qty": "grams"
-      }
-    ]
-  },
-  {
-    "name": "Choco-Rasperry",
-    "yield": 2,
-    "type": "Gelato",
-    "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "Chocolate Base",
-        "qty": "grams"
-      },
-      {
-        "quantity": 250,
-        "name": "Raspberry",
         "qty": "grams"
       }
     ]
@@ -794,7 +812,7 @@
       }
     ]
   },
-   {
+  {
     "name": "Nutella",
     "yield": 2,
     "type": "Gelato",
@@ -880,24 +898,6 @@
         "quantity": 140,
         "name": "Peanut butter",
         "qty": "grams"
-      }
-    ]
-  },
-  {
-    "name": "Turkish Delight",
-    "yield": 2,
-    "type": "Gelato",
-    "decoration": "Cinnamon",
-    "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Grasse",
-        "qty": "grams"
-      },
-      {
-        "quantity": 7,
-        "name": "Salep Mix",
-        "qty": "bags"
       }
     ]
   }
