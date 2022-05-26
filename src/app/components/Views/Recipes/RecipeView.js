@@ -27,23 +27,9 @@ class RecipeView extends React.Component {
     )
   };
 
-  alcoFilter = (a) => {
+  gelatoFilter = (filtType) => {
     var newItems = recipes.filter(function (entry) {
-      return entry.type === 'Alcoholic';
-  });
-  this.setState({filteredDataSource: newItems})
-  }
-
-  gelatoFilter = (a) => {
-    var newItems = recipes.filter(function (entry) {
-      return entry.type === 'Gelato';
-  });
-  this.setState({filteredDataSource: newItems})
-  }
-
-  sorbetFilter = (a) => {
-    var newItems = recipes.filter(function (entry) {
-      return entry.type === 'Sorbet';
+      return entry.type === filtType;
   });
   this.setState({filteredDataSource: newItems})
   }
@@ -60,9 +46,10 @@ class RecipeView extends React.Component {
       <div>
         <h2>Recipes</h2>
         <div>
-        <button onClick={()=> this.gelatoFilter("bah")}>Gelato</button>
-        <button onClick={()=> this.sorbetFilter("bah")}>Sorbet</button>
-        <button onClick={()=> this.alcoFilter("bah")}>Alcoholic</button>
+        <button onClick={()=> this.gelatoFilter("Gelato")}>Gelato</button>
+        <button onClick={()=> this.gelatoFilter("Sorbet")}>Sorbet</button>
+        <button onClick={()=> this.gelatoFilter("Alcoholic")}>Alcoholic</button>
+        <button onClick={()=> this.gelatoFilter("Base")}>Base</button>
         <button onClick={()=> this.clearFilter("bah")}>Clear</button>
         </div>
         <table className="table table-striped table-hover text-white">

@@ -1,5 +1,193 @@
 [
   {
+    "name": "Yogourt",
+    "yield": 2,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 4840,
+        "name": "Milk",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1200,
+        "name": "Plain Yogourt",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1330,
+        "name": "Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Yossi",
+        "qty": "grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Fruttosa",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Sugar Base",
+    "yield": 1,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 40,
+        "name": "Milk",
+        "qty": "L"
+      },
+      {
+        "quantity": 5,
+        "name": "Cream",
+        "qty": "L"
+      },
+      {
+        "quantity": 7500,
+        "name": "Sugar",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Dextrose",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Skim Milk",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Piu Cremoso",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 2500,
+        "name": "50 Base",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Glucose Liquid",
+        "qty": "Grams"
+      }
+    ]
+  },
+  {
+    "name": "Graisse Base",
+    "yield": 1,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 40,
+        "name": "Milk",
+        "qty": "L"
+      },
+      {
+        "quantity": 5,
+        "name": "Cream",
+        "qty": "L"
+      },
+      {
+        "quantity": 7500,
+        "name": "Sugar",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Dextrose",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Skim Milk",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 300,
+        "name": "Piu Cremoso",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 2500,
+        "name": "50 Base",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 400,
+        "name": "Glucose Liquid",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 1,
+        "name": "Velutina",
+        "qty": "Tea Spoon"
+      }
+    ]
+  },
+  {
+    "name": "Chocolate  Base",
+    "yield": 1,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 40,
+        "name": "Milk",
+        "qty": "L"
+      },
+      {
+        "quantity": 4,
+        "name": "Cream",
+        "qty": "L"
+      },
+      {
+        "quantity": 7500,
+        "name": "Sugar",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 1000,
+        "name": "Dextrose",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 700,
+        "name": "Skim Milk",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 150,
+        "name": "Piu Cremoso",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 2000,
+        "name": "50 Base",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 1000,
+        "name": "Glucose Liquid",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 2700,
+        "name": "Cacao",
+        "qty": "Grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Melted Chocolate",
+        "qty": "Grams"
+      }
+    ]
+  },
+  {
     "name": "Lemon",
     "yield": 2,
     "type": "Sorbet",
@@ -180,38 +368,6 @@
       {
         "quantity": 20,
         "name": "Cocoa",
-        "qty": "grams"
-      }
-    ]
-  },
-  {
-    "name": "Yogourt",
-    "yield": 2,
-    "type": "Yoggi",
-    "ingredients": [
-      {
-        "quantity": 4840,
-        "name": "Milk",
-        "qty": "grams"
-      },
-      {
-        "quantity": 1200,
-        "name": "Plain Yogourt",
-        "qty": "grams"
-      },
-      {
-        "quantity": 1330,
-        "name": "Sugar",
-        "qty": "grams"
-      },
-      {
-        "quantity": 300,
-        "name": "Yossi",
-        "qty": "grams"
-      },
-      {
-        "quantity": 300,
-        "name": "Fruttosa",
         "qty": "grams"
       }
     ]
@@ -594,6 +750,24 @@
     ]
   },
   {
+    "name": "Matcha",
+    "yield": 2,
+    "type": "Gelato",
+    "decoration": "Cinnamon",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "White Base Grasse",
+        "qty": "grams"
+      },
+      {
+        "quantity": 50,
+        "name": "Matcha Powder",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Monkey Business",
     "yield": 2,
     "type": "Gelato",
@@ -656,7 +830,7 @@
     ]
   },
   {
-    "name": "Pistacchio",
+    "name": "Pistachio",
     "yield": 2,
     "type": "Gelato",
     "decoration": "Sprinkle Pistachio crumbs",
