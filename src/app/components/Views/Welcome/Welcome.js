@@ -10,52 +10,34 @@ import Footer from "../../Reusable_Components/Footer";
 import { logout, isUserLoggedIn } from "../../../store/actions/UserView";
 
 class Welcome extends React.Component {
+  state = { passLog: false };
+
   componentDidMount() {
     this.props.isUserLoggedIn();
   }
 
+  textPass = (a) => {
+    if (a == "carl") {
+    this.setState({ passLog: true })
+    }
+  };
+
   render() {
 
-    var isIOS =
-      /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (isIOS) {
       return (
         <div className="fields center">
           <MainTitle />
-          <h1>Conefetti Inventory System: </h1>
+          <h1>Conefetti System: </h1>
           <div className="container-sm">
-            We believe your experience will be better using our{" "}
-            <a href="https://apps.apple.com/ca/app/npc-tracker/id1504359362">
-              App
-            </a>
-            !<p />
-            <Link to={urls.login.route}>
-              <BlueButton title="Login" />
-            </Link>
-            <Link to="/signup">
-              <BlueButton title="Sign Up" />
-            </Link>
+
+            {this.state.passLog ? 
+            <Link to="/recipe">
+              <BlueButton title="Recipe" />
+            </Link> : <p>Password: <input type="ui search" placeholder="Password" onChange={(e) => {this.textPass(e.target.value);}}/> </p> }
           </div>
           <Footer />
         </div>
       );
-    } else {
-      return (
-        <div className="fields center">
-          <MainTitle />
-          <h1>Select </h1>
-          <div className="container-sm">
-            <Link to={urls.login.route}>
-              <BlueButton title="Login" />
-            </Link>
-            <Link to="/signup">
-              <BlueButton title="Sign Up" />
-            </Link>
-          </div>
-          <Footer />
-        </div>
-      );
-    }
   }
 }
 
@@ -64,3 +46,4 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 export default connect(mapStateToProps, { logout, isUserLoggedIn })(Welcome);
+

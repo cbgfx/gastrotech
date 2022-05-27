@@ -13,7 +13,7 @@ class RecipeView extends React.Component {
   }
 
   sortRecipe = (ds) => {
-    var dataSource = ds.sort((a, b) => parseFloat(a.name) - parseFloat(b.name));
+    var dataSource = ds.sort((a, b) => a.name.localeCompare(b.name));
     return dataSource;
   };
 
@@ -26,17 +26,19 @@ class RecipeView extends React.Component {
   };
 
   typeFilter = (filtType) => {
-    var newItems = recipes.filter(function (entry) {
+    var filteredItemArray = recipes.filter(function (entry) {
       return entry.type === filtType;
   });
-  this.setState({filteredDataSource: newItems})
+  var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+  this.setState({filteredDataSource: sortedFilteredDS})
   }
 
   baseFilter = (filtType) => {
-    var newItems = recipes.filter(function (entry) {
+    var filteredItemArray = recipes.filter(function (entry) {
       return entry.base === filtType;
   });
-  this.setState({filteredDataSource: newItems})
+  var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+  this.setState({filteredDataSource: sortedFilteredDS})
   }
 
   clearFilter = (a) => {
@@ -54,18 +56,19 @@ class RecipeView extends React.Component {
           <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
         </div>
         <div>
+          Filter by Type:
           <BlueButton title="Alcoholic" didClick={()=> this.typeFilter("Alcoholic")} />
-        <button onClick={()=> this.typeFilter("Gelato")}>Gelato</button>
-        <button onClick={()=> this.typeFilter("Sorbet")}>Sorbet</button>
-        <button onClick={()=> this.typeFilter("Alcoholic")}>Alcoholic</button>
-        <button onClick={()=> this.typeFilter("Base")}>Base</button>
+          <BlueButton title="Sorbet" didClick={()=> this.typeFilter("Sorbet")} />
+          <BlueButton title="Gelato" didClick={()=> this.typeFilter("Gelato")} />
+          <BlueButton title="Bases" didClick={()=> this.typeFilter("Base")} />
         </div>
         <div>
-        <button onClick={()=> this.baseFilter("White Sugar")}>White Sugar</button>
-        <button onClick={()=> this.baseFilter("White Fat")}>White Fat</button>
-        <button onClick={()=> this.baseFilter("Chocolate")}>Chocolate Base</button>  
+          Filter by Base:
+          <BlueButton title="White Sugar" didClick={()=> this.baseFilter("White Sugar")} />
+          <BlueButton title="White Fat" didClick={()=> this.baseFilter("White Fat")} />
+          <BlueButton title="Chocolate" didClick={()=> this.baseFilter("Chocolate")} />
         </div>
-        <div><button onClick={()=> this.clearFilter("bah")}>Clear</button></div>
+        <BlueButton title="Clear Filters" didClick={()=> this.clearFilter("clear")} />
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>

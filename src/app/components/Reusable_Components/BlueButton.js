@@ -7,10 +7,10 @@ class BlueButton extends React.Component {
       textAlign: "center",
       textDecoration: "none",
       fontSize: "14px",
-      backgroundColor: "#342741",
+      backgroundColor: "#e29b30",
       border: "solid 1px",
-      color: "#FFFFFF",
-      borderColor: "#FFFFFF",
+      color: "#000000",
+      borderColor: "#000000",
       marginBottom: "5px",
       borderRadius: "5px",
       width: "130px",
@@ -49,7 +49,7 @@ class BlueButton extends React.Component {
 
 BlueButton.defaultProps = {
   didClick: () => {
-    
+
   },
 };
 
