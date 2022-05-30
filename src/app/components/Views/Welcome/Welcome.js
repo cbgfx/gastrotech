@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import * as urls from "../../../constants/urls";
-
 import BlueButton from "../../Reusable_Components/BlueButton";
 import MainTitle from "../../Reusable_Components/MainTitle";
 import Footer from "../../Reusable_Components/Footer";
@@ -17,7 +15,7 @@ class Welcome extends React.Component {
   }
 
   textPass = (a) => {
-    if (a == "carl") {
+    if (a === "carl") {
       this.setState({ passLog: true });
     }
   };
