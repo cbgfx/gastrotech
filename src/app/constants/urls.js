@@ -43,6 +43,10 @@ export const recipe = {
   route: "/recipe",
 };
 
+export const base = {
+  route: "/base",
+};
+
 export const sched = {
   route: "/schedule",
 };

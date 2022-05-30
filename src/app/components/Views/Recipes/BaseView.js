@@ -3,9 +3,9 @@ import React from "react";
 import BlueButton from "../../Reusable_Components/BlueButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import Footer from "../../Reusable_Components/Footer";
-import recipes from "../../../constants/recipe.json";
+import recipes from "../../../constants/base.json";
 
-class RecipeView extends React.Component {
+class BaseView extends React.Component {
   state = { filteredDataSource: [] };
 
   componentDidMount() {
@@ -53,22 +53,9 @@ class RecipeView extends React.Component {
     return (
       <div>
         <NavBar />
-        <h2>Recipes</h2>
+        <h2>Bases</h2>
         <div>
           <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
-        </div>
-        <div>
-          Filter by Type:
-          <BlueButton title="Alcoholic" didClick={()=> this.typeFilter("Alcoholic")} />
-          <BlueButton title="Sorbet" didClick={()=> this.typeFilter("Sorbet")} />
-          <BlueButton title="Gelato" didClick={()=> this.typeFilter("Gelato")} />
-          <BlueButton title="Bases" didClick={()=> this.typeFilter("Base")} />
-        </div>
-        <div>
-          Filter by Base:
-          <BlueButton title="White Sugar" didClick={()=> this.baseFilter("White Sugar")} />
-          <BlueButton title="White Fat" didClick={()=> this.baseFilter("White Fat")} />
-          <BlueButton title="Chocolate" didClick={()=> this.baseFilter("Chocolate")} />
         </div>
         <BlueButton title="Clear Filters" didClick={()=> this.clearFilter("clear")} />
         <table className="table table-striped table-hover text-white">
@@ -108,7 +95,7 @@ class RecipeView extends React.Component {
           </tbody>
           <tfoot>
             <tr>
-              <td>Recipes : {this.state.filteredDataSource.length}</td>
+              <td>Bases : {this.state.filteredDataSource.length}</td>
             </tr>
           </tfoot>
         </table>
@@ -118,6 +105,6 @@ class RecipeView extends React.Component {
   }
 }
 
-RecipeView.defaultProps = {};
+BaseView.defaultProps = {};
 
-export default RecipeView;
+export default BaseView;

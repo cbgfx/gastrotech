@@ -1,18 +1,18 @@
-import React from "react"
-import "../../../css/header.css"
-import * as constants from "../../../constants/constants"
+import React from "react";
+import "../../../css/header.css";
+import { Link } from "react-router-dom";
+import * as constants from "../../../constants/constants";
 
-import UserNavBar from "./UserNavBar"
-import OutsideNavBar from "./OutsideNavBar"
+import BlueButton from "../BlueButton";
 
 class NavBar extends React.Component {
   state = {
     toggle: false,
-  }
+  };
 
   Toggle = () => {
-    this.setState({ toggle: !this.state.toggle })
-  }
+    this.setState({ toggle: !this.state.toggle });
+  };
 
   render() {
     return (
@@ -21,24 +21,31 @@ class NavBar extends React.Component {
           <i className="list icon"></i>
         </button>
         <ul className={this.state.toggle ? "links show-nav" : "links"}>
-          <li className="navli"><img src={constants.LOGOSMALL}
-                    height="40px"
-                    width="40px"
-                    alt="Small Logo"></img></li>
-          {this.props.userNav ? null : (
-            <li className="navli">
-              <a href="https://conefetti.shop">Home</a>
-            </li>
-          )}
-           {this.props.userNav ? (
-            <UserNavBar campaignID={this.props.campaignID} />
-          ) : (
-            <OutsideNavBar />
-          )}
+          <li className="navli">
+            <img
+              src={constants.LOGOSMALL}
+              height="40px"
+              width="40px"
+              alt="Small Logo"
+            ></img>
+          </li>
+          <li className="navLi">
+            {" "}
+            <Link to="/recipe">
+              <BlueButton title="Recipe" />
+            </Link>
+          </li>
+
+          <li className="navLi">
+            {" "}
+            <Link to="/base">
+              <BlueButton title="Base" />
+            </Link>
+          </li>
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default NavBar
+export default NavBar;

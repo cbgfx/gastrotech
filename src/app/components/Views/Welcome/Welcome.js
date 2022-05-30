@@ -18,26 +18,41 @@ class Welcome extends React.Component {
 
   textPass = (a) => {
     if (a == "carl") {
-    this.setState({ passLog: true })
+      this.setState({ passLog: true });
     }
   };
 
   render() {
-
-      return (
-        <div className="fields center">
-          <MainTitle />
-          <h1>Conefetti System: </h1>
-          <div className="container-sm">
-
-            {this.state.passLog ? 
-            <Link to="/recipe">
-              <BlueButton title="Recipe" />
-            </Link> : <p>Password: <input type="ui search" placeholder="Password" onChange={(e) => {this.textPass(e.target.value);}}/> </p> }
-          </div>
-          <Footer />
+    return (
+      <div className="fields center">
+        <MainTitle />
+        <h1>Conefetti System: </h1>
+        <div className="container-sm">
+          {this.state.passLog ? (
+            <div>
+              <Link to="/recipe">
+                <BlueButton title="Recipe" />
+              </Link>
+              <Link to="/base">
+                <BlueButton title="Bases" />
+              </Link>
+            </div>
+          ) : (
+            <p>
+              Password:{" "}
+              <input
+                type="ui search"
+                placeholder="Password"
+                onChange={(e) => {
+                  this.textPass(e.target.value);
+                }}
+              />{" "}
+            </p>
+          )}
         </div>
-      );
+        <Footer />
+      </div>
+    );
   }
 }
 
@@ -46,4 +61,3 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 export default connect(mapStateToProps, { logout, isUserLoggedIn })(Welcome);
-

@@ -1,8 +1,7 @@
 // WHERE WE KEEP TRACK OF PROPER CONSTANTS
 export const APPVERSION = 1.3; //VER: UPDATE THIS SERVER SIDE TOO
-export const BLANKCAMPPIC = "/assets/campBlank.png";
-export const BLANKUSERPIC = "/assets/fnpcBlank.png";
 export const LOGOSMALL = "/assets/smallLogo.png";
+export const LOGO = "/assets/logo.png";
 
 export const SvgIconType = {
   Name: "Name",

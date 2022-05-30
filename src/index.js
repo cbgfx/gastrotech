@@ -21,6 +21,7 @@ import ChangePassword from "./app/components/Views/Accounts/PasswordView";
 import EditSuppliers from "./app/components/Views/Suppliers/EditSuppliers";
 import ScheduleView from "./app/components/Views/Schedule/ScheduleView";
 import RecipeView from "./app/components/Views/Recipes/RecipeView";
+import BaseView from "./app/components/Views/Recipes/BaseView";
 import ForgotUserPassword from "./app/components/Views/Forgot/ForgotUserPassword";
 
 /*
@@ -50,6 +51,7 @@ export const App = () => (
       <Route path={urls.suppliers.route} element={<EditSuppliers />} />
       <Route path={urls.sched.route} element={<ScheduleView />} />
       <Route path={urls.recipe.route} element={<RecipeView />} />
+      <Route path={urls.base.route} element={<BaseView />} />
       <Route path={urls.forgot.route} element={<ForgotUserPassword />} />
 
       {/* <Route path={urls.randomNameGenerator.route} exact component={RandomNameGenerator} /> */}
