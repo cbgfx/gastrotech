@@ -434,11 +434,6 @@
     "decoration": "Raisins on top",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Grasse",
-        "qty": "grams"
-      },
-      {
         "quantity": 375,
         "name": "Malaga",
         "qty": "grams"
@@ -451,11 +446,6 @@
     "type": "Alcoholic",
     "base": "White Sugar",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 300,
         "name": "Whisky of Choice",
@@ -471,11 +461,6 @@
     "decoration": "2 Layers of Amaretto Cookie Crumbs",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 350,
         "name": "Amaretto",
         "qty": "grams"
@@ -489,11 +474,6 @@
     "base": "White Sugar",
     "decoration": "3 Layers of Apple Sauce & Graham Crackers",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 50,
         "name": "Cinnamon",
@@ -509,11 +489,6 @@
     "decoration": "Handfull of Hazeluts on top",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "Choco Base",
-        "qty": "grams"
-      },
-      {
         "quantity": 300,
         "name": "Hazelnut Regina",
         "qty": "grams"
@@ -526,11 +501,6 @@
     "type": "Gelato",
     "base": "White Sugar",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 200,
         "name": "Banana",
@@ -551,11 +521,6 @@
     "decoration": "Cinnamon",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Grasse",
-        "qty": "grams"
-      },
-      {
         "quantity": 7,
         "name": "Salep Mix",
         "qty": "bags"
@@ -569,11 +534,6 @@
     "base": "White Sugar",
     "decoration": "Biscottino 3 Layer",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base",
-        "qty": "grams"
-      },
       {
         "quantity": 350,
         "name": "Biscottino",
@@ -589,11 +549,6 @@
     "decoration": "A few Gum balls on top",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 200,
         "name": "Bubble Gum",
         "qty": "grams"
@@ -607,11 +562,6 @@
     "base": "White Sugar",
     "decoration": "Broken Cannolis Shells",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 850,
         "name": "Ricotta",
@@ -632,11 +582,6 @@
     "decoration": "2 Layers of Caramel Mou Sauce",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 140,
         "name": "Caramel",
         "qty": "grams"
@@ -650,11 +595,6 @@
     "base": "White Sugar",
     "decoration": "3 Layers of Caramel Mou Sauce",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 150,
         "name": "Caramel Late",
@@ -670,11 +610,6 @@
     "decoration": "Cocoa Powder on top",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 375,
         "name": "Costa D'Oro",
         "qty": "grams"
@@ -688,11 +623,6 @@
     "base": "Chocolate",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "Chocolate Base",
-        "qty": "grams"
-      },
-      {
         "quantity": 330,
         "name": "Costa D'Oro",
         "qty": "grams"
@@ -705,11 +635,6 @@
     "type": "Gelato",
     "base": "Chocolate",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "Chocolate Base",
-        "qty": "grams"
-      },
       {
         "quantity": 250,
         "name": "Raspberry",
@@ -725,11 +650,6 @@
     "decoration": "Coconut shavings on top",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 400,
         "name": "Coconut",
         "qty": "grams"
@@ -743,11 +663,6 @@
     "base": "White Sugar",
     "decoration": "Cookie Dough in 3 Layers",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 40,
         "name": "Biscottino",
@@ -768,11 +683,6 @@
     "decoration": "3 Layers of Donatella Rock",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 800,
         "name": "Donatella Rock",
         "qty": "grams"
@@ -781,23 +691,18 @@
   },
   {
     "name": "Fig & Porto",
-    "yield": 1,
+    "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
     "decoration": "Fikissimo mixed in with the beater!!!!",
     "ingredients": [
       {
-        "quantity": 3500,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
-        "quantity": 80,
+        "quantity": 160,
         "name": "Taylor Fladgate 2017",
         "qty": "grams"
       },
       {
-        "quantity": 60,
+        "quantity": 120,
         "name": "Fig",
         "qty": "grams"
       }
@@ -810,11 +715,6 @@
     "base": "White Fat",
     "decoration": "Handfull of Hazeluts on top",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Grasse",
-        "qty": "grams"
-      },
       {
         "quantity": 700,
         "name": "Hazelnut Regina",
@@ -829,11 +729,6 @@
     "base": "White Sugar",
     "decoration": "3 Layer of Chocolate Chips",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 200,
         "name": "Mint",
@@ -854,11 +749,6 @@
     "base": "White Sugar",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "Vegan or White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 50,
         "name": "Matcha Powder",
         "qty": "grams"
@@ -871,11 +761,6 @@
     "type": "Gelato",
     "base": "Chocolate",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "Chocolate Base",
-        "qty": "grams"
-      },
       {
         "quantity": 350,
         "name": "Peanut Butter",
@@ -914,11 +799,6 @@
     "base": "Chocolate",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "Chocolate Base",
-        "qty": "grams"
-      },
-      {
         "quantity": 350,
         "name": "Nutella",
         "qty": "grams"
@@ -932,11 +812,6 @@
     "base": "White Sugar",
     "decoration": "3 Layer of Peanut Butter, Nutella Swirl + Peanuts (salted)",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 420,
         "name": "Peanut Butter (Creamy)",
@@ -952,11 +827,6 @@
     "decoration": "Sprinkle Pistachio crumbs",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Grasse",
-        "qty": "grams"
-      },
-      {
         "quantity": 600,
         "name": "Pistachio Med",
         "qty": "grams"
@@ -971,11 +841,6 @@
     "decoration": "2 Layer of Oreo Crumbs",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 200,
         "name": "Oreo",
         "qty": "grams"
@@ -989,11 +854,6 @@
     "base": "White Sugar",
     "decoration": "3 Layers Reese's Pieces, peanut butter, chocolate drip",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 140,
         "name": "Peanut butter",
@@ -1037,11 +897,6 @@
     "decoration": "3 Layers of Lady Finger dipped in Coffee",
     "ingredients": [
       {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
-      {
         "quantity": 500,
         "name": "Tiramisu",
         "qty": "grams"
@@ -1054,11 +909,6 @@
     "type": "Gelato",
     "base": "White Sugar",
     "ingredients": [
-      {
-        "quantity": 7000,
-        "name": "White Base Sucré",
-        "qty": "grams"
-      },
       {
         "quantity": 200,
         "name": "Vanilla Tahiti",
