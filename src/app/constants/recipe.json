@@ -36,6 +36,11 @@
     "type": "Sorbet",
     "ingredients": [
       {
+        "quantity": 2000,
+        "name": "Mango Pure",
+        "qty": "grams"
+      },
+      {
         "quantity": 2400,
         "name": "Water",
         "qty": "grams"
@@ -77,6 +82,11 @@
     "yield": 2,
     "type": "Sorbet",
     "ingredients": [
+      {
+        "quantity": 2000,
+        "name": "Raspberry Pure",
+        "qty": "grams"
+      },
       {
         "quantity": 2400,
         "name": "Water",
