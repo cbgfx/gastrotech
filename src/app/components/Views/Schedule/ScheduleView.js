@@ -1,65 +1,42 @@
 import React from "react";
-import { connect } from "react-redux";
 
-import NavBar from "../../Reusable_Components/NavBar/NavBar";
-import AccountsBar from "../../Reusable_Components/NavBar/AccountsBar";
+import * as constants from "../../../constants/constants"
 import Footer from "../../Reusable_Components/Footer";
+import MainTitle from "../../Reusable_Components/MainTitle";
 
 class ScheduleView extends React.Component {
-  state = { showPopup: false };
+  state = { showPopup: false, passLog: false};
 
-  componentDidMount() {
-  }
-
-  showHidePopup = () => {
-    this.setState({ showPopup: !this.state.showPopup });
+  textPass = (a) => {
+    if (a === "hazel") {
+      this.setState({ passLog: true });
+    }
   };
-
 
   render() {
     return (
-      <div>
-        <AccountsBar />
-        <NavBar userNav={true} backButton={true}/>
-        <table className="table table-striped table-hover text-white">
-        <tr>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-        <th>Sunday</th>
-    </tr>
-    <tr>
-        <td>{/*Monday*/}
-            -----
-        </td>
-        <td>{/*Tuesday*/}
-            -----
-        </td>
-        <td>{/*Wednesday*/}
-            -----
-            </td>
-        <td>{/*Thursday*/}
-            Delphine 3pm-7pm
-        <br />Tatiana 7pm-10pm
-        </td>
-        <td>{/*Friday*/}
-            Tessa 3pm-7pm
-        <br />Christel  6pm-10pm
-        </td>
-        <td>{/*Saturday*/}
-            Adele 2pm-7pm
-            <br />Christel 6pm-10pm
-        </td>
-        <td>{/*Sunday*/}
-            Delphine 11am-4pm
-            <br />Adele 4pm-10pm
-        </td>
-    </tr>
-        </table>
-      <Footer />
+      <div className="fields center">
+        <MainTitle />
+        <h1>Conefetti Scheduler: </h1>
+        <div>
+          {this.state.passLog ? (
+            <div>
+              <img src={constants.SCHEDULE}></img>
+            </div>
+          ) : (
+            <p>
+              Password:{" "}
+              <input
+                type="ui search"
+                placeholder="Password"
+                onChange={(e) => {
+                  this.textPass(e.target.value);
+                }}
+              />{" "}
+            </p>
+          )}
+        </div>
+        <Footer />
       </div>
     );
   }
@@ -67,9 +44,5 @@ class ScheduleView extends React.Component {
 
 ScheduleView.defaultProps = {};
 
-const mapStateToProps = (state) => {
-  return { items: Object.values(state.itemsViewReducer) };
-};
 
-export default connect(mapStateToProps, {
-})(ScheduleView);
+export default ScheduleView;

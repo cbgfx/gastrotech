@@ -52,6 +52,7 @@ export const App = () => (
       <Route path={urls.sched.route} element={<ScheduleView />} />
       <Route path={urls.recipe.route} element={<RecipeView />} />
       <Route path={urls.base.route} element={<BaseView />} />
+      <Route path={urls.forgot.sched} element={<ScheduleView />} />
       <Route path={urls.forgot.route} element={<ForgotUserPassword />} />
 
       {/* <Route path={urls.randomNameGenerator.route} exact component={RandomNameGenerator} /> */}
