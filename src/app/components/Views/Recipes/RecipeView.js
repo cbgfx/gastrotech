@@ -62,7 +62,6 @@ class RecipeView extends React.Component {
           <BlueButton title="Alcoholic" didClick={()=> this.typeFilter("Alcoholic")} />
           <BlueButton title="Sorbet" didClick={()=> this.typeFilter("Sorbet")} />
           <BlueButton title="Gelato" didClick={()=> this.typeFilter("Gelato")} />
-          <BlueButton title="Bases" didClick={()=> this.typeFilter("Base")} />
         </div>
         <div>
           Filter by Base:
