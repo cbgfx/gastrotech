@@ -691,6 +691,34 @@
         "qty": "grams"
       }
     ]
+  },
+  {
+    "name": "Kraft Mac & Cheese",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "3 Layers of KD Powder",
+    "ingredients": [
+      {
+        "quantity": 200,
+        "name": "KD Powder",
+        "qty": "grams"
+      }
+    ]
+  },  
+  {
+    "name": "Waferini",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "3 Layers of Waferini",
+    "ingredients": [
+      {
+        "quantity": 300,
+        "name": "Hazelnut",
+        "qty": "grams"
+      }
+    ]
   },  
   {
     "name": "Vanilla Tahiti",
