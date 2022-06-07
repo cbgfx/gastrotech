@@ -544,7 +544,6 @@
     "name": "Matcha",
     "yield": 2,
     "type": "Gelato",
-    "decoration": "Cinnamon",
     "base": "White Sugar",
     "ingredients": [
       {

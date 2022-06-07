@@ -29,17 +29,30 @@ class RecipeView extends React.Component {
   typeFilter = (filtType) => {
     var filteredItemArray = recipes.filter(function (entry) {
       return entry.type === filtType;
-  });
-  var sortedFilteredDS = this.sortRecipe(filteredItemArray);
-  this.setState({filteredDataSource: sortedFilteredDS})
+    });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS })
+  }
+
+  decoFilter = () => {
+    console.log("Deco Filter");
+
+    var filteredItemArray = recipes.filter(function (entry) {
+      if (entry.hasOwnProperty("decoration")) {
+        return entry;
+      }
+    });
+
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS })
   }
 
   baseFilter = (filtType) => {
     var filteredItemArray = recipes.filter(function (entry) {
       return entry.base === filtType;
-  });
-  var sortedFilteredDS = this.sortRecipe(filteredItemArray);
-  this.setState({filteredDataSource: sortedFilteredDS})
+    });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS })
   }
 
   clearFilter = (a) => {
@@ -55,21 +68,22 @@ class RecipeView extends React.Component {
         <NavBar />
         <h2>Recipes</h2>
         <div>
-          <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
+          <input type="ui search" placeholder="Search" onChange={(e) => { this.textFilter(e.target.value); }} />
         </div>
         <div>
           Filter by Type:
-          <BlueButton title="Alcoholic" didClick={()=> this.typeFilter("Alcoholic")} />
-          <BlueButton title="Sorbet" didClick={()=> this.typeFilter("Sorbet")} />
-          <BlueButton title="Gelato" didClick={()=> this.typeFilter("Gelato")} />
+          <BlueButton title="Alcoholic" didClick={() => this.typeFilter("Alcoholic")} />
+          <BlueButton title="Sorbet" didClick={() => this.typeFilter("Sorbet")} />
+          <BlueButton title="Gelato" didClick={() => this.typeFilter("Gelato")} />
+          <BlueButton title="Decoration" didClick={() => this.decoFilter()} />
         </div>
         <div>
           Filter by Base:
-          <BlueButton title="White Sugar" didClick={()=> this.baseFilter("White Sugar")} />
-          <BlueButton title="White Fat" didClick={()=> this.baseFilter("White Fat")} />
-          <BlueButton title="Chocolate" didClick={()=> this.baseFilter("Chocolate")} />
+          <BlueButton title="White Sugar" didClick={() => this.baseFilter("White Sugar")} />
+          <BlueButton title="White Fat" didClick={() => this.baseFilter("White Fat")} />
+          <BlueButton title="Chocolate" didClick={() => this.baseFilter("Chocolate")} />
         </div>
-        <BlueButton title="Clear Filters" didClick={()=> this.clearFilter("clear")} />
+        <BlueButton title="Clear Filters" didClick={() => this.clearFilter("clear")} />
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>
