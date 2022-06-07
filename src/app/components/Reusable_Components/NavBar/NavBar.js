@@ -42,6 +42,13 @@ class NavBar extends React.Component {
               <BlueButton title="Base" />
             </Link>
           </li>
+
+          <li className="navLi">
+            {" "}
+            <Link to="/schedule">
+              <BlueButton title="Schedule" />
+            </Link>
+          </li>
         </ul>
       </div>
     );

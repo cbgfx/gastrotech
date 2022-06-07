@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 
 import "../../../css/notificationBars.css";
 
-import UserDeletePopup from "../../Popups/UserDeletePopup";
 import AccountForm from "./AccountForm";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import AccountsBar from "../../Reusable_Components/NavBar/AccountsBar";
@@ -14,8 +13,6 @@ import { SvgIconType } from "../../../constants/constants";
 import {
   fetchUser,
   editUser,
-  deleteUserAndClosePopup,
-  didClickDelete,
 } from "../../../store/actions/UserView";
 
 class AccountView extends React.Component {
@@ -51,14 +48,6 @@ class AccountView extends React.Component {
       <div>
         <AccountsBar />
         <NavBar userNav={false} backButton={true} />
-        {this.props.userToDelete ? (
-          <UserDeletePopup
-            itemName={this.props.user.username}
-            didClickDelete={() =>
-              this.props.deleteUserAndClosePopup(this.props.userToDelete)
-            }
-          />
-        ) : null}
         <h1>Account</h1>
         {this.state.errorMessage ? (
           <div className="bar errorBox">{this.state.errorMessage}</div>
@@ -68,13 +57,6 @@ class AccountView extends React.Component {
           onSubmit={this.onSubmit}
           avatar={this.props.user.avatar}
         />
-
-        <SvgButton
-          color="#FF4D4D"
-          type={SvgIconType.Delete}
-          title="Delete My Account!"
-          didClick={() => this.props.didClickDelete(this.props.user._id)}
-        ></SvgButton>
         <Footer />
       </div>
     );
@@ -84,15 +66,12 @@ class AccountView extends React.Component {
 const mapStateToProps = (state, ownProps) => {
   return {
     user: state.editUserReducer,
-    userToDelete: state.editUserReducer.userToDelete,
   };
 };
 
 export default connect(mapStateToProps, {
   fetchUser,
   editUser,
-  deleteUserAndClosePopup,
-  didClickDelete,
 })(AccountView);
 
 //ALLOW PEOPLE TO UPDATE FIRST NAME / EMAIL (needs reconfirmation) / PASSWORD
