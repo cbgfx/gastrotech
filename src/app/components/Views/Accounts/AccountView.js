@@ -7,8 +7,6 @@ import AccountForm from "./AccountForm";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import AccountsBar from "../../Reusable_Components/NavBar/AccountsBar";
 import Footer from "../../Reusable_Components/Footer";
-import SvgButton from "../../Reusable_Components/SvgButton";
-import { SvgIconType } from "../../../constants/constants";
 
 import {
   fetchUser,
