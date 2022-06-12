@@ -5,7 +5,6 @@ import history from "../../../../history";
 import * as urls from "../../../constants/urls";
 import "../../../css/header.css";
 import { logout } from "../../../store/actions/UserView";
-//import * as urls from "../../../constants/urls";
 
 class AccountsBar extends React.Component {
   renderLoggedInBar = () => {
