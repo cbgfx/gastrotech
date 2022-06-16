@@ -195,33 +195,65 @@
   },
   {
     "name": "Mojito",
-    "yield": 2,
+    "yield": 1,
     "type": "Alcoholic",
     "ingredients": [
       {
-        "quantity": 2,
+        "quantity": 1,
         "name": "Lime Sprint",
         "qty": "bags"
       },
       {
-        "quantity": 4700,
+        "quantity": 2350,
         "name": "Water",
         "qty": "grams"
       },
       {
-        "quantity": 150,
+        "quantity": 300,
         "name": "Base Allegra",
         "qty": "grams"
       },
       {
-        "quantity": 300,
+        "quantity": 150,
         "name": "White Rhum",
         "qty": "grams"
       },
       {
-        "quantity": 2,
+        "quantity": 1,
         "name": "Fresh Mint",
-        "qty": "bunches"
+        "qty": "cups"
+      }
+    ]
+  },
+  {
+    "name": "Pina Colada",
+    "yield": 2,
+    "type": "Alcoholic",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Pineapple Sprint",
+        "qty": "bag"
+      },
+      {
+        "quantity": 2660,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": 800,
+        "name": "Coconut Cream",
+        "qty": "grams"
+      },
+      {
+        "quantity": 20,
+        "name": "Coconut Paste",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1,
+        "name": "Vellutina",
+        "qty": "spoon"
       }
     ]
   },
@@ -317,12 +349,31 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "Cinnamon",
+    "decoration": "Pistachio and Cinnamon",
     "ingredients": [
       {
         "quantity": 7,
         "name": "Salep Mix",
         "qty": "bags"
+      }
+    ]
+  },
+  {
+    "name": "Rose Water",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Graham Crackers",
+    "ingredients": [
+      {
+        "quantity": 4,
+        "name": "Salep Mix",
+        "qty": "bags"
+      },
+      {
+        "quantity": 100,
+        "name": "Rose Water",
+        "qty": "grams"
       }
     ]
   },
@@ -484,6 +535,19 @@
       {
         "quantity": 800,
         "name": "Donatella Rock",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Fior De Latte (Diabetic)",
+    "yield": 1,
+    "type": "Gelato",
+    "base": "Diabetic",
+    "ingredients": [
+      {
+        "quantity": 175,
+        "name": "Hazelnut Paste",
         "qty": "grams"
       }
     ]
