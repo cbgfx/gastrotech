@@ -125,43 +125,6 @@
     ]
   },
   {
-    "name": "Piña Colada",
-    "yield": 1,
-    "type": "Sorbet",
-    "ingredients": [
-      {
-        "quantity": 2660,
-        "name": "Water",
-        "qty": "grams"
-      },
-      {
-        "quantity": 800,
-        "name": "Coconut Cream",
-        "qty": "grams"
-      },
-      {
-        "quantity": 1,
-        "name": "Pineapple Sprint",
-        "qty": "bag"
-      },
-      {
-        "quantity": 200,
-        "name": "Coconut Fortefrutto Paste",
-        "qty": "grams"
-      },
-      {
-        "quantity": 250,
-        "name": "Fruttosa Milk Free",
-        "qty": "grams"
-      },
-      {
-        "quantity": 200,
-        "name": "Fortefrutto",
-        "qty": "grams"
-      }
-    ]
-  },
-  {
     "name": "Chocolate",
     "yield": 2,
     "type": "Sorbet",
