@@ -82,6 +82,7 @@ class RecipeView extends React.Component {
           <BlueButton title="White Sugar" didClick={() => this.baseFilter("White Sugar")} />
           <BlueButton title="White Fat" didClick={() => this.baseFilter("White Fat")} />
           <BlueButton title="Chocolate" didClick={() => this.baseFilter("Chocolate")} />
+          <BlueButton title="Sprint" didClick={() => this.baseFilter("Sprint")} />
         </div>
         <BlueButton title="Clear Filters" didClick={() => this.clearFilter("clear")} />
         <table className="table table-striped table-hover text-white">

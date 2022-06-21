@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "Lemon",
     "yield": 2,
     "type": "Sorbet",
@@ -506,14 +507,7 @@
     "name": "Fior De Latte (Diabetic)",
     "yield": 1,
     "type": "Gelato",
-    "base": "Diabetic",
-    "ingredients": [
-      {
-        "quantity": 175,
-        "name": "Hazelnut Paste",
-        "qty": "grams"
-      }
-    ]
+    "base": "Sprint"
   },
   {
     "name": "Fig & Porto",
@@ -608,7 +602,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "Chocolate",
-    "decoration":"3 Layers of Brownies / Marshmallwo / Wallnuts / Chocolate Sauce",
+    "decoration": "3 Layers of Brownies / Marshmallwo / Wallnuts / Chocolate Sauce",
     "ingredients": [
       {
         "quantity": 7000,
@@ -627,6 +621,20 @@
         "quantity": 350,
         "name": "Nutella",
         "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Buter Pecan",
+    "yield": 1,
+    "type": "Gelato",
+    "base": "Sprint",
+    "decoration": "2 Layers of Pecan and Caramel Sauce",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Butter Pecan Sprint",
+        "qty": "bag"
       }
     ]
   },
@@ -691,7 +699,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration":"3 Layers of Strawberry Variegato mixed in with Fork",
+    "decoration": "3 Layers of Strawberry Variegato mixed in with Fork",
     "ingredients": [
       {
         "quantity": 7000,
@@ -705,7 +713,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration":"3 Layers Caramel Mou, Skor, and Nutella",
+    "decoration": "3 Layers Caramel Mou, Skor, and Nutella",
     "ingredients": [
       {
         "quantity": 7000,
@@ -729,6 +737,25 @@
     ]
   },
   {
+    "name": "Maple Walnut",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "2 Layers of Walnut",
+    "ingredients": [
+      {
+        "quantity": 180,
+        "name": "Maple Essence",
+        "qty": "grams"
+      },
+      {
+        "quantity": 100,
+        "name": "Walnuts",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Kraft Mac & Cheese",
     "yield": 2,
     "type": "Gelato",
@@ -741,7 +768,7 @@
         "qty": "grams"
       }
     ]
-  },  
+  },
   {
     "name": "Waferini",
     "yield": 2,
@@ -755,7 +782,7 @@
         "qty": "grams"
       }
     ]
-  },  
+  },
   {
     "name": "Vanilla Tahiti",
     "yield": 2,
