@@ -26,6 +26,20 @@ class RecipeView extends React.Component {
     this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
+  ingFilter = (a) => {
+    var filtered = [];
+    for(var i = 0; i < recipes.length; i++) {
+      var filteredIngs = recipes[i].ingredients.filter((entry)  => {
+        return entry.name.toLowerCase().includes(a.toLowerCase());
+      })
+      if (filteredIngs.length > 0) {
+        filtered.push(recipes[i]);
+      }
+    }
+    var sortedFilteredDS = this.sortRecipe(filtered);
+    this.setState({ filteredDataSource: sortedFilteredDS });
+  };
+
   typeFilter = (filtType) => {
     var filteredItemArray = recipes.filter(function (entry) {
       return entry.type === filtType;
@@ -41,8 +55,8 @@ class RecipeView extends React.Component {
       if (entry.hasOwnProperty("decoration")) {
         return entry;
       }
+      return null;
     });
-
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
     this.setState({ filteredDataSource: sortedFilteredDS })
   }
@@ -68,7 +82,8 @@ class RecipeView extends React.Component {
         <NavBar />
         <h2>Recipes</h2>
         <div>
-          <input type="ui search" placeholder="Search" onChange={(e) => { this.textFilter(e.target.value); }} />
+          <input type="ui search" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
+          <input type="ui search" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
         </div>
         <div>
           Filter by Type:

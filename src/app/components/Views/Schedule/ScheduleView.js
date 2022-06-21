@@ -21,7 +21,7 @@ class ScheduleView extends React.Component {
         <div>
           {this.state.passLog ? (
             <div>
-              <img src={constants.SCHEDULE}></img>
+              <img src={constants.SCHEDULE} alt="schedule"></img>
             </div>
           ) : (
             <p>

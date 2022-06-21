@@ -504,12 +504,6 @@
     ]
   },
   {
-    "name": "Fior De Latte (Diabetic)",
-    "yield": 1,
-    "type": "Gelato",
-    "base": "Sprint"
-  },
-  {
     "name": "Fig & Porto",
     "yield": 2,
     "type": "Gelato",
