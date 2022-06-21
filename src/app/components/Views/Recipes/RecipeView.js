@@ -6,7 +6,7 @@ import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/recipe.json";
 
 class RecipeView extends React.Component {
-  state = { filteredDataSource: [] };
+  state = { filteredDataSource: [], colYield: true, colBase : true, colDeco: true, colIng: true};
 
   componentDidMount() {
     var sortedDataSource = this.sortRecipe(recipes);
@@ -49,8 +49,6 @@ class RecipeView extends React.Component {
   }
 
   decoFilter = () => {
-    console.log("Deco Filter");
-
     var filteredItemArray = recipes.filter(function (entry) {
       if (entry.hasOwnProperty("decoration")) {
         return entry;
@@ -70,7 +68,7 @@ class RecipeView extends React.Component {
   }
 
   clearFilter = (a) => {
-    this.setState({ filteredDataSource: recipes });
+    this.setState({ filteredDataSource: recipes, colBase: true, colDeco: true, colIng: true, colYield: true });
   };
 
   /*
@@ -105,10 +103,10 @@ class RecipeView extends React.Component {
             <tr>
               <th scope="col">Name</th>
               <th scope="col">Type</th>
-              <th scope="col">Yield</th>
-              <th scope="col">Base</th>
-              <th scope="col">Ingredients</th>
-              <th scope="col">Decoration</th>
+              {this.state.colYield?<th scope="col"><a href="#" onClick={() => this.setState({ colYield: false })}>Yield</a></th>:null}
+              {this.state.colBase?<th scope="col"><a href="#" onClick={() => this.setState({ colBase: false })}>Base</a></th>:null}
+              {this.state.colIng?<th scope="col"><a href="#" onClick={() => this.setState({ colIng: false })}>Ingredients</a></th>:null}
+              {this.state.colDeco?<th scope="col"><a href="#" onClick={() => this.setState({ colDeco: false })}>Decoration</a></th>:null}
             </tr>
           </thead>
           <tbody>
@@ -117,9 +115,9 @@ class RecipeView extends React.Component {
                 <tr onClick={() => this.clickedTD(rec)}>
                   <td>{rec.name}</td>
                   <td>{rec.type}</td>
-                  <td>{rec.yield} pans</td>
-                  <td>{rec.base}</td>
-                  <td>
+                  {this.state.colYield?<td>{rec.yield}</td>:null}
+                  {this.state.colBase?<td>{rec.base}</td>:null}
+                  {this.state.colIng?<td>
                     <ul>
                       {rec.ingredients.map((ing, j) => (
                         <React.Fragment key={j}>
@@ -129,8 +127,8 @@ class RecipeView extends React.Component {
                         </React.Fragment>
                       ))}
                     </ul>
-                  </td>
-                  <td>{rec.decoration}</td>
+                  </td>:null}
+                  {this.state.colDeco?<td>{rec.decoration}</td>:null}
                 </tr>
               </React.Fragment>
             ))}

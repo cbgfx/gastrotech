@@ -62,11 +62,8 @@ class BaseView extends React.Component {
           <thead>
             <tr>
               <th scope="col">Name</th>
-              <th scope="col">Type</th>
-              <th scope="col">Yield</th>
-              <th scope="col">Base</th>
+
               <th scope="col">Ingredients</th>
-              <th scope="col">Decoration</th>
             </tr>
           </thead>
           <tbody>
@@ -74,9 +71,6 @@ class BaseView extends React.Component {
               <React.Fragment key={i}>
                 <tr onClick={() => this.clickedTD(rec)}>
                   <td>{rec.name}</td>
-                  <td>{rec.type}</td>
-                  <td>{rec.yield} pans</td>
-                  <td>{rec.base}</td>
                   <td>
                     <ul>
                       {rec.ingredients.map((ing, j) => (
