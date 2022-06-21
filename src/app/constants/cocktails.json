@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Coconut Lime",
+    "prep": [
+      {"step": 1,
+        "description": "Take the lime"
+      },
+      {"step": 2,
+        "description": "Put in the Coconut"
+      },
+      {"step": 3,
+        "description": "Drink it all up"
+      }
+    ],
+    "ingredients": [
+      {
+        "quantity": "5",
+        "name": "Coconuts",
+        "qty": "ounces"
+      },
+      {
+        "quantity": "3",
+        "name": "Lime",
+        "qty": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Whisky Sour",
+    "prep": [
+      {"step": 1,
+        "description": "Combine bourbon, lemon juice, and simple syrup in a cocktail shaker."
+      },
+      {"step": 2,
+        "description": "Fill shaker with ice, cover, and shake vigorously until outside of shaker is very cold, about 20 seconds."
+      },
+      {"step": 3,
+        "description": "Strain cocktail through a Hawthorne strainer or a slotted spoon into an old-fashioned or rocks glass filled with ice. Garnish with orange wheel and cherry."
+      }
+    ],
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Bourbon",
+        "qty": "ounces"
+      },
+      {
+        "quantity": "3/4",
+        "name": "fresh lemon juice",
+        "qty": "Ounce"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Simple Syrup",
+        "qty": "Ounce"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Orange",
+        "qty": "Wheel"
+      },
+      {
+        "quantity": "1",
+        "name": "Maraschino Cherry",
+        "qty": ""
+      }
+    ]
+  }
+]

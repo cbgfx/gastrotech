@@ -47,6 +47,10 @@ export const base = {
   route: "/base",
 };
 
+export const drinks = {
+  route: "/drinks",
+};
+
 export const sched = {
   route: "/schedule",
 };
