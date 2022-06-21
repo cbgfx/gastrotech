@@ -100,7 +100,7 @@ div.sticky {
   z-index: 5;
 }
 
-.blueButtonStyle {
+.CoolButtonStyle {
   background-color: #6c008a;
   border: none;
   color: #ffffff;
@@ -113,10 +113,17 @@ div.sticky {
   font-size: medium;
 }
 
-input {
+input.cone {
   background-color: #b909a4;
   color: #dcdfe4;
   border-color: #342741;
+  font-weight: bolder;
+}
+
+input.whisky {
+  background-color: #335B50;
+  color: #ffffff;
+  border-color: #335B50;
   font-weight: bolder;
 }
 
@@ -148,3 +155,7 @@ input:focus {
 50% { opacity: 0.5; }
 100% { opacity: 1; }
 }
+
+
+/* Whisky Green #335B50 */
+/* Whisky Gold #86764F */

@@ -1,6 +1,6 @@
 import React from "react";
 
-import BlueButton from "../../Reusable_Components/BlueButton";
+import CoolButton from "../../Reusable_Components/CoolButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/recipe.json";
@@ -80,33 +80,33 @@ class RecipeView extends React.Component {
         <NavBar />
         <h2>Recipes</h2>
         <div>
-          <input type="ui search" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
-          <input type="ui search" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
+          <input type="ui search" className="cone" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
+          <input type="ui search" className="cone" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
         </div>
         <div>
           Filter by Type:
-          <BlueButton title="Alcoholic" didClick={() => this.typeFilter("Alcoholic")} />
-          <BlueButton title="Sorbet" didClick={() => this.typeFilter("Sorbet")} />
-          <BlueButton title="Gelato" didClick={() => this.typeFilter("Gelato")} />
-          <BlueButton title="Decoration" didClick={() => this.decoFilter()} />
+          <CoolButton title="Alcoholic" didClick={() => this.typeFilter("Alcoholic")} />
+          <CoolButton title="Sorbet" didClick={() => this.typeFilter("Sorbet")} />
+          <CoolButton title="Gelato" didClick={() => this.typeFilter("Gelato")} />
+          <CoolButton title="Decoration" didClick={() => this.decoFilter()} />
         </div>
         <div>
           Filter by Base:
-          <BlueButton title="White Sugar" didClick={() => this.baseFilter("White Sugar")} />
-          <BlueButton title="White Fat" didClick={() => this.baseFilter("White Fat")} />
-          <BlueButton title="Chocolate" didClick={() => this.baseFilter("Chocolate")} />
-          <BlueButton title="Sprint" didClick={() => this.baseFilter("Sprint")} />
+          <CoolButton title="White Sugar" didClick={() => this.baseFilter("White Sugar")} />
+          <CoolButton title="White Fat" didClick={() => this.baseFilter("White Fat")} />
+          <CoolButton title="Chocolate" didClick={() => this.baseFilter("Chocolate")} />
+          <CoolButton title="Sprint" didClick={() => this.baseFilter("Sprint")} />
         </div>
-        <BlueButton title="Clear Filters" didClick={() => this.clearFilter("clear")} />
+        <CoolButton title="Clear Filters" didClick={() => this.clearFilter("clear")} />
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>
               <th scope="col">Name</th>
               <th scope="col">Type</th>
-              {this.state.colYield?<th scope="col"><a href="#" onClick={() => this.setState({ colYield: false })}>Yield</a></th>:null}
-              {this.state.colBase?<th scope="col"><a href="#" onClick={() => this.setState({ colBase: false })}>Base</a></th>:null}
-              {this.state.colIng?<th scope="col"><a href="#" onClick={() => this.setState({ colIng: false })}>Ingredients</a></th>:null}
-              {this.state.colDeco?<th scope="col"><a href="#" onClick={() => this.setState({ colDeco: false })}>Decoration</a></th>:null}
+              {this.state.colYield?<th scope="col"><span onClick={() => this.setState({ colYield: false })}>Yield</span></th>:null}
+              {this.state.colBase?<th scope="col"><span onClick={() => this.setState({ colBase: false })}>Base</span></th>:null}
+              {this.state.colIng?<th scope="col"><span onClick={() => this.setState({ colIng: false })}>Ingredients</span></th>:null}
+              {this.state.colDeco?<th scope="col"><span onClick={() => this.setState({ colDeco: false })}>Decoration</span></th>:null}
             </tr>
           </thead>
           <tbody>

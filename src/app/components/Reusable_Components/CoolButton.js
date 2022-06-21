@@ -1,8 +1,8 @@
 import React from "react";
 
-class BlueButton extends React.Component {
+class CoolButton extends React.Component {
   render() {
-    const normalStyle = {
+    const ConeStyle = {
       // display: "inline-block",
       textAlign: "center",
       textDecoration: "none",
@@ -18,14 +18,14 @@ class BlueButton extends React.Component {
       // boxShadow: "0px 6px 8px 1px #e4e3e3", //* h-offset v-offset blur spread color
     };
 
-    const selectedStyle = {
+    const WhiskyStyle = {
       // display: "inline-block",
       textAlign: "center",
       textDecoration: "none",
       fontSize: "14px",
-      backgroundColor: "#342741",
-      borderColor: "#2e4057",
-      color: "#2e4057",
+      backgroundColor: "#335B50",
+      borderColor: "#335B50",
+      color: "#86764F",
       border: "solid 2px",
       marginBottom: "5px",
       borderRadius: "5px",
@@ -36,7 +36,7 @@ class BlueButton extends React.Component {
 
     return (
       <button
-        style={this.props.selected ? selectedStyle : normalStyle}
+        style={this.props.whiskyStyle ?  WhiskyStyle : ConeStyle}
         onClick={() => {
           this.props.didClick();
         }}
@@ -47,10 +47,10 @@ class BlueButton extends React.Component {
   }
 }
 
-BlueButton.defaultProps = {
+CoolButton.defaultProps = {
   didClick: () => {
 
   },
 };
 
-export default BlueButton;
+export default CoolButton;

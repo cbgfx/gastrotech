@@ -1,6 +1,6 @@
 import React from "react";
 
-import BlueButton from "../../Reusable_Components/BlueButton";
+import CoolButton from "../../Reusable_Components/CoolButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/base.json";
@@ -55,9 +55,9 @@ class BaseView extends React.Component {
         <NavBar />
         <h2>Bases</h2>
         <div>
-          <input type="ui search" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
+          <input type="ui search" className="cone" placeholder="Search" onChange={(e) => {this.textFilter(e.target.value);}}/>
         </div>
-        <BlueButton title="Clear Filters" didClick={()=> this.clearFilter("clear")} />
+        <CoolButton title="Clear Filters" didClick={()=> this.clearFilter("clear")} />
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>

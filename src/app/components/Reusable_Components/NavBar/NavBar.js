@@ -3,7 +3,7 @@ import "../../../css/header.css";
 import { Link } from "react-router-dom";
 import * as constants from "../../../constants/constants";
 
-import BlueButton from "../BlueButton";
+import CoolButton from "../CoolButton";
 
 class NavBar extends React.Component {
   state = {
@@ -32,21 +32,21 @@ class NavBar extends React.Component {
           <li className="navLi">
             {" "}
             <Link to="/recipe">
-              <BlueButton title="Recipe" />
+              <CoolButton title="Recipe" />
             </Link>
           </li>
 
           <li className="navLi">
             {" "}
             <Link to="/base">
-              <BlueButton title="Base" />
+              <CoolButton title="Base" />
             </Link>
           </li>
 
           <li className="navLi">
             {" "}
             <Link to="/schedule">
-              <BlueButton title="Schedule" />
+              <CoolButton title="Schedule" />
             </Link>
           </li>
         </ul>

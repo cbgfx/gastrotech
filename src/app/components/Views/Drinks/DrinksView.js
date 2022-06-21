@@ -1,6 +1,6 @@
 import React from "react";
 
-import BlueButton from "../../Reusable_Components/BlueButton";
+import CoolButton from "../../Reusable_Components/CoolButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/cocktails.json";
@@ -75,10 +75,10 @@ class DrinksView extends React.Component {
         <NavBar />
         <h2>Recipes</h2>
         <div>
-          <input type="ui search" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
-          <input type="ui search" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
+          <input type="ui search" className="whisky" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
+          <input type="ui search" className="whisky" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
         </div>
-        <BlueButton title="Clear Filters" didClick={() => this.clearFilter("clear")} />
+        <CoolButton title="Clear Filters" didClick={() => this.clearFilter("clear")} whiskyStyle={true} />
         <table className="table table-striped table-hover text-white">
           <thead>
             <tr>

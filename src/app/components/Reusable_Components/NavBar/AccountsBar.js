@@ -14,7 +14,7 @@ class AccountsBar extends React.Component {
           Account ({this.props.user.username})
         </Link>
         -
-        <button className="blueButtonStyle" onClick={() => this.props.logout()}>
+        <button className="CoolButtonStyle" onClick={() => this.props.logout()}>
           Logout
         </button>
       </div>

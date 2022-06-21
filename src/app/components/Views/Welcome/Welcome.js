@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import BlueButton from "../../Reusable_Components/BlueButton";
+import CoolButton from "../../Reusable_Components/CoolButton";
 import MainTitle from "../../Reusable_Components/MainTitle";
 import Footer from "../../Reusable_Components/Footer";
 import { logout, isUserLoggedIn } from "../../../store/actions/UserView";
@@ -29,10 +29,10 @@ class Welcome extends React.Component {
           {this.state.passLog ? (
             <div>
               <Link to="/recipe">
-                <BlueButton title="Recipe" />
+                <CoolButton title="Recipe" />
               </Link>
               <Link to="/base">
-                <BlueButton title="Bases" />
+                <CoolButton title="Bases" />
               </Link>
             </div>
           ) : (
