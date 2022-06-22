@@ -7,11 +7,20 @@ import recipes from "../../../constants/cocktails.json";
 import * as CONST from "../../../constants/constants";
 
 class DrinksView extends React.Component {
-  state = { filteredDataSource: [], passLog: false };
+  state = { mountDataSource: [], filteredDataSource: [], passLog: false };
 
   componentDidMount() {
-    var sortedDataSource = this.sortRecipe(recipes);
-    this.setState({ filteredDataSource: sortedDataSource });
+    var filteredItemArray = recipes.filter(function (entry) {
+      if (!entry.hasOwnProperty("hidden")) {
+        return entry;
+      }
+      return null;
+    });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({
+      mountDataSource: sortedFilteredDS,
+      filteredDataSource: sortedFilteredDS,
+    });
   }
 
   sortRecipe = (ds) => {
@@ -20,7 +29,7 @@ class DrinksView extends React.Component {
   };
 
   textFilter = (a) => {
-    var filteredItemArray = recipes.filter((items) => {
+    var filteredItemArray = this.state.mountDataSource.filter((items) => {
       return items.name.toLowerCase().includes(a.toLowerCase());
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
@@ -29,12 +38,14 @@ class DrinksView extends React.Component {
 
   ingFilter = (a) => {
     var filtered = [];
-    for (var i = 0; i < recipes.length; i++) {
-      var filteredIngs = recipes[i].ingredients.filter((entry) => {
-        return entry.name.toLowerCase().includes(a.toLowerCase());
-      });
+    for (var i = 0; i < this.state.mountDataSource.length; i++) {
+      var filteredIngs = this.state.filteredDataSource[i].ingredients.filter(
+        (entry) => {
+          return entry.name.toLowerCase().includes(a.toLowerCase());
+        }
+      );
       if (filteredIngs.length > 0) {
-        filtered.push(recipes[i]);
+        filtered.push(this.state.filteredDataSource[i]);
       }
     }
     var sortedFilteredDS = this.sortRecipe(filtered);
@@ -42,18 +53,16 @@ class DrinksView extends React.Component {
   };
 
   typeFilter = (filtType) => {
-    var filteredItemArray = recipes.filter(function (entry) {
+    var filteredItemArray = this.state.mountDataSource.filter(function (entry) {
       return entry.type === filtType;
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
     this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
-  decoFilter = () => {
-    console.log("Deco Filter");
-
-    var filteredItemArray = recipes.filter(function (entry) {
-      if (entry.hasOwnProperty("decoration")) {
+  comFilter = () => {
+    var filteredItemArray = this.state.mountDataSource.filter(function (entry) {
+      if (entry.hasOwnProperty("com")) {
         return entry;
       }
       return null;
@@ -63,7 +72,14 @@ class DrinksView extends React.Component {
   };
 
   clearFilter = (a) => {
-    this.setState({ filteredDataSource: recipes });
+    var filteredItemArray = recipes.filter(function (entry) {
+      if (!entry.hasOwnProperty("hidden")) {
+        return entry;
+      }
+      return null;
+    });
+    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   /*
@@ -91,6 +107,12 @@ class DrinksView extends React.Component {
                   this.ingFilter(e.target.value);
                 }}
               />
+              <div>
+                <CoolButton
+                  title="Cocktail of the Month"
+                  didClick={() => this.comFilter()}
+                />
+              </div>
             </div>
             <CoolButton
               title="Clear Filters"
@@ -102,6 +124,8 @@ class DrinksView extends React.Component {
                 <tr>
                   <th scope="col">Name</th>
                   <th scope="col">Ingredients</th>
+                  <th scope="col">Glassware</th>
+                  <th scope="col">Garnish</th>
                   <th scope="col">Preparation</th>
                 </tr>
               </thead>
@@ -121,6 +145,8 @@ class DrinksView extends React.Component {
                           ))}
                         </ul>
                       </td>
+                      <td>{rec.glass}</td>
+                      <td>{rec.garnish}</td>
                       <td>
                         <ul>
                           {rec.prep.map((prp, p) => (
@@ -147,7 +173,7 @@ class DrinksView extends React.Component {
           <p>
             Password:{" "}
             <input
-              type="ui search"
+              type="password"
               placeholder="Password"
               onChange={(e) => {
                 if (CONST.textPass(e.target.value, "peter")) {
