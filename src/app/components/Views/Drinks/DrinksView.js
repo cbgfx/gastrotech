@@ -6,8 +6,15 @@ import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/cocktails.json";
 
 class DrinksView extends React.Component {
-  state = { filteredDataSource: [] };
+  state = { filteredDataSource: [], passLog: false };
 
+  textPass = (input, password) => {
+    if (input.toLowerCase() === password) {
+      this.setState({ passLog: true });
+    }
+  };
+
+  
   componentDidMount() {
     var sortedDataSource = this.sortRecipe(recipes);
     this.setState({ filteredDataSource: sortedDataSource });
@@ -73,10 +80,12 @@ class DrinksView extends React.Component {
     return (
       <div>
         <NavBar />
-        <h2>Recipes</h2>
+        <h2>Drink recipes</h2>
+        {this.state.passLog ? (
         <div>
-          <input type="ui search" className="whisky" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
-          <input type="ui search" className="whisky" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
+        <div>
+          <input type="ui search"  placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
+          <input type="ui search"  placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
         </div>
         <CoolButton title="Clear Filters" didClick={() => this.clearFilter("clear")} whiskyStyle={true} />
         <table className="table table-striped table-hover text-white">
@@ -124,6 +133,18 @@ class DrinksView extends React.Component {
             </tr>
           </tfoot>
         </table>
+        </div>) : (
+          <p>
+          Password:{" "}
+          <input
+            type="ui search"
+            placeholder="Password"
+            onChange={(e) => {
+              this.textPass(e.target.value);
+            }}
+          />{" "}
+        </p>
+        )}
         <Footer />
       </div>
     );

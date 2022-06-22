@@ -80,8 +80,8 @@ class RecipeView extends React.Component {
         <NavBar />
         <h2>Recipes</h2>
         <div>
-          <input type="ui search" className="cone" placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
-          <input type="ui search" className="cone" placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
+          <input type="ui search"  placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
+          <input type="ui search"  placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
         </div>
         <div>
           Filter by Type:

@@ -1,6 +1,6 @@
 body {
   background-color: #333d5b;
-  color: #e29b30;
+  color: #cbd0e2;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +82,7 @@ a:link {
 }
 
 a:hover, a:visited:hover {
-  color: #e29b30;
+  color: #6676a9;
 }
 
 a:visited {
@@ -90,7 +90,7 @@ a:visited {
 }
 
 .table-hover tbody tr:hover td {
-    background: #e29b30;
+    background: #6676a9;
 }
 
 div.sticky {
@@ -101,7 +101,7 @@ div.sticky {
 }
 
 .CoolButtonStyle {
-  background-color: #6c008a;
+  background-color: #6676a9;
   border: none;
   color: #ffffff;
 }
@@ -113,24 +113,18 @@ div.sticky {
   font-size: medium;
 }
 
-input.cone {
-  background-color: #b909a4;
+input {
+  background-color: #6676a9;
   color: #dcdfe4;
   border-color: #342741;
   font-weight: bolder;
 }
 
-input.whisky {
-  background-color: #335B50;
-  color: #ffffff;
-  border-color: #335B50;
-  font-weight: bolder;
-}
 
 input:focus {
-  background-color: #e29b30;
+  background-color: #6676a9;
   color: #ffffff;
-  border-color: #f29b60;
+  border-color: #6676a9;
 }
 
 .centerRape {

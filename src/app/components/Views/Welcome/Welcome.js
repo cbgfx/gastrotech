@@ -34,6 +34,9 @@ class Welcome extends React.Component {
               <Link to="/base">
                 <CoolButton title="Bases" />
               </Link>
+              <Link to="/drinks">
+                <CoolButton title="Drinks" />
+              </Link>
             </div>
           ) : (
             <p>

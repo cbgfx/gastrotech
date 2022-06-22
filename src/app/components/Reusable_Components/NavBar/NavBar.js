@@ -22,12 +22,14 @@ class NavBar extends React.Component {
         </button>
         <ul className={this.state.toggle ? "links show-nav" : "links"}>
           <li className="navli">
+            <a href="/">
             <img
               src={constants.LOGOSMALL}
               height="40px"
               width="40px"
               alt="Small Logo"
             ></img>
+            </a>
           </li>
           <li className="navLi">
             {" "}
@@ -47,6 +49,12 @@ class NavBar extends React.Component {
             {" "}
             <Link to="/schedule">
               <CoolButton title="Schedule" />
+            </Link>
+          </li>
+          <li className="navLi">
+            {" "}
+            <Link to="/drinks">
+              <CoolButton whiskyStyle={true} title="Drinks" />
             </Link>
           </li>
         </ul>
