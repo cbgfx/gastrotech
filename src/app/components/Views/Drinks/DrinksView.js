@@ -14,7 +14,6 @@ class DrinksView extends React.Component {
     }
   };
 
-  
   componentDidMount() {
     var sortedDataSource = this.sortRecipe(recipes);
     this.setState({ filteredDataSource: sortedDataSource });
@@ -35,10 +34,10 @@ class DrinksView extends React.Component {
 
   ingFilter = (a) => {
     var filtered = [];
-    for(var i = 0; i < recipes.length; i++) {
-      var filteredIngs = recipes[i].ingredients.filter((entry)  => {
+    for (var i = 0; i < recipes.length; i++) {
+      var filteredIngs = recipes[i].ingredients.filter((entry) => {
         return entry.name.toLowerCase().includes(a.toLowerCase());
-      })
+      });
       if (filteredIngs.length > 0) {
         filtered.push(recipes[i]);
       }
@@ -52,8 +51,8 @@ class DrinksView extends React.Component {
       return entry.type === filtType;
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
-    this.setState({ filteredDataSource: sortedFilteredDS })
-  }
+    this.setState({ filteredDataSource: sortedFilteredDS });
+  };
 
   decoFilter = () => {
     console.log("Deco Filter");
@@ -65,9 +64,8 @@ class DrinksView extends React.Component {
       return null;
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
-    this.setState({ filteredDataSource: sortedFilteredDS })
-  }
-
+    this.setState({ filteredDataSource: sortedFilteredDS });
+  };
 
   clearFilter = (a) => {
     this.setState({ filteredDataSource: recipes });
@@ -82,68 +80,85 @@ class DrinksView extends React.Component {
         <NavBar />
         <h2>Drink recipes</h2>
         {this.state.passLog ? (
-        <div>
-        <div>
-          <input type="ui search"  placeholder="Name" onChange={(e) => { this.textFilter(e.target.value); }} />
-          <input type="ui search"  placeholder="Ingredient" onChange={(e) => { this.ingFilter(e.target.value); }} />
-        </div>
-        <CoolButton title="Clear Filters" didClick={() => this.clearFilter("clear")} whiskyStyle={true} />
-        <table className="table table-striped table-hover text-white">
-          <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Ingredients</th>
-              <th scope="col">Preparation</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.filteredDataSource.map((rec, i) => (
-              <React.Fragment key={i}>
-                <tr onClick={() => this.clickedTD(rec)}>
-                  <td>{rec.name}</td>
-                  <td>
-                    <ul>
-                      {rec.ingredients.map((ing, j) => (
-                        <React.Fragment key={j}>
-                          <li>
-                            {ing.quantity} {ing.qty} of {ing.name}
-                          </li>
-                        </React.Fragment>
-                      ))}
-                    </ul>
-                  </td>
-                  <td>
-                    <ul>
-                      {rec.prep.map((prp, p) => (
-                        <React.Fragment key={p}>
-                          <li>
-                           Step {prp.step} - {prp.description}
-                          </li>
-                        </React.Fragment>
-                      ))}
-                    </ul>
-                  </td>
+          <div>
+            <div>
+              <input
+                type="ui search"
+                placeholder="Name"
+                onChange={(e) => {
+                  this.textFilter(e.target.value);
+                }}
+              />
+              <input
+                type="ui search"
+                placeholder="Ingredient"
+                onChange={(e) => {
+                  this.ingFilter(e.target.value);
+                }}
+              />
+            </div>
+            <CoolButton
+              title="Clear Filters"
+              didClick={() => this.clearFilter("clear")}
+              whiskyStyle={true}
+            />
+            <table className="table table-striped table-hover text-white">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Ingredients</th>
+                  <th scope="col">Preparation</th>
                 </tr>
-              </React.Fragment>
-            ))}
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Recipes : {this.state.filteredDataSource.length}</td>
-            </tr>
-          </tfoot>
-        </table>
-        </div>) : (
+              </thead>
+              <tbody>
+                {this.state.filteredDataSource.map((rec, i) => (
+                  <React.Fragment key={i}>
+                    <tr onClick={() => this.clickedTD(rec)}>
+                      <td>{rec.name}</td>
+                      <td>
+                        <ul>
+                          {rec.ingredients.map((ing, j) => (
+                            <React.Fragment key={j}>
+                              <li>
+                                {ing.quantity} {ing.qty} of {ing.name}
+                              </li>
+                            </React.Fragment>
+                          ))}
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          {rec.prep.map((prp, p) => (
+                            <React.Fragment key={p}>
+                              <li>
+                                Step {prp.step} - {prp.description}
+                              </li>
+                            </React.Fragment>
+                          ))}
+                        </ul>
+                      </td>
+                    </tr>
+                  </React.Fragment>
+                ))}
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Recipes : {this.state.filteredDataSource.length}</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        ) : (
           <p>
-          Password:{" "}
-          <input
-            type="ui search"
-            placeholder="Password"
-            onChange={(e) => {
-              this.textPass(e.target.value);
-            }}
-          />{" "}
-        </p>
+            Password:{" "}
+            <input
+              type="ui search"
+              placeholder="Password"
+              onChange={(e) => {
+                this.textPass(e.target.value, "peter");
+              }}
+            />{" "}
+          </p>
         )}
         <Footer />
       </div>
