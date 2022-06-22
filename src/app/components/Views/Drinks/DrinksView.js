@@ -4,15 +4,10 @@ import CoolButton from "../../Reusable_Components/CoolButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/cocktails.json";
+import * as CONST from "../../../constants/constants";
 
 class DrinksView extends React.Component {
   state = { filteredDataSource: [], passLog: false };
-
-  textPass = (input, password) => {
-    if (input.toLowerCase() === password) {
-      this.setState({ passLog: true });
-    }
-  };
 
   componentDidMount() {
     var sortedDataSource = this.sortRecipe(recipes);
@@ -155,7 +150,9 @@ class DrinksView extends React.Component {
               type="ui search"
               placeholder="Password"
               onChange={(e) => {
-                this.textPass(e.target.value, "peter");
+                if (CONST.textPass(e.target.value, "peter")) {
+                  this.setState({ passLog: true });
+                }
               }}
             />{" "}
           </p>

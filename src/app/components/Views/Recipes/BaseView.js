@@ -4,15 +4,10 @@ import CoolButton from "../../Reusable_Components/CoolButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/base.json";
+import * as CONST from "../../../constants/constants";
 
 class BaseView extends React.Component {
   state = { filteredDataSource: [], passLog: false };
-
-  textPass = (a) => {
-    if (a === "daniel") {
-      this.setState({ passLog: true });
-    }
-  };
 
   componentDidMount() {
     var sortedDataSource = this.sortRecipe(recipes);
@@ -118,7 +113,9 @@ class BaseView extends React.Component {
               type="ui search"
               placeholder="Password"
               onChange={(e) => {
-                this.textPass(e.target.value);
+                if (CONST.textPass(e.target.value, "daniel")) {
+                  this.setState({ passLog: true });
+                }
               }}
             />{" "}
           </p>

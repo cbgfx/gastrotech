@@ -6,6 +6,7 @@ import CoolButton from "../../Reusable_Components/CoolButton";
 import MainTitle from "../../Reusable_Components/MainTitle";
 import Footer from "../../Reusable_Components/Footer";
 import { logout, isUserLoggedIn } from "../../../store/actions/UserView";
+import * as CONST from "../../../constants/constants";
 
 class Welcome extends React.Component {
   state = { passLog: false };
@@ -13,12 +14,6 @@ class Welcome extends React.Component {
   componentDidMount() {
     this.props.isUserLoggedIn();
   }
-
-  textPass = (a) => {
-    if (a === "carl") {
-      this.setState({ passLog: true });
-    }
-  };
 
   render() {
     return (
@@ -45,7 +40,9 @@ class Welcome extends React.Component {
                 type="ui search"
                 placeholder="Password"
                 onChange={(e) => {
-                  this.textPass(e.target.value);
+                  if (CONST.textPass(e.target.value, "carl")) {
+                    this.setState({ passLog: true });
+                  }
                 }}
               />{" "}
             </p>

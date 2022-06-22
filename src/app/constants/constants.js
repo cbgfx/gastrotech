@@ -28,6 +28,11 @@ export const UserField = {
   Verified: "verified",
 };
 
+export function textPass(input, password) {
+  if (input.toLowerCase() === password.toLowerCase()) {
+    return true;
+  }
+}
 
 export const DISCOUNT = 0.15; //Discount given on Pre-Gel Items
 export const KGBASE = 7; //We produce for 7L
