@@ -1,13 +1,11 @@
 [
   {
-    "name": "Coconut Lime",
+    "name": "PAPER PLANE",
     "prep": [
       { "step": 1, "description": "Take the lime" },
       { "step": 2, "description": "Put in the Coconut" },
       { "step": 3, "description": "Drink it all up" }
     ],
-    "com": 1,
-    "hidden": 1,
     "ingredients": [
       {
         "quantity": "5",

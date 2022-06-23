@@ -346,7 +346,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "Biscottino 3 Layer",
+    "decoration": "Biscottino Fold in 3 Layer",
     "ingredients": [
       {
         "quantity": 350,
@@ -374,7 +374,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "Broken Cannolis Shells",
+    "decoration": "Broken Cannolis Shells & chocolate chips",
     "ingredients": [
       {
         "quantity": 850,
@@ -527,7 +527,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Fat",
-    "decoration": "Handfull of Hazeluts on top",
+    "decoration": "Sprinkle crushed Hazeluts on top",
     "ingredients": [
       {
         "quantity": 700,
@@ -573,6 +573,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "Chocolate",
+    "decoration": "2 Layers of Peanut Butter & Chocolate Sauce",
     "ingredients": [
       {
         "quantity": 350,
@@ -619,20 +620,6 @@
     ]
   },
   {
-    "name": "Butter Pecan",
-    "yield": 1,
-    "type": "Gelato",
-    "base": "Sprint",
-    "decoration": "2 Layers of Pecan and Caramel Sauce",
-    "ingredients": [
-      {
-        "quantity": 1,
-        "name": "Butter Pecan Sprint",
-        "qty": "bag"
-      }
-    ]
-  },
-  {
     "name": "Peanut Butter Nutella",
     "yield": 2,
     "type": "Gelato",
@@ -651,7 +638,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Fat",
-    "decoration": "Sprinkle Pistachio crumbs",
+    "decoration": "Sprinkle Pistachio crumbs on top",
     "ingredients": [
       {
         "quantity": 600,
@@ -707,7 +694,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "3 Layers Caramel Mou, Skor, and Nutella",
+    "decoration": "3 Layers Caramel Caramel Sauce, Chocolate Sauce, Skor",
     "ingredients": [
       {
         "quantity": 7000,
@@ -721,7 +708,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "3 Layers of Lady Finger dipped in Coffee",
+    "decoration": "3 Layers of Lady Finger dipped in Coffee & sprinkle cocoa powder",
     "ingredients": [
       {
         "quantity": 500,
@@ -768,7 +755,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "3 Layers of Waferini",
+    "decoration": "2 Layers of Waferini",
     "ingredients": [
       {
         "quantity": 300,
@@ -787,6 +774,62 @@
         "quantity": 200,
         "name": "Vanilla Tahiti",
         "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Butter Pecan",
+    "yield": 1,
+    "type": "Gelato",
+    "base": "Sprint",
+    "decoration": "2 Layers of Pecan and Caramel Sauce",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Butter Pecan Sprint",
+        "qty": "bag"
+      }
+    ]
+  },
+  {
+    "name": "Candy Dream",
+    "yield": 1,
+    "type": "Gelato",
+    "base": "Sprint",
+    "decoration": "Nerds on Top",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Candy Dream Sprint",
+        "qty": "bag"
+      }
+    ]
+  },
+  {
+    "name": "Red Velvet",
+    "yield": 1,
+    "type": "Gelato",
+    "base": "Sprint",
+    "decoration": "Cocoa Powder on Top",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Red Velvet Sprint",
+        "qty": "bag"
+      }
+    ]
+  },
+  {
+    "name": "Birthday Cake",
+    "yield": 1,
+    "type": "Gelato",
+    "base": "Sprint",
+    "decoration": "3 Layers of Sprinkles",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Blue Sprint",
+        "qty": "bag"
       }
     ]
   }
