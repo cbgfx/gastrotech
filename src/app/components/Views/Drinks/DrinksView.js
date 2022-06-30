@@ -38,18 +38,23 @@ class DrinksView extends React.Component {
 
   ingFilter = (a) => {
     var filtered = [];
+    if(a==""){
+      this.setState({ filteredDataSource: this.state.mountDataSource });
+    } else {
     for (var i = 0; i < this.state.mountDataSource.length; i++) {
-      var filteredIngs = this.state.filteredDataSource[i].ingredients.filter(
-        (entry) => {
-          return entry.name.toLowerCase().includes(a.toLowerCase());
+
+        var filteredIngs = this.state.mountDataSource[i].ingredients.filter(
+          (entry) => {
+            return entry.name.toLowerCase().includes(a.toLowerCase());
+          }
+        );
+        if (filteredIngs.length > 0) {
+          filtered.push(this.state.mountDataSource[i]);
         }
-      );
-      if (filteredIngs.length > 0) {
-        filtered.push(this.state.filteredDataSource[i]);
-      }
+      var sortedFilteredDS = this.sortRecipe(filtered);
+      this.setState({ filteredDataSource: sortedFilteredDS });
     }
-    var sortedFilteredDS = this.sortRecipe(filtered);
-    this.setState({ filteredDataSource: sortedFilteredDS });
+  }
   };
 
   typeFilter = (filtType) => {
@@ -174,7 +179,6 @@ class DrinksView extends React.Component {
             Password:{" "}
             <input
               type="password"
-              placeholder="Password"
               onChange={(e) => {
                 if (CONST.textPass(e.target.value, "peter")) {
                   this.setState({ passLog: true });
