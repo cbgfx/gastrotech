@@ -76,5 +76,83 @@
         "qty": "oz"
       }
     ]
+  },
+  {
+    "name": "BAHAMA MAMA",
+    "prep": [
+      { "step": 1, "description": "Fill Tiki glass with crushed ice."},
+      { "step": 2, "description": "Combine ingredients in a shaker." },
+      { "step": 3, "description": "Add ice and shake well for 10 seconds." },
+      { "step": 4, "description": "Strain over crushed ice in Tiki glass." },
+      { "step": 5, "description": "Add crushed ice as needed to fill Tiki glass to the top." },
+      { "step": 6, "description": "Place dehydrated orange wheel on the drink." }
+    ],
+    "glass": "Tiki Glass",
+    "garnish" : "Dehydrated Orange Wheel",
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Orange Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Pineapple Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Plantation Original Dark Rum",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Malibu Rum",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Homemade Grenadine",
+        "qty": "oz"
+      },      {
+        "quantity": "3/4",
+        "name": "Homemade banana Syrup",
+        "qty": "oz"
+      }
+    ]
+  },
+  {
+    "name": "BLOOD & SMOKE",
+    "prep": [
+      { "step": 1, "description": "Wet half the rim of the glass using lime juice."},
+      { "step": 2, "description": "Rim the glass with Celery salt." },
+      { "step": 3, "description": "Pour ingredients over ice in highball glass. Top up with Clamato Juice." },
+      { "step": 4, "description": "Stir the drink to blend the ingredients." },
+      { "step": 5, "description": "Add garnishes." }
+    ],
+    "glass": "Collins glass (Highball)",
+    "garnish" : "Lemon, Olives, Cucumber Slice, Pork Jerky, Celery Salt",
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Ardbeg Wee Beastie",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Fresh Lime Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/4",
+        "name": "Homemade Bloody Mix (1/2oz if the client prefers it spicy).",
+        "qty": "oz"
+      },
+      {
+        "quantity": "",
+        "name": "Clamato Juice",
+        "qty": ""
+      }
+    ]
   }
 ]
