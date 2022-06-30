@@ -1,67 +1,79 @@
 [
   {
-    "name": "PAPER PLANE",
+    "name": "ARMY & NAVY",
     "prep": [
-      { "step": 1, "description": "Take the lime" },
-      { "step": 2, "description": "Put in the Coconut" },
-      { "step": 3, "description": "Drink it all up" }
+      { "step": 1, "description": "Combine ingredients in a shaker."},
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      { "step": 3, "description": "Place the Maraschino cherry with some of its juice at the bottom of the coupe glass." },
+      { "step": 4, "description": " Double strain the drink into the coupe, garnish with a lemon zest." }
     ],
+    "glass": "Nick & Nora Glass",
+    "garnish" : "1 Maraschino cherry.",
     "ingredients": [
       {
-        "quantity": "5",
-        "name": "Coconuts",
-        "qty": "ounces"
+        "quantity": "20",
+        "name": "Hendricks Gin",
+        "qty": "oz"
       },
       {
-        "quantity": "3",
-        "name": "Lime",
-        "qty": "ml"
+        "quantity": "1/2",
+        "name": "Homemade Orgeat",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "2",
+        "name": "Angostura Bitters",
+        "qty": "dashes"
       }
     ]
   },
   {
-    "name": "Whisky Sour",
+    "name": "AVIATION",
     "prep": [
       {
         "step": 1,
-        "description": "Combine bourbon, lemon juice, and simple syrup in a cocktail shaker."
+        "description": "Combine ingredients in a shaker."
       },
       {
         "step": 2,
-        "description": "Fill shaker with ice, cover, and shake vigorously until outside of shaker is very cold, about 20 seconds."
+        "description": "Add ice and shake well for 10 seconds."
       },
       {
         "step": 3,
-        "description": "Strain cocktail through a Hawthorne strainer or a slotted spoon into an old-fashioned or rocks glass filled with ice. Garnish with orange wheel and cherry."
+        "description": "Place the Maraschino cherry at the bottom of the coupe glass."
+      },
+      {
+        "step": 4,
+        "description": "Double strain the drink into the coupe, garnish with a lemon zest."
       }
     ],
-    "glass": "boob glass",
-    "garnish": "boobs",
+    "glass": "Nick & Nora Glass.",
+    "garnish": "1 Maraschino cherry. Lemon zest.",
     "ingredients": [
       {
-        "quantity": "2",
-        "name": "Bourbon",
-        "qty": "ounces"
+        "quantity": "3/4",
+        "name": "Hendricks Gin",
+        "qty": "oz"
       },
       {
         "quantity": "3/4",
-        "name": "fresh lemon juice",
-        "qty": "Ounce"
+        "name": "Crème de Violette",
+        "qty": "oz"
       },
       {
         "quantity": "3/4",
-        "name": "Simple Syrup",
-        "qty": "Ounce"
+        "name": "Luxardo Maraschino Liqueur",
+        "qty": "oz"
       },
       {
-        "quantity": "1/2",
-        "name": "Orange",
-        "qty": "Wheel"
-      },
-      {
-        "quantity": "1",
-        "name": "Maraschino Cherry",
-        "qty": ""
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
       }
     ]
   }
