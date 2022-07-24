@@ -662,6 +662,25 @@
     ]
   },
   {
+    "name": "Kinder",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "2 Crumpled Kinder Bar on top",
+    "ingredients": [
+      {
+        "quantity": 200,
+        "name": "Hazelnut",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Kinder Bars",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Reese's Pieces",
     "yield": 2,
     "type": "Gelato",
