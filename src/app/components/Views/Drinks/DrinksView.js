@@ -2,6 +2,7 @@ import React from "react";
 
 import CoolButton from "../../Reusable_Components/CoolButton";
 import NavBar from "../../Reusable_Components/NavBar/NavBar";
+import CollapsibleSection from "../../Reusable_Components/CollapsibleSection";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/cocktails.json";
 import * as CONST from "../../../constants/constants";
@@ -38,7 +39,7 @@ class DrinksView extends React.Component {
 
   ingFilter = (a) => {
     var filtered = [];
-    if(a==""){
+    if(a===""){
       this.setState({ filteredDataSource: this.state.mountDataSource });
     } else {
     for (var i = 0; i < this.state.mountDataSource.length; i++) {
@@ -85,6 +86,54 @@ class DrinksView extends React.Component {
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
     this.setState({ filteredDataSource: sortedFilteredDS });
+    document.getElementById('sName').value = ''
+    document.getElementById('sIngredient').value = ''
+  };
+
+  renderSubSection = (rec) => {  
+    return (
+      <div>
+          <div className="col" onClick={(e) => e.stopPropagation()}>
+            <b>Ingredients:</b>
+            <ul>
+              {rec.ingredients.map((ing, j) => (
+                <React.Fragment key={j}>
+                  <li>
+                    {ing.quantity} {ing.qty} of {ing.name}
+                  </li>
+                </React.Fragment>
+              ))}
+            </ul>
+          </div>
+          <div className="col" onClick={(e) => e.stopPropagation()}>
+           <b>Glass: </b> {rec.glass}
+          </div>
+          <div className="col" onClick={(e) => e.stopPropagation()}>
+            <b>Garnish: </b>
+            <ul>
+              {rec.garnish.map((grn, g) => (
+                <React.Fragment key={g}>
+                  <li>
+                    {grn.garnish}
+                  </li>
+                </React.Fragment>
+              ))}
+            </ul>
+          </div>
+          <div className="col" onClick={(e) => e.stopPropagation()}>
+            <b>Prep:</b>
+            <ul>
+              {rec.prep.map((prp, p) => (
+                <React.Fragment key={p}>
+                  <li>
+                    Step {prp.step} - {prp.description}
+                  </li>
+                </React.Fragment>
+              ))}
+            </ul>
+          </div>
+      </div>
+    );
   };
 
   /*
@@ -101,12 +150,14 @@ class DrinksView extends React.Component {
               <input
                 type="ui search"
                 placeholder="Name"
+                id="sName"
                 onChange={(e) => {
                   this.textFilter(e.target.value);
                 }}
               />
               <input
                 type="ui search"
+                id="sIngredient"
                 placeholder="Ingredient"
                 onChange={(e) => {
                   this.ingFilter(e.target.value);
@@ -124,55 +175,22 @@ class DrinksView extends React.Component {
               didClick={() => this.clearFilter("clear")}
               whiskyStyle={true}
             />
-            <table className="table table-striped table-hover text-white">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Ingredients</th>
-                  <th scope="col">Glassware</th>
-                  <th scope="col">Garnish</th>
-                  <th scope="col">Preparation</th>
-                </tr>
-              </thead>
-              <tbody>
+            <div>
                 {this.state.filteredDataSource.map((rec, i) => (
                   <React.Fragment key={i}>
-                    <tr onClick={() => this.clickedTD(rec)}>
-                      <td>{rec.name}</td>
-                      <td>
-                        <ul>
-                          {rec.ingredients.map((ing, j) => (
-                            <React.Fragment key={j}>
-                              <li>
-                                {ing.quantity} {ing.qty} of {ing.name}
-                              </li>
-                            </React.Fragment>
-                          ))}
-                        </ul>
-                      </td>
-                      <td>{rec.glass}</td>
-                      <td>{rec.garnish}</td>
-                      <td>
-                        <ul>
-                          {rec.prep.map((prp, p) => (
-                            <React.Fragment key={p}>
-                              <li>
-                                Step {prp.step} - {prp.description}
-                              </li>
-                            </React.Fragment>
-                          ))}
-                        </ul>
-                      </td>
-                    </tr>
+                    <CollapsibleSection
+                    id={i}
+                    name={rec.name}
+                    embededComponent={this.renderSubSection(rec)} />
                   </React.Fragment>
                 ))}
-              </tbody>
-              <tfoot>
-                <tr>
+              </div>
+              
+                <div>
                   <td>Recipes : {this.state.filteredDataSource.length}</td>
-                </tr>
-              </tfoot>
-            </table>
+                </div>
+              
+            
           </div>
         ) : (
           <p>

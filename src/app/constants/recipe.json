@@ -291,6 +291,20 @@
     ]
   },
   {
+    "name": "Espresso",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Handfull of Hazeluts on top",
+    "ingredients": [
+      {
+        "quantity": 50,
+        "name": "Ground Coffee",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Banana",
     "yield": 2,
     "type": "Gelato",

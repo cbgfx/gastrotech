@@ -81,6 +81,7 @@ class RecipeView extends React.Component {
       colIng: true,
       colYield: true,
     });
+    document.getElementById('sName').value = ''
   };
 
   /*
@@ -95,6 +96,7 @@ class RecipeView extends React.Component {
           <input
             type="ui search"
             placeholder="Name"
+            id="sName"
             onChange={(e) => {
               this.textFilter(e.target.value);
             }}

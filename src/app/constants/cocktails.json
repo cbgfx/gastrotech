@@ -5,10 +5,10 @@
       { "step": 1, "description": "Combine ingredients in a shaker."},
       { "step": 2, "description": "Add ice and shake well for 10 seconds." },
       { "step": 3, "description": "Place the Maraschino cherry with some of its juice at the bottom of the coupe glass." },
-      { "step": 4, "description": " Double strain the drink into the coupe, garnish with a lemon zest." }
+      { "step": 4, "description": "Double strain the drink into the coupe, garnish with a lemon zest." }
     ],
     "glass": "Nick & Nora Glass",
-    "garnish" : "1 Maraschino cherry.",
+    "garnish" : [{"garnish": "1 Maraschino cherry."}], 
     "ingredients": [
       {
         "quantity": "20",
@@ -53,7 +53,8 @@
       }
     ],
     "glass": "Nick & Nora Glass.",
-    "garnish": "1 Maraschino cherry. Lemon zest.",
+    "garnish": [{"garnish": "1 Maraschino cherry."},
+    {"garnish": "Lemon Zest"}], 
     "ingredients": [
       {
         "quantity": "3/4",
@@ -88,7 +89,7 @@
       { "step": 6, "description": "Place dehydrated orange wheel on the drink." }
     ],
     "glass": "Tiki Glass",
-    "garnish" : "Dehydrated Orange Wheel",
+    "garnish" :[{"garnish": "Dehydrated Orange Wheel"}],
     "ingredients": [
       {
         "quantity": "2",
@@ -131,7 +132,7 @@
       { "step": 5, "description": "Add garnishes." }
     ],
     "glass": "Collins glass (Highball)",
-    "garnish" : "Lemon, Olives, Cucumber Slice, Pork Jerky, Celery Salt",
+    "garnish" :[{"garnish": "Lemon, Olives, Cucumber Slice, Pork Jerky, Celery Salt"}], 
     "ingredients": [
       {
         "quantity": "1.5",
