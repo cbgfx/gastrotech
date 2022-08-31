@@ -13,14 +13,21 @@ class CollapsibleSection extends React.Component {
       <div style={{ border: "1px solid" }}>
         <div
           className="gridStyle"
-          style={{ background: this.props.bgcolor, borderBottom: "1px solid", color: "#DCA111" }}
+          style={{
+            background: this.props.bgcolor,
+            borderBottom: "1px solid",
+            color: "#DCA111",
+          }}
           onClick={() => this.showHideSubSection()}
         >
-          <div className="col"><b>{this.props.name}</b>            {this.state.showSubSection ? (
+          <div className="col">
+            <b>{this.props.name}</b>
+            {this.state.showSubSection ? (
               <i className="chevron up icon"></i>
             ) : (
               <i className="chevron down icon"></i>
-            )}</div>
+            )}
+          </div>
         </div>
 
         <div>

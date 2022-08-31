@@ -13,17 +13,10 @@ import history from "./history"; // added so we can handle programatic navigatio
 
 import "./app/css/front.css";
 
-import Login from "./app/components/Views/Login/Login";
-import SignUp from "./app/components/Views/SignUp/SignUp";
 import Welcome from "./app/components/Views/Welcome/Welcome";
-import Account from "./app/components/Views/Accounts/AccountView";
-import ChangePassword from "./app/components/Views/Accounts/PasswordView";
-import EditSuppliers from "./app/components/Views/Suppliers/EditSuppliers";
-import ScheduleView from "./app/components/Views/Schedule/ScheduleView";
 import RecipeView from "./app/components/Views/Recipes/RecipeView";
 import BaseView from "./app/components/Views/Recipes/BaseView";
 import DrinksView from "./app/components/Views/Drinks/DrinksView";
-import ForgotUserPassword from "./app/components/Views/Forgot/ForgotUserPassword";
 
 /*
 const RouteGuard = (Component) => ({ match }) => (
@@ -45,17 +38,9 @@ export const App = () => (
       {/*TODO: Fix the rest of the elements*/}
       {/*<Route path="/" element={<Home />} />*/}
       <Route path="/" element={<Welcome />} />
-      <Route path={urls.login.route} element={<Login />} />
-      <Route path={urls.signup.route} element={<SignUp />} />
-      <Route path={urls.account.route} element={<Account />} />
-      <Route path={urls.changePass.route} element={<ChangePassword />} />
-      <Route path={urls.suppliers.route} element={<EditSuppliers />} />
-      <Route path={urls.sched.route} element={<ScheduleView />} />
       <Route path={urls.recipe.route} element={<RecipeView />} />
       <Route path={urls.base.route} element={<BaseView />} />
       <Route path={urls.drinks.route} element={<DrinksView />} />
-      <Route path={urls.forgot.sched} element={<ScheduleView />} />
-      <Route path={urls.forgot.route} element={<ForgotUserPassword />} />
 
       {/* <Route path={urls.randomNameGenerator.route} exact component={RandomNameGenerator} /> */}
     </Routes>

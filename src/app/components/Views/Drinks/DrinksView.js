@@ -12,7 +12,7 @@ class DrinksView extends React.Component {
 
   componentDidMount() {
     var filteredItemArray = recipes.filter(function (entry) {
-      if (!entry.hasOwnProperty("hidden")) {
+      if (entry.hidden === 0 ) {
         return entry;
       }
       return null;
@@ -108,7 +108,7 @@ class DrinksView extends React.Component {
           <div className="col" onClick={(e) => e.stopPropagation()}>
            <b>Glass: </b> {rec.glass}
           </div>
-          <div className="col" onClick={(e) => e.stopPropagation()}>
+          {rec.hasOwnProperty("garnish")?(          <div className="col" onClick={(e) => e.stopPropagation()}>
             <b>Garnish: </b>
             <ul>
               {rec.garnish.map((grn, g) => (
@@ -119,7 +119,8 @@ class DrinksView extends React.Component {
                 </React.Fragment>
               ))}
             </ul>
-          </div>
+          </div>):(<div></div>)}
+
           <div className="col" onClick={(e) => e.stopPropagation()}>
             <b>Prep:</b>
             <ul>
@@ -187,7 +188,7 @@ class DrinksView extends React.Component {
               </div>
               
                 <div>
-                  <td>Recipes : {this.state.filteredDataSource.length}</td>
+                  Recipes : {this.state.filteredDataSource.length}
                 </div>
               
             

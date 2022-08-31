@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
 
 import CoolButton from "../../Reusable_Components/CoolButton";
 import MainTitle from "../../Reusable_Components/MainTitle";
 import Footer from "../../Reusable_Components/Footer";
-import { logout, isUserLoggedIn } from "../../../store/actions/UserView";
 import * as CONST from "../../../constants/constants";
 
 class Welcome extends React.Component {
@@ -54,8 +52,5 @@ class Welcome extends React.Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return { user: state.userReducer }; //Object.values extracts the values and puts them in array
-};
 
-export default connect(mapStateToProps, { logout, isUserLoggedIn })(Welcome);
+export default Welcome;
