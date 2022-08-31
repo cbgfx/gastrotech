@@ -10,7 +10,6 @@ class Welcome extends React.Component {
   state = { passLog: false };
 
   componentDidMount() {
-    this.props.isUserLoggedIn();
   }
 
   render() {
@@ -53,4 +52,5 @@ class Welcome extends React.Component {
 }
 
 
+Welcome.defaultProps = {};
 export default Welcome;
