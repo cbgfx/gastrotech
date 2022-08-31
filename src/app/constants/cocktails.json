@@ -324,7 +324,7 @@
     "ingredients": [
       {
         "quantity": "2",
-        "name": "Buffalo Trace",
+        "name": "Buffalo Trace Bourbon",
         "qty": "oz"
       },
       {
@@ -667,7 +667,7 @@
     "ingredients": [
       {
         "quantity": "2",
-        "name": "Buffalo Trace",
+        "name": "Buffalo Trace Bourbon",
         "qty": "oz"
       },
       {
@@ -988,7 +988,7 @@
     "ingredients": [
       {
         "quantity": "2",
-        "name": "Buffalo Trace",
+        "name": "Buffalo Trace Bourbon",
         "qty": "oz"
       },
       {
@@ -1031,7 +1031,7 @@
     "ingredients": [
       {
         "quantity": "3/4",
-        "name": "Buffalo Trace",
+        "name": "Buffalo Trace Bourbon",
         "qty": "oz"
       },
       {
@@ -1297,52 +1297,165 @@
     "hidden": 0,
     "ingredients": [
       {
-        "quantity": "1.5",
-        "name": "Sazerac Rye Whiskey",
+        "quantity": "1",
+        "name": "El Dorado 12",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Bacardi Gold",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Fresh Lime Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Homemade Grenadine",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Tiki Glass",
+    "garnish": [{ "garnish": "Lime Wheel" }, {"garnish":"Umbrella"}],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Fill Tiki glass with crushed ice."
+      },
+      { "step": 2, "description": "Combine ingredients in a shaker." },
+      {
+        "step": 3,
+        "description": "Add ice and shake well for 10 seconds."
+      },
+      { "step": 4, "description": "Strain over crushed ice in Tiki glass." },
+      { "step": 5, "description": "Add crushed ice as needed to fill Tiki glass to the top." },
+      { "step": 6, "description": "Place umbrella and lime wheel on the drink." }
+    ]
+  },
+  {
+    "name": "TOMMY’S MARGARITA",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Cazadores Tequila",
         "qty": "oz"
       },
       {
         "quantity": "1/2",
-        "name": "Pierre Ferrand Cognac",
+        "name": "Agave Syrup",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Fresh Lime Juice",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Rocks/Old fashioned glass",
+    "garnish": [{ "garnish": "Salt Rim" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Roll half the rim of the glass in the lime juice, then roll the wet side in the salt."
+      },
+      { "step": 2, "description": "Combine ingredients in a shaker." },
+      {
+        "step": 3,
+        "description": "Add ice and shake well for 10 seconds."
+      },
+      { "step": 4, "description": "Strain the drink into the glass over ice." }
+    ]
+  },
+  {
+    "name": "WHISKEY SOUR",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Buffalo Trace Bourbon",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Homemade Rich Demerara Syrup",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "2",
+        "name": "Magic Foamer",
+        "qty": "dashes"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "garnish": [{ "garnish": "Lemon Zest" },{ "garnish": "Angostura Bitters" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Discard ice and dry-shake for 10 seconds."
+      },
+      { "step": 4, "description": "Double strain the drink into the glass." },
+      { "step": 5, "description": "Place 3 drops of Angostura on the foam." }
+    ]
+  },
+  {
+    "name": "WHISKEY-CILLIN",
+    "hidden": 1,
+    "com": 1,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Chivas Regal 12",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Benedictine",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Ardbeg Ten",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Fresh Lemon Juice",
         "qty": "oz"
       },
       {
         "quantity": "1/4",
         "name": "Homemade Sugar Cane Syrup",
         "qty": "oz"
-      },
-      {
-        "quantity": "3",
-        "name": "Peychaud Bitters",
-        "qty": "dashes"
-      },
-      {
-        "quantity": "1",
-        "name": "Angostura Bitters",
-        "qty": "dash"
-      },
-      {
-        "quantity": "2",
-        "name": "Absinthe",
-        "qty": "sprays"
       }
     ],
     "glass": "Rocks/Old fashioned glass",
-    "garnish": [{ "garnish": "Lemon Zest" }],
+    "garnish": [{ "garnish": "Candied Ginger" }],
     "prep": [
       {
         "step": 1,
         "description": "Prepare clear ice cube in the glass."
       },
-      { "step": 2, "description": "Combine whiskey, cognac, syrup, and bitters in a mixing glass." },
+      { "step": 2, "description": "Combine ingredients in a shaker." },
       {
         "step": 3,
-        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
+        "description": "Add ice and shake well for 10 seconds."
       },
-      { "step": 4, "description": "Coat inside of serving glass with 2 sprays of Absinthe." },
-      { "step": 5, "description": "Strain the drink over ice into the glass." },
-      { "step": 6, "description": "Express lemon zest and discard." },
-      { "step": 7, "description": "Stamp the ice cube." }
+      { "step": 4, "description": "Double strain the drink into the glass over ice." },
+      { "step": 5, "description": "Place the candied ginger on a pick over the glass." },
+      { "step": 6, "description": "Stamp the ice cube." }
     ]
   }
 ]
