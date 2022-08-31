@@ -79,7 +79,7 @@ class DrinksView extends React.Component {
 
   clearFilter = (a) => {
     var filteredItemArray = recipes.filter(function (entry) {
-      if (!entry.hasOwnProperty("hidden")) {
+      if (entry.hidden === 0 ) {
         return entry;
       }
       return null;
