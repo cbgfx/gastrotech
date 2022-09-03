@@ -500,45 +500,6 @@
   {
     "name": "EARL GREY MAR-TEA-NI",
     "hidden": 0,
-    "ingredients": [
-      {
-        "quantity": "1.5",
-        "name": "Tanqueray Gin",
-        "qty": "oz"
-      },
-      {
-        "quantity": "1.5",
-        "name": "Homemade Earl Grey Syrup",
-        "qty": "oz"
-      },
-      {
-        "quantity": "1/2",
-        "name": "Fresh Lemon Juice",
-        "qty": "oz"
-      },
-      {
-        "quantity": "2",
-        "name": "Magic Foamer",
-        "qty": "dashes"
-      }
-    ],
-    "glass": "Martini",
-    "prep": [
-      {
-        "step": 1,
-        "description": "Combine ingredients in a shaker."
-      },
-      { "step": 2, "description": "Shake well for 10 seconds." },
-      {
-        "step": 3,
-        "description": "Add ice and shake again for another 10 seconds."
-      },
-      { "step": 4, "description": "Strain the drink into the glass." }
-    ]
-  },
-  {
-    "name": "EARL GREY MAR-TEA-NI",
-    "hidden": 0,
     "com": 1,
     "ingredients": [
       {
