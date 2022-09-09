@@ -44,7 +44,7 @@ const publicEmailHTML = (emailData) => {
         <!DOCTYPE html>
           <html>
             <head>
-              <title>Conefetti Password Recovery</title>
+              <title>GastroTech Password Recovery</title>
             </head>
             <body>
               <div style="background: #2e4057; color: #e29b30">

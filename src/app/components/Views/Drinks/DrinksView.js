@@ -1,7 +1,6 @@
 import React from "react";
 
 import CoolButton from "../../Reusable_Components/CoolButton";
-import NavBar from "../../Reusable_Components/NavBar/NavBar";
 import CollapsibleSection from "../../Reusable_Components/CollapsibleSection";
 import Footer from "../../Reusable_Components/Footer";
 import recipes from "../../../constants/cocktails.json";
@@ -143,7 +142,7 @@ class DrinksView extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <img alt="logo" src="https://www.whiskycafe.com/wp-content/uploads/2022/02/logo-4.png" />
         <h2>Drink recipes</h2>
         {this.state.passLog ? (
           <div>
