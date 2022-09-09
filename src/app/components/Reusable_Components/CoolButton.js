@@ -13,7 +13,7 @@ class CoolButton extends React.Component {
       borderColor: "#000000",
       marginBottom: "5px",
       borderRadius: "5px",
-      width: "130px",
+      width: "180px",
       height: "30px",
       // boxShadow: "0px 6px 8px 1px #e4e3e3", //* h-offset v-offset blur spread color
     };

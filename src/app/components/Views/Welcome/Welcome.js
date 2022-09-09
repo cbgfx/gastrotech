@@ -16,7 +16,7 @@ class Welcome extends React.Component {
     return (
       <div className="fields center">
         <MainTitle />
-        <h1>Conefetti System: </h1>
+        <h1>GastroTech System: </h1>
         <div className="container-sm">
           {this.state.passLog ? (
             <div>

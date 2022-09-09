@@ -197,7 +197,7 @@ class RecipeView extends React.Component {
                         {rec.ingredients.map((ing, j) => (
                           <React.Fragment key={j}>
                             <li>
-                              * {ing.quantity} {ing.qty} of {ing.name}
+                              {ing.quantity} {ing.qty} of {ing.name}
                             </li>
                           </React.Fragment>
                         ))}

@@ -44,19 +44,6 @@ class NavBar extends React.Component {
               <CoolButton title="Base" />
             </Link>
           </li>
-
-          <li className="navLi">
-            {" "}
-            <Link to="/schedule">
-              <CoolButton title="Schedule" />
-            </Link>
-          </li>
-          <li className="navLi">
-            {" "}
-            <Link to="/drinks">
-              <CoolButton whiskyStyle={true} title="Drinks" />
-            </Link>
-          </li>
         </ul>
       </div>
     );

@@ -1,8 +1,7 @@
 // WHERE WE KEEP TRACK OF PROPER CONSTANTS
 export const APPVERSION = 0.3; //VER: UPDATE THIS SERVER SIDE TOO
-export const LOGOSMALL = "/assets/smallLogo.png";
+export const LOGOSMALL = "/assets/logoSmall.png";
 export const LOGO = "/assets/logo.png";
-export const SCHEDULE = "/assets/schedule.png";
 
 export const SvgIconType = {
   Name: "Name",
