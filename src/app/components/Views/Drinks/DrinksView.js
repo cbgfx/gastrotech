@@ -108,7 +108,7 @@ class DrinksView extends React.Component {
            <b>Glass: </b> {rec.glass}
           </div>
           {rec.hasOwnProperty("garnish")?(          <div className="col" onClick={(e) => e.stopPropagation()}>
-            <b>Garnish: </b>
+            <br /><b>Garnish: </b>
             <ul>
               {rec.garnish.map((grn, g) => (
                 <React.Fragment key={g}>
