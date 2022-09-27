@@ -12,7 +12,7 @@
       { "step": 4, "description": "Double strain the drink into the glass." }
     ],
     "glass": "Nick & Nora Glass",
-    "garnish": [{ "garnish": "1 Maraschino." }],
+    "garnish": [{ "garnish": "1 Maraschino Cherry." }],
     "ingredients": [
       {
         "quantity": "20",
@@ -81,6 +81,38 @@
       {
         "quantity": "3/4",
         "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      }
+    ]
+  },
+  {
+    "name": "BOBBY BURNS",
+    "hidden": 0,
+    "prep": [
+      { "step": 1, "description": "Combine ingredients in a mixing glass." },
+      { "step": 2, "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch." },
+      {
+        "step": 3,
+        "description": "Strain the drink into the glass"
+      },
+      { "step": 4, "description": "Express lemon zest and discard." }
+    ],
+    "glass": "Coupe Glass/Marie-Antoinette",
+    "garnish": [{ "garnish": "Lemon Zest Expression." }],
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Chivas Regal 12",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Cocchi Vermouth Di Torino",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "D.O.M. Benedictine",
         "qty": "oz"
       }
     ]
