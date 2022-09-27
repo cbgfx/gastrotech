@@ -12,7 +12,7 @@
       { "step": 4, "description": "Double strain the drink into the glass." }
     ],
     "glass": "Nick & Nora Glass",
-    "garnish": [{ "garnish": "1 Maraschino Cherry." }],
+    "garnish": [{ "garnish": "1 Maraschino." }],
     "ingredients": [
       {
         "quantity": "20",
