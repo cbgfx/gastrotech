@@ -54,13 +54,17 @@
       },
       {
         "step": 4,
-        "description": "Double strain the drink into the coupe, garnish with a lemon zest."
+        "description": "Double strain the drink into the glass."
+      },
+      {
+        "step": 5,
+        "description": "Express lemon zest and discard."
       }
     ],
     "glass": "Nick & Nora Glass",
     "garnish": [
       { "garnish": "1 Maraschino Cherry." },
-      { "garnish": "Lemon Zest" }
+      { "garnish": "Lemon Zest Expression." }
     ],
     "ingredients": [
       {
@@ -81,38 +85,6 @@
       {
         "quantity": "3/4",
         "name": "Fresh Lemon Juice",
-        "qty": "oz"
-      }
-    ]
-  },
-  {
-    "name": "BOBBY BURNS",
-    "hidden": 0,
-    "prep": [
-      { "step": 1, "description": "Combine ingredients in a mixing glass." },
-      { "step": 2, "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch." },
-      {
-        "step": 3,
-        "description": "Strain the drink into the glass"
-      },
-      { "step": 4, "description": "Express lemon zest and discard." }
-    ],
-    "glass": "Coupe Glass/Marie-Antoinette",
-    "garnish": [{ "garnish": "Lemon Zest Expression." }],
-    "ingredients": [
-      {
-        "quantity": "2",
-        "name": "Chivas Regal 12",
-        "qty": "oz"
-      },
-      {
-        "quantity": "1",
-        "name": "Cocchi Vermouth Di Torino",
-        "qty": "oz"
-      },
-      {
-        "quantity": "1/2",
-        "name": "D.O.M. Benedictine",
         "qty": "oz"
       }
     ]
@@ -182,15 +154,14 @@
         "step": 3,
         "description": "Pour ingredients over ice in highball glass. Top up with Clamato Juice."
       },
-      { "step": 4, "description": "Stir the drink to blend the ingredients." },
-      { "step": 5, "description": "Add garnishes." }
+      { "step": 4, "description": "Stir with a bar spoon to combine all ingredients." },
+      { "step": 5, "description": "Add garnishes on a pick." }
     ],
     "glass": "Collins glass (Highball)",
     "garnish": [
-      { "garnish": "Lemon" },
+      { "garnish": "Lime Wedge" },
       { "garnish": "Olives" },
       { "garnish": "Cucumber Slice" },
-      { "garnish": "Pork Jerky" },
       { "garnish": "Celery Salt" }
     ],
     "ingredients": [
@@ -229,15 +200,14 @@
         "step": 3,
         "description": "Pour ingredients over ice in highball glass. Top up with Clamato Juice."
       },
-      { "step": 4, "description": "Stir the drink to blend the ingredients." },
-      { "step": 5, "description": "Add garnishes." }
+      { "step": 4, "description": "Stir with a bar spoon to combine all ingredients." },
+      { "step": 5, "description": "Add garnishes on a pick." }
     ],
     "glass": "Collins glass (Highball)",
     "garnish": [
-      { "garnish": "Lemon" },
+      { "garnish": "Lime Wedge" },
       { "garnish": "Olives" },
       { "garnish": "Cucumber Slice" },
-      { "garnish": "Pork Jerky" },
       { "garnish": "Celery Salt" }
     ],
     "ingredients": [
@@ -276,15 +246,14 @@
         "step": 3,
         "description": "Pour ingredients over ice in highball glass. Top up with Tomato Juice."
       },
-      { "step": 4, "description": "Stir the drink to blend the ingredients." },
-      { "step": 5, "description": "Add garnishes." }
+      { "step": 4, "description": "Stir with a bar spoon to combine all ingredients." },
+      { "step": 5, "description": "Add garnishes on a pick." }
     ],
     "glass": "Collins glass (Highball)",
     "garnish": [
-      { "garnish": "Lemon" },
+      { "garnish": "Lime Wedge" },
       { "garnish": "Olives" },
       { "garnish": "Cucumber Slice" },
-      { "garnish": "Pork Jerky" },
       { "garnish": "Celery Salt" }
     ],
     "ingredients": [
@@ -311,6 +280,38 @@
     ]
   },
   {
+    "name": "BOBBY BURNS",
+    "hidden": 0,
+    "prep": [
+      { "step": 1, "description": "Combine ingredients in a mixing glass." },
+      { "step": 2, "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch." },
+      {
+        "step": 3,
+        "description": "Strain the drink into the glass."
+      },
+      { "step": 4, "description": "Express lemon zest and discard." }
+    ],
+    "glass": "Coupe Glass/Marie-Antoinette",
+    "garnish": [{ "garnish": "Lemon Zest Expression." }],
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Chivas Regal 12",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Cocchi Vermouth Di Torino",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "D.O.M. Benedictine",
+        "qty": "oz"
+      }
+    ]
+  },
+  {
     "name": "BOULEVARDIER",
     "hidden": 0,
     "ingredients": [
@@ -326,11 +327,11 @@
       },
       {
         "quantity": "3/4",
-        "name": "Lacuesta Sweet Vermouth",
+        "name": "Cocchi Vermouth Di Torino",
         "qty": "oz"
       }
     ],
-    "garnish": [{ "garnish": "Lemon Twist" }],
+    "garnish": [{ "garnish": "Lemon Zest Expression." }],
     "glass": "Rocks/Old fashioned glass",
     "prep": [
       {
@@ -339,7 +340,7 @@
       },
       {
         "step": 2,
-        "description": "Combine ingredients (starting with the bourbon) in a mixing glass."
+        "description": "Combine ingredients in a mixing glass."
       },
       {
         "step": 3,
@@ -380,18 +381,18 @@
     "prep": [
       {
         "step": 1,
-        "description": "Combine ingredients (starting with the bourbon) in a mixing glass"
+        "description": "Combine ingredients in a shaker."
       },
       {
         "step": 2,
-        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch"
+        "description": "Add ice and shake well for 10 seconds."
       },
       {
         "step": 3,
-        "description": "Strain the drink into the glass"
+        "description": "Strain the drink into the glass."
       },
       { "step": 4, "description": "Top up with soda water" },
-      { "step": 5, "description": "Activate the mint and insert into glass" }
+      { "step": 5, "description": "Activate the mint and decorate with mint bouquet." }
     ]
   },
   {
@@ -453,7 +454,7 @@
       },
       {
         "quantity": "1/4",
-        "name": "Homemade Pineapple Syrup",
+        "name": "Homemade Pineapple Spice Syrup",
         "qty": "oz"
       },
       {
@@ -490,6 +491,99 @@
     ]
   },
   {
+    "name": "CLOVER CLUB",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Tanqueray Gin",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Homemade Raspberry Syrup",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1.5",
+        "name": "Magic Foamer",
+        "qty": "dash"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "garnish": [{ "garnish": "Raspberry" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Discard ice and dry-shake for 5 seconds."
+      },
+      {
+        "step": 4,
+        "description": "Double strain the drink into the glass."
+      },
+      {
+        "step": 5,
+        "description": "Place the raspberry on the glass with a pick."
+      }
+    ]
+  },
+  {
+    "name": "COFFEE NEGRONI",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "1",
+        "name": "Tanqueray Gin",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Campari",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Kahlua",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Rocks/Old fashioned glass",
+    "garnish": [{ "garnish": "1 Espresso Bean" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Prepare clear ice cube in the glass."
+      },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
+      {
+        "step": 3,
+        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
+      },
+      {
+        "step": 4,
+        "description": "Strain the drink into the glass."
+      },
+      {
+        "step": 5,
+        "description": "Stamp the ice cube."
+      },
+      {
+        "step": 6,
+        "description": "Place the Espresso bean on the ice cube."
+      }
+    ]
+  },
+  {
     "name": "DAIQUIRI",
     "hidden": 0,
     "ingredients": [
@@ -515,7 +609,7 @@
       }
     ],
     "glass": "Coupe Glass/Marie-Antoinette",
-    "garnish": [{ "garnish": "1 Lime Wedge" }],
+    "garnish": [{ "garnish": "Lime Wedge." }],
     "prep": [
       {
         "step": 1,
@@ -524,7 +618,7 @@
       { "step": 2, "description": "Add ice and shake well for 10 seconds." },
       {
         "step": 3,
-        "description": "Double strain the drink into the coupe."
+        "description": "Double strain the drink into the glass."
       },
       { "step": 4, "description": "Garnish with lime wedge." }
     ]
@@ -545,7 +639,7 @@
         "qty": "oz"
       },
       {
-        "quantity": "1/2",
+        "quantity": "3/4",
         "name": "Fresh Lemon Juice",
         "qty": "oz"
       },
@@ -555,7 +649,8 @@
         "qty": "dashes"
       }
     ],
-    "glass": "Martini",
+    "garnish": [{ "garnish": "Lavender sprig." }],
+    "glass": "Coupe Glass/Marie-Antoinette",
     "prep": [
       {
         "step": 1,
@@ -564,9 +659,10 @@
       { "step": 2, "description": "Shake well for 10 seconds." },
       {
         "step": 3,
-        "description": "Add ice and shake again for another 10 seconds."
+        "description": "Discard ice and dry-shake for 5 seconds."
       },
-      { "step": 4, "description": "Strain the drink into the glass." }
+      { "step": 4, "description": "Strain the drink into the glass." },
+      { "step": 5, "description": "Place Lavender sprig in the drink" }
     ]
   },
   {
@@ -616,7 +712,7 @@
     "ingredients": [
       {
         "quantity": "3/4",
-        "name": "Hendricks Gin",
+        "name": "Rye",
         "qty": "oz"
       },
       {
@@ -631,27 +727,21 @@
       },
       {
         "quantity": "3/4",
-        "name": "Fresh Lime Juice",
+        "name": "Fresh Lemon Juice",
         "qty": "oz"
       }
     ],
-    "glass": "Coupe Glass/Marie-Antoinette",
-    "garnish": [{ "garnish": "1 Maraschino Cherry." }],
+    "glass": "Nick & Nora Glass",
     "prep": [
       {
         "step": 1,
-        "description": "Extract 1oz of Espresso."
+        "description": "Combine ingredients in a shaker."
       },
-      { "step": 2, "description": "Combine ingredients in a shaker." },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
       {
         "step": 3,
-        "description": "Add ice and shake well for 10 seconds."
-      },
-      {
-        "step": 4,
-        "description": "Place the Maraschino cherry at the bottom of the glass."
-      },
-      { "step": 5, "description": "Double strain the drink into the glass." }
+        "description": "Double strain the drink into the glass."
+      }
     ]
   },
   {
@@ -698,6 +788,50 @@
     ]
   },
   {
+    "name": "HOTEL GEORGIA",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1.75",
+        "name": "Tanqueray Gin",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Homemade Orgeat",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "2",
+        "name": "Magic Foamer",
+        "qty": "dashes"
+      }
+    ],
+    "garnish": [{ "garnish": "Grated Nutmeg" }],
+    "glass": "Nick & Nora Glass",
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Discard ice and dry-shake for 5 seconds."
+      },
+      { "step": 4, "description": "Double strain the drink into the glass." },
+      {
+        "step": 5,
+        "description": "Sprinkle the grated nutmeg on the foam."
+      }
+    ]
+  },
+  {
     "name": "IRISH COFFEE",
     "hidden": 0,
     "ingredients": [
@@ -712,14 +846,14 @@
         "qty": "oz"
       },
       {
-        "quantity": "1/2",
+        "quantity": "1/4",
         "name": "Homemade Vanilla Syrup",
         "qty": "oz"
       },
       {
         "quantity": "1",
-        "name": "Americano",
-        "qty": "cup"
+        "name": "Long Espresso",
+        "qty": "shot"
       },
       {
         "quantity": "1",
@@ -731,11 +865,11 @@
     "prep": [
       {
         "step": 1,
-        "description": "Prepare an Americano: Make a double shot of espresso over the hot water."
+        "description": "Extract a long shot of Espresso"
       },
       {
         "step": 2,
-        "description": "Pour whiskey and demerara syrup into the mug."
+        "description": "Pour whiskey and demerara syrup into the mug over the coffee."
       },
       {
         "step": 3,
@@ -781,7 +915,7 @@
       },
       {
         "step": 2,
-        "description": "Combine ingredients (starting with the whiskey) in a mixing glass."
+        "description": "Combine ingredients in a mixing glass."
       },
       {
         "step": 3,
@@ -797,6 +931,39 @@
         "description": "Twist the orange peel and put in the glass."
       },
       { "step": 7, "description": "Stamp the ice cube." }
+    ]
+  },
+  {
+    "name": "JACK ROSE",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Daron Calvados",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Homemade Grenadine",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Coupe Glass/Marie-Antoinette",
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Double strain the drink into the glass."
+      }
     ]
   },
   {
@@ -827,18 +994,10 @@
     "glass": "Nick & Nora Glass",
     "garnish": [{ "garnish": "1 Maraschino Cherry." }],
     "prep": [
-      {
-        "step": 1,
-        "description": "Prepare clear ice cube in the glass."
-      },
-      { "step": 2, "description": "Combine ingredients in a shaker." },
-      {
-        "step": 3,
-        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
-      },
-      { "step": 4, "description": "Add ice and shake well for 10 seconds." },
-      { "step": 5, "description": "Maraschino Cherry at bottom." },
-      { "step": 6, "description": "Double strain the drink into the glass." }
+      { "step": 1, "description": "Combine ingredients in a shaker." },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      { "step": 3, "description": "Place the Maraschino cherry at the bottom of the coupe glass." },
+      { "step": 4, "description": "Double strain the drink into the glass." }
     ]
   },
   {
@@ -899,7 +1058,82 @@
         "description": "Double strain the drink into the glass over ice."
       },
 
-      { "step": 4, "description": "Decorate with mint bouquet and umbrella." }
+      { "step": 4, "description": "Activate the mint and decorate with mint bouquet and umbrella." }
+    ]
+  },
+  {
+    "name": "MEZCAL AMARONI",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "1",
+        "name": "Sombra Mezcal",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Campari",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Amaro Nonino",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Rocks/Old fashioned glass",
+    "garnish": [{ "garnish": "Orange Zest Expression" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Prepare clear ice cube in the glass."
+      },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
+      {
+        "step": 3,
+        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
+      },
+      { "step": 4, "description": "Strain the drink into the glass." },
+      { "step": 5, "description": "Express the orange zest and discard." },
+      { "step": 6, "description": "Stamp the ice cube." }
+    ]
+  },
+  {
+    "name": "MONTE CASSINO",
+    "hidden":1,
+    "ingredients": [
+      {
+        "quantity": "3/4",
+        "name": "Rye",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Yellow Chartreuse",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "D.O.M. Benedictine",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Double strain the drink into the glass."
+      }
     ]
   },
   {
@@ -929,12 +1163,12 @@
         "step": 1,
         "description": "Add ice in the copper mug."
       },
-      { "step": 2, "description": "Pour ingredients (starting with the vodka) in the copper mug." },
+      { "step": 2, "description": "Pour ingredients in the copper mug." },
       {
         "step": 3,
         "description": "Top up with Ginger Beer."
       },
-      { "step": 4, "description": "Stir with a bar spoon." },
+      { "step": 4, "description": "Stir with a bar spoon to combine all ingredients." },
       { "step": 5, "description": "Garnish mug with the lime wedge." }
     ]
   },
@@ -943,7 +1177,7 @@
     "hidden": 0,
     "ingredients": [
       {
-        "quantity": "1",
+        "quantity": "1.5",
         "name": "Hendricks Gin",
         "qty": "oz"
       },
@@ -954,24 +1188,24 @@
       },
       {
         "quantity": "3/4",
-        "name": "Lacuesta Sweet Vermouth",
+        "name": "Cocchi Vermouth Di Torino",
         "qty": "oz"
       }
     ],
     "glass": "Rocks/Old fashioned glass",
-    "garnish": [{ "garnish": "Lemon Twist" }],
+    "garnish": [{ "garnish": "Orange Zest Expression" }],
     "prep": [
       {
         "step": 1,
         "description": "Prepare clear ice cube in the glass."
       },
-      { "step": 2, "description": "Combine ingredients (starting with the gin) in a mixing glass." },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
       {
         "step": 3,
         "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
       },
       { "step": 4, "description": "Strain the drink into the glass." },
-      { "step": 5, "description": "Express the lemon zest and discard." },
+      { "step": 5, "description": "Express the orange zest and discard." },
       { "step": 6, "description": "Stamp the ice cube." }
     ]
   },
@@ -1001,13 +1235,13 @@
       }
     ],
     "glass": "Rocks/Old fashioned glass",
-    "garnish": [{ "garnish": "Orange Twist" }],
+    "garnish": [{ "garnish": "Orange Zest Expression" }],
     "prep": [
       {
         "step": 1,
         "description": "Prepare clear ice cube in the glass."
       },
-      { "step": 2, "description": "Combine ingredients (starting with the bourbon) in a mixing glass." },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
       {
         "step": 3,
         "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
@@ -1044,7 +1278,7 @@
       }
     ],
     "glass": "Coupe Glass/Marie-Antoinette",
-    "garnish": [{ "garnish": "Lemon Zest" },
+    "garnish": [{ "garnish": "Lemon Zest Expression." },
     { "garnish": "Paper Airplane" }],
     "prep": [
       {
@@ -1058,6 +1292,90 @@
       },
       { "step": 4, "description": "Express lemon zest and discard." },
       { "step": 5, "description": "Attach paper airplane to the side of the glass." }
+    ]
+  },
+  {
+    "name": "PIMM'S CUP",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Pimm's #1",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "",
+        "name": "Ginger Ale",
+        "qty": ""
+      }
+    ],
+    "glass": "Collins glass (Highball)",
+    "garnish": [{ "garnish": "Cucumber Slice" },
+    { "garnish": "Mint Bouquet" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Place Cucumber with the ice in the glass."
+      },
+      { "step": 4, "description": "Strain the drink into the glass." },
+      { "step": 5, "description": "Top up with Ginger Ale." },
+      { "step": 6, "description": "Attach paper airplane to the side of the glass." }
+    ]
+  },
+  {
+    "name": "PINK LADY",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Tanqueray Gin",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Daron Calvados",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Homemade Grenadine",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Magic Foamer",
+        "qty": "dash"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "garnish": [{ "garnish": "1 Maraschino Cherry." }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Discard ice and dry-shake for 5 seconds."
+      },
+      { "step": 4, "description": "Double strain the drink into the glass." },
+      { "step": 5, "description": "Place the Maraschino cherry on the glass with a pick" }
     ]
   },
   {
@@ -1100,7 +1418,7 @@
       { "step": 2, "description": "Add ice and shake well for 10 seconds." },
       {
         "step": 3,
-        "description": "Discard ice and dry-shake for 10 seconds."
+        "description": "Discard ice and dry-shake for 5 seconds."
       },
       { "step": 4, "description": "Double strain the drink into the glass." },
       { "step": 5, "description": "Place 3 drops of Angostura on the foam." }
@@ -1149,7 +1467,43 @@
         "step": 3,
         "description": "Double strain the drink into the glass."
       },
-      { "step": 4, "description": "Express lime zest and add spiral over glass." }
+      { "step": 4, "description": "Express lime zest and discard." },
+      { "step": 5, "description": "Add Lime spiral over glass." }
+    ]
+  },
+  {
+    "name": "ROB ROY",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Glenmorangie X",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Cocchi Vermouth Di Torino",
+        "qty": "oz"
+      },
+      {
+        "quantity": "2",
+        "name": "Angostura Bitters",
+        "qty": "dashes"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "garnish": [{ "garnish": "1 Maraschino Cherry." }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a mixing glass."
+      },
+      {
+        "step": 2,
+        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
+      },
+      { "step": 3, "description": "Strain the drink into the glass." },
+      { "step": 4, "description": "Garnish with the cherry." }
     ]
   },
   {
@@ -1168,13 +1522,13 @@
       }
     ],
     "glass": "Rocks/Old fashioned glass",
-    "garnish": [{ "garnish": "Lemon Twist" }],
+    "garnish": [{ "garnish": "Lemon Zest Expression." }],
     "prep": [
       {
         "step": 1,
         "description": "Prepare clear ice cube in the glass."
       },
-      { "step": 2, "description": "Combine ingredients (starting with the whisky) in a mixing glass." },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
       {
         "step": 3,
         "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
@@ -1185,7 +1539,7 @@
     ]
   },
   {
-    "name": "SAZÉRABLE",
+    "name": "SAZERABLE",
     "hidden": 1,
     "ingredients": [
       {
@@ -1215,35 +1569,35 @@
       }
     ],
     "glass": "Rocks/Old fashioned glass",
-    "garnish": [{ "garnish": "Lemon Zest" }],
+    "garnish": [{ "garnish": "Lemon Zest Expression." }],
     "prep": [
+      { "step": 1, "description": "Coat inside of serving glass with 2 sprays of Absinthe." },
       {
-        "step": 1,
+        "step": 2,
         "description": "Prepare clear ice cube in the glass."
       },
-      { "step": 2, "description": "Combine ingredients (starting with the maple syrup whiskey) in a mixing glass." },
+      { "step": 3, "description": "Combine ingredients in a mixing glass." },
       {
-        "step": 3,
+        "step": 4,
         "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
       },
-      { "step": 4, "description": "Coat inside of serving glass with 2 sprays of Absinthe." },
       { "step": 5, "description": "Strain the drink over ice into the glass." },
       { "step": 6, "description": "Express lemon zest and discard." },
       { "step": 7, "description": "Stamp the ice cube." }
     ]
   },
   {
-    "name": "SAZÉRAC",
-    "hidden": 0,
+    "name": "SAZERAC",
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "1.5",
-        "name": "Sazerac Rye Whiskey",
+        "name": "Sazerac Rye",
         "qty": "oz"
       },
       {
         "quantity": "1/2",
-        "name": "Pierre Ferrand Cognac",
+        "name": "St-Remy XO Cognac",
         "qty": "oz"
       },
       {
@@ -1268,18 +1622,18 @@
       }
     ],
     "glass": "Rocks/Old fashioned glass",
-    "garnish": [{ "garnish": "Lemon Zest" }],
+    "garnish": [{ "garnish": "Lemon Zest Expression." }],
     "prep": [
+      { "step": 1, "description": "Coat inside of serving glass with 2 sprays of Absinthe." },
       {
-        "step": 1,
+        "step": 2,
         "description": "Prepare clear ice cube in the glass."
       },
-      { "step": 2, "description": "Combine whiskey, cognac, syrup, and bitters in a mixing glass." },
+      { "step": 3, "description": "Combine ingredients in a mixing glass." },
       {
-        "step": 3,
+        "step": 4,
         "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
       },
-      { "step": 4, "description": "Coat inside of serving glass with 2 sprays of Absinthe." },
       { "step": 5, "description": "Strain the drink over ice into the glass." },
       { "step": 6, "description": "Express lemon zest and discard." },
       { "step": 7, "description": "Stamp the ice cube." }
@@ -1311,7 +1665,7 @@
       }
     ],
     "glass": "Tiki Glass",
-    "garnish": [{ "garnish": "Lime Wheel" }, {"garnish":"Umbrella"}],
+    "garnish": [{ "garnish": "Dehydrated Lime Wheel" }, {"garnish":"Umbrella"}],
     "prep": [
       {
         "step": 1,
@@ -1325,6 +1679,121 @@
       { "step": 4, "description": "Strain over crushed ice in Tiki glass." },
       { "step": 5, "description": "Add crushed ice as needed to fill Tiki glass to the top." },
       { "step": 6, "description": "Place umbrella and lime wheel on the drink." }
+    ]
+  },
+  {
+    "name": "SIDECAR",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "St-Remy XO Cognac",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Pierre Ferrand Dry Curacao",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/4",
+        "name": "Homemade Sugar Cane Syrup",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Coupe Glass/Marie-Antoinette",
+    "garnish": [{ "garnish": "Sugar" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Wet half the rim of the glass using lemon juice."
+      },
+      { "step": 2, "description": "Rim the glass with sugar" },
+      {
+        "step": 3,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 4, "description": "Add ice and shake well for 10 seconds." },
+      { "step": 5, "description": "Double strain the drink into the glass." }
+    ]
+  },
+  {
+    "name": "TEA-JUANA",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Sombra Mezcal",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Homemade Earl Grey Syrup",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "2",
+        "name": "Magic Foamer",
+        "qty": "dash"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Discard ice and dry-shake for 5 seconds."
+      },
+      { "step": 4, "description": "Strain the drink into the glass." }
+    ]
+  },
+  {
+    "name": "THE BACARDI COCKTAIL",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "name": "Bacardi White",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Homemade Grenadine",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Fresh Lime Juice",
+        "qty": "oz"
+      }
+    ],
+    "garnish": [{ "garnish": "1 Maraschino Cherry." }],
+    "glass": "Coupe Glass/Marie-Antoinette",
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 3,
+        "description": "Strain the drink into the glass."
+      },
+      { "step": 4, "description": "Add garnishes on a pick." }
     ]
   },
   {
@@ -1352,14 +1821,55 @@
     "prep": [
       {
         "step": 1,
-        "description": "Roll half the rim of the glass in the lime juice, then roll the wet side in the salt."
+        "description": "Wet half the rim of the glass using lime juice."
       },
-      { "step": 2, "description": "Combine ingredients in a shaker." },
       {
-        "step": 3,
+        "step": 2,
+        "description": "Rim the glass with salt"
+      },
+      { "step": 3, "description": "Combine ingredients in a shaker." },
+      {
+        "step": 4,
         "description": "Add ice and shake well for 10 seconds."
       },
-      { "step": 4, "description": "Strain the drink into the glass over ice." }
+      { "step": 5, "description": "Strain the drink into the glass over ice." }
+    ]
+  },
+  {
+    "name": "TRINIDAD SOUR",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1/2",
+        "name": "Buffalo Trace Bourbon",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Homemade Orgeat",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Angostura Bitters",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "garnish": [{ "garnish": "Mint Leaf" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      { "step": 3, "description": "Double strain the drink into the glass." },
+      { "step": 4, "description": "Float the mint leaf on the drink." }
     ]
   },
   {
@@ -1388,7 +1898,7 @@
       }
     ],
     "glass": "Nick & Nora Glass",
-    "garnish": [{ "garnish": "Lemon Zest" },{ "garnish": "Angostura Bitters" }],
+    "garnish": [{ "garnish": "Angostura Bitters" }],
     "prep": [
       {
         "step": 1,
@@ -1397,7 +1907,7 @@
       { "step": 2, "description": "Add ice and shake well for 10 seconds." },
       {
         "step": 3,
-        "description": "Discard ice and dry-shake for 10 seconds."
+        "description": "Discard ice and dry-shake for 5 seconds."
       },
       { "step": 4, "description": "Double strain the drink into the glass." },
       { "step": 5, "description": "Place 3 drops of Angostura on the foam." }
@@ -1447,7 +1957,44 @@
         "description": "Add ice and shake well for 10 seconds."
       },
       { "step": 4, "description": "Double strain the drink into the glass over ice." },
-      { "step": 5, "description": "Place the candied ginger on a pick over the glass." },
+      { "step": 5, "description": "Stamp the ice cube." },
+      { "step": 6, "description": "Place the candied ginger on a pick over the glass." }
+    ]
+  },
+  {
+    "name": "WHITE NEGRONI",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Hendricks Gin",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Suze",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Lilet Blanc",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Rocks/Old fashioned glass",
+    "garnish": [{ "garnish": "Orange Zest Expression" }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Prepare clear ice cube in the glass."
+      },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
+      {
+        "step": 3,
+        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
+      },
+      { "step": 4, "description": "Strain the drink into the glass." },
+      { "step": 5, "description": "Express the orange zest and discard." },
       { "step": 6, "description": "Stamp the ice cube." }
     ]
   }
