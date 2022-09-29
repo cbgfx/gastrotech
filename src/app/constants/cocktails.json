@@ -119,7 +119,7 @@
   },
   {
     "name": "BAHAMA MAMA",
-    "hidden": 0,
+    "hidden": 1,
     "prep": [
       { "step": 1, "description": "Fill Tiki glass with crushed ice." },
       { "step": 2, "description": "Combine ingredients in a shaker." },
@@ -395,7 +395,7 @@
     ]
   },
   {
-    "name": "CAMERON's KICK",
+    "name": "CAMERON'S KICK",
     "hidden": 0,
     "ingredients": [
       {
@@ -612,7 +612,7 @@
   },
   {
     "name": "FINAL WARD",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "3/4",
@@ -656,7 +656,7 @@
   },
   {
     "name": "HOT TODDY",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "2",
@@ -801,7 +801,7 @@
   },
   {
     "name": "LAST WORD",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "3/4",
@@ -1062,7 +1062,7 @@
   },
   {
     "name": "PISCO SOUR",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "2",
@@ -1154,7 +1154,7 @@
   },
   {
     "name": "RUSTY NAIL",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "2",
@@ -1186,7 +1186,7 @@
   },
   {
     "name": "SAZÉRABLE",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "2",
