@@ -259,7 +259,7 @@
     "ingredients": [
       {
         "quantity": "1.5",
-        "name": "Bowmore 12",
+        "name": "Belvedere Vodka",
         "qty": "oz"
       },
       {
@@ -281,7 +281,7 @@
   },
   {
     "name": "BOBBY BURNS",
-    "hidden": 0,
+    "hidden": 1,
     "prep": [
       { "step": 1, "description": "Combine ingredients in a mixing glass." },
       { "step": 2, "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch." },
@@ -1430,7 +1430,7 @@
     "ingredients": [
       {
         "quantity": "1.5",
-        "name": "El Dorado 12",
+        "name": "El Dorado 12 Rum",
         "qty": "oz"
       },
       {
@@ -1645,7 +1645,7 @@
     "ingredients": [
       {
         "quantity": "1",
-        "name": "El Dorado 12",
+        "name": "El Dorado 12 Rum",
         "qty": "oz"
       },
       {
@@ -1767,7 +1767,7 @@
     "ingredients": [
       {
         "quantity": "2",
-        "name": "Bacardi White",
+        "name": "Bacardi White Rum",
         "qty": "oz"
       },
       {
