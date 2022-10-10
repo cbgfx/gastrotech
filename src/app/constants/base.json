@@ -153,7 +153,7 @@
     ]
   },
   {
-    "name": "Chocolate  Base",
+    "name": "Chocolate Base",
     "yield": 1,
     "type": "Base",
     "ingredients": [
@@ -205,6 +205,28 @@
       {
         "quantity": 800,
         "name": "Melted Chocolate",
+        "qty": "Grams"
+      }
+    ]
+  },
+  {
+    "name": "Home Base",
+    "yield": 1,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 700,
+        "name": "Milk",
+        "qty": "ml"
+      },
+      {
+        "quantity": 200,
+        "name": "Cream",
+        "qty": "ml"
+      },
+      {
+        "quantity": 175,
+        "name": "Sugar",
         "qty": "Grams"
       }
     ]
