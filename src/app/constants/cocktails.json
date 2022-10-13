@@ -38,7 +38,7 @@
   },
   {
     "name": "AVIATION",
-    "hidden": 0,
+    "hidden": 1,
     "prep": [
       {
         "step": 1,
