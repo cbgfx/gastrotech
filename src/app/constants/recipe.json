@@ -391,13 +391,8 @@
     "decoration": "Broken Cannolis Shells & chocolate chips",
     "ingredients": [
       {
-        "quantity": 850,
-        "name": "Ricotta",
-        "qty": "grams"
-      },
-      {
-        "quantity": 100,
-        "name": "Marscarpone",
+        "quantity": 300,
+        "name": "Ricotta 30 U",
         "qty": "grams"
       }
     ]
