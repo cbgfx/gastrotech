@@ -11,7 +11,7 @@ class DrinksView extends React.Component {
 
   componentDidMount() {
     var filteredItemArray = recipes.filter(function (entry) {
-      if (entry.hidden === 0 ) {
+      if (entry.hidden === 0) {
         return entry;
       }
       return null;
@@ -75,6 +75,13 @@ class DrinksView extends React.Component {
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
     this.setState({ filteredDataSource: sortedFilteredDS });
   };
+
+  allFilter = () => {
+    this.setState({
+      mountDataSource: recipes,
+      filteredDataSource: recipes,
+    });
+  }
 
   clearFilter = (a) => {
     var filteredItemArray = recipes.filter(function (entry) {
@@ -200,6 +207,10 @@ class DrinksView extends React.Component {
               onChange={(e) => {
                 if (CONST.textPass(e.target.value, "peter")) {
                   this.setState({ passLog: true });
+                }
+                if (CONST.textPass(e.target.value, "showall")){
+                  this.allFilter();
+                  this.setState({ passLog: true});
                 }
               }}
             />{" "}
