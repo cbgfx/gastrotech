@@ -624,6 +624,60 @@
     ]
   },
   {
+    "name": "DARK SOUL",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "1.5",
+        "name": "Chivas Regal 12",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Ardbeg Wee Beastie",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Agave Syrup",
+        "qty": "oz"
+      }
+      {
+        "quantity": "1",
+        "name": "Squid Ink",
+        "qty": "dash"
+      }
+      {
+        "quantity": "2",
+        "name": "Magic Foamer",
+        "qty": "dashes"
+      }
+    ],
+    "glass": "Rocks/Old fashioned glass",
+    "garnish": [{ "garnish": "Gold Dust." }],
+    "prep": [
+      {
+        "step": 1,
+        "description": "Prepare clear ice cube in the glass."
+      },
+      {
+        "step": 2,
+        "description": "Combine ingredients in a shaker."
+      },
+      { "step": 3, "description": "Add ice and shake well for 10 seconds." },
+      {
+        "step": 4,
+        "description": "Double strain the drink into the glass."
+      },
+      { "step": 5, "description": "2 splashes of gold dust." }
+    ]
+  },
+  {
     "name": "EARL GREY MAR-TEA-NI",
     "hidden": 0,
     "com": 1,
