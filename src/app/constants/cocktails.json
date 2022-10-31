@@ -625,7 +625,7 @@
   },
   {
     "name": "DARK SOUL",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "1.5",
