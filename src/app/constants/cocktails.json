@@ -1,7 +1,7 @@
 [
   {
     "name": "ARMY & NAVY",
-    "hidden": 0,
+    "hidden": 1,
     "prep": [
       { "step": 1, "description": "Combine ingredients in a shaker." },
       { "step": 2, "description": "Add ice and shake well for 10 seconds." },
@@ -440,7 +440,7 @@
   },
   {
     "name": "CARIBBEAN RUM FASHIONED",
-    "hidden": 0,
+    "hidden": 1,
     "ingredients": [
       {
         "quantity": "2",
@@ -842,6 +842,54 @@
     ]
   },
   {
+    "name": "HIGH AND DRY",
+    "hidden": 1,
+    "ingredients": [
+      {
+        "quantity": "1",
+        "name": "Hendrick's Gin",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "Campari",
+        "qty": "oz"
+      },
+      {
+        "quantity": "1",
+        "name": "St-Germain",
+        "qty": "oz"
+      },
+      {
+        "quantity": "2",
+        "name": "Orange Blossom Water",
+        "qty": "dashes"
+      }
+    ],
+    "garnish": [{ "garnish": "Orange Zest Expression" }],
+    "glass": "Rocks/Old fashioned glass",
+    "prep": [
+      {
+        "step": 1,
+        "description": "Prepare clear ice cube in the glass."
+      },
+      { "step": 2, "description": "Combine ingredients in a mixing glass." },
+      {
+        "step": 3,
+        "description": "Add ice and stir for 30 seconds (60 revolutions) until mixing glass gets cold to touch."
+      },
+      { "step": 4, "description": "Strain the drink into the glass." },
+      {
+        "step": 5,
+        "description": "Express the orange zest and discard."
+      },
+      {
+        "step": 6,
+        "description": "Stamp the ice cube."
+      }
+    ]
+  },
+  {
     "name": "HOTEL GEORGIA",
     "hidden": 1,
     "ingredients": [
@@ -1022,7 +1070,7 @@
   },
   {
     "name": "LAST WORD",
-    "hidden": 1,
+    "hidden": 0,
     "ingredients": [
       {
         "quantity": "3/4",
@@ -1350,7 +1398,7 @@
   },
   {
     "name": "PIMM'S CUP",
-    "hidden": 1,
+    "hidden": 0,
     "ingredients": [
       {
         "quantity": "2",
@@ -1527,7 +1575,7 @@
   },
   {
     "name": "ROB ROY",
-    "hidden": 1,
+    "hidden": 0,
     "ingredients": [
       {
         "quantity": "2",
@@ -1642,7 +1690,7 @@
   },
   {
     "name": "SAZERAC",
-    "hidden": 1,
+    "hidden": 0,
     "ingredients": [
       {
         "quantity": "1.5",
@@ -1851,7 +1899,7 @@
     ]
   },
   {
-    "name": "TOMMY’S MARGARITA",
+    "name": "TOMMY'S MARGARITA",
     "hidden": 0,
     "ingredients": [
       {
