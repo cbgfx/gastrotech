@@ -799,6 +799,41 @@
     ]
   },
   {
+    "name": "GENTLEMAN'S HEALTH",
+    "hidden": 0,
+    "ingredients": [
+      {
+        "quantity": "1",
+        "name": "Jameson Black Barrel",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Yellow Chartreuse",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Lillet Blanc",
+        "qty": "oz"
+      },
+      {
+        "quantity": "3/4",
+        "name": "Fresh Lemon Juice",
+        "qty": "oz"
+      }
+    ],
+    "glass": "Nick & Nora Glass",
+    "garnish": [{ "garnish": "1 Moustache." }, { "garnish": "Lemon Zest Expression." }],
+    "prep": [
+      { "step": 1, "description": "Combine ingredients in a shaker." },
+      { "step": 2, "description": "Add ice and shake well for 10 seconds." },
+      { "step": 3, "description": "Double strain the drink into the glass." },
+      { "step": 4, "description": "Express lemon zest and discard." },
+      { "step": 5, "description": "Attach moustache to the side of the glass." }
+    ]
+  },
+  {
     "name": "HOT TODDY",
     "hidden": 1,
     "ingredients": [
