@@ -1,9 +1,9 @@
 import React from "react";
 
 import CoolButton from "../../Reusable_Components/CoolButton";
-import NavBar from "../../Reusable_Components/NavBar/NavBar";
+import NavBar from "../../Reusable_Components/NavBar/ConeNavBar";
 import Footer from "../../Reusable_Components/Footer";
-import recipes from "../../../constants/base.json";
+import recipes from "../../../recipes/base.json";
 import * as CONST from "../../../constants/constants";
 
 class BaseView extends React.Component {

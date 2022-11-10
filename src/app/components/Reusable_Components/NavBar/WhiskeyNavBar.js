@@ -5,7 +5,7 @@ import * as constants from "../../../constants/constants";
 
 import CoolButton from "../CoolButton";
 
-class NavBar extends React.Component {
+class WhiskeyNavBar extends React.Component {
   state = {
     toggle: false,
   };
@@ -33,15 +33,14 @@ class NavBar extends React.Component {
           </li>
           <li className="navLi">
             {" "}
-            <Link to="/recipe">
-              <CoolButton title="Recipe" />
+            <Link to="/drinks">
+              <CoolButton title="Drinks" />
             </Link>
           </li>
-
           <li className="navLi">
             {" "}
-            <Link to="/base">
-              <CoolButton title="Base" />
+            <Link to="/syrup">
+              <CoolButton title="Syrups" />
             </Link>
           </li>
         </ul>
@@ -50,4 +49,4 @@ class NavBar extends React.Component {
   }
 }
 
-export default NavBar;
+export default WhiskeyNavBar;

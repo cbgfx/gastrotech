@@ -1,11 +1,11 @@
 import React from "react";
 
 import CoolButton from "../../Reusable_Components/CoolButton";
-import NavBar from "../../Reusable_Components/NavBar/NavBar";
+import NavBar from "../../Reusable_Components/NavBar/ConeNavBar";
 import Footer from "../../Reusable_Components/Footer";
-import recipes from "../../../constants/recipe.json";
+import recipes from "../../../recipes/gelato.json";
 
-class RecipeView extends React.Component {
+class GelatoView extends React.Component {
   state = {
     filteredDataSource: [],
     colYield: true,
@@ -221,6 +221,6 @@ class RecipeView extends React.Component {
   }
 }
 
-RecipeView.defaultProps = {};
+GelatoView.defaultProps = {};
 
-export default RecipeView;
+export default GelatoView;

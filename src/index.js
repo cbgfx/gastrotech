@@ -14,9 +14,10 @@ import history from "./history"; // added so we can handle programatic navigatio
 import "./app/css/front.css";
 
 import Welcome from "./app/components/Views/Welcome/Welcome";
-import RecipeView from "./app/components/Views/Recipes/RecipeView";
-import BaseView from "./app/components/Views/Recipes/BaseView";
+import GelatoView from "./app/components/Views/Gelato/GelatoView";
+import BaseView from "./app/components/Views/Gelato/BaseView";
 import DrinksView from "./app/components/Views/Drinks/DrinksView";
+import SyrupView from "./app/components/Views/Syrups/SyrupView";
 
 /*
 const RouteGuard = (Component) => ({ match }) => (
@@ -38,9 +39,10 @@ export const App = () => (
       {/*TODO: Fix the rest of the elements*/}
       {/*<Route path="/" element={<Home />} />*/}
       <Route path="/" element={<Welcome />} />
-      <Route path={urls.recipe.route} element={<RecipeView />} />
+      <Route path={urls.gelato.route} element={<GelatoView />} />
       <Route path={urls.base.route} element={<BaseView />} />
       <Route path={urls.drinks.route} element={<DrinksView />} />
+      <Route path={urls.syrup.route} element={<SyrupView />} />
 
       {/* <Route path={urls.randomNameGenerator.route} exact component={RandomNameGenerator} /> */}
     </Routes>

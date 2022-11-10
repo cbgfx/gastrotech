@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Earl Grey Syrup",
+    "ingredients": [
+      {
+        "quantity": 2,
+        "name": "Water",
+        "qty": "cups"
+      },
+      {
+        "quantity": 2,
+        "name": "Cane Sugar",
+        "qty": "cups"
+      },
+      {
+        "quantity": 9,
+        "name": "Earl Grey Tea (or 6 pouches)",
+        "qty": "Tea Spoons"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Boil Water."
+        },
+        {
+          "step": 2,
+          "description": "Remove from heat and steep tea for 10 minutes."
+        },
+        { "step": 3, "description": "Strain well and weigh water." },
+        {
+          "step": 4,
+          "description": "Match the weight of the water with an equal amount of sugar."
+        },
+        { "step": 5, "description": "Stir until sugar completely disolved." }
+    ]
+  }
+]

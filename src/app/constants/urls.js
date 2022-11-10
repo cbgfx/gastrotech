@@ -35,12 +35,8 @@ export const changePass = {
   },
 };
 
-export const suppliers = {
-  route: "/suppliers",
-};
-
-export const recipe = {
-  route: "/recipe",
+export const gelato = {
+  route: "/gelato",
 };
 
 export const base = {
@@ -49,6 +45,10 @@ export const base = {
 
 export const drinks = {
   route: "/drinks",
+};
+
+export const syrup = {
+  route: "/syrup",
 };
 
 export const sched = {

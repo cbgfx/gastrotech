@@ -2,26 +2,17 @@ import React from "react";
 
 import CoolButton from "../../Reusable_Components/CoolButton";
 import CollapsibleSection from "../../Reusable_Components/CollapsibleSection";
-import Footer from "../../Reusable_Components/Footer";
 import NavBar from "../../Reusable_Components/NavBar/WhiskeyNavBar";
-import recipes from "../../../recipes/cocktails.json";
+import Footer from "../../Reusable_Components/Footer";
+import recipes from "../../../recipes/syrup.json";
 import * as CONST from "../../../constants/constants";
 
-class DrinksView extends React.Component {
+class SyrupsView extends React.Component {
   state = { mountDataSource: [], filteredDataSource: [], passLog: false };
 
   componentDidMount() {
-    var filteredItemArray = recipes.filter(function (entry) {
-      if (entry.hidden === 0) {
-        return entry;
-      }
-      return null;
-    });
-    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
-    this.setState({
-      mountDataSource: sortedFilteredDS,
-      filteredDataSource: sortedFilteredDS,
-    });
+    var sortedDataSource = this.sortRecipe(recipes);
+    this.setState({ filteredDataSource: sortedDataSource });
   }
 
   sortRecipe = (ds) => {
@@ -39,38 +30,21 @@ class DrinksView extends React.Component {
 
   ingFilter = (a) => {
     var filtered = [];
-    if (a === "") {
-      this.setState({ filteredDataSource: this.state.mountDataSource });
-    } else {
-      for (var i = 0; i < this.state.mountDataSource.length; i++) {
-        var filteredIngs = this.state.mountDataSource[i].ingredients.filter(
-          (entry) => {
-            return entry.name.toLowerCase().includes(a.toLowerCase());
-          }
-        );
-        if (filteredIngs.length > 0) {
-          filtered.push(this.state.mountDataSource[i]);
-        }
-        var sortedFilteredDS = this.sortRecipe(filtered);
-        this.setState({ filteredDataSource: sortedFilteredDS });
+    for (var i = 0; i < recipes.length; i++) {
+      var filteredIngs = recipes[i].ingredients.filter((entry) => {
+        return entry.name.toLowerCase().includes(a.toLowerCase());
+      });
+      if (filteredIngs.length > 0) {
+        filtered.push(recipes[i]);
       }
     }
+    var sortedFilteredDS = this.sortRecipe(filtered);
+    this.setState({ filteredDataSource: sortedFilteredDS });
   };
 
   typeFilter = (filtType) => {
     var filteredItemArray = this.state.mountDataSource.filter(function (entry) {
       return entry.type === filtType;
-    });
-    var sortedFilteredDS = this.sortRecipe(filteredItemArray);
-    this.setState({ filteredDataSource: sortedFilteredDS });
-  };
-
-  comFilter = () => {
-    var filteredItemArray = this.state.mountDataSource.filter(function (entry) {
-      if (entry.hasOwnProperty("com")) {
-        return entry;
-      }
-      return null;
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
     this.setState({ filteredDataSource: sortedFilteredDS });
@@ -112,25 +86,6 @@ class DrinksView extends React.Component {
           </ul>
         </div>
         <div className="col" onClick={(e) => e.stopPropagation()}>
-          <b>Glass: </b> {rec.glass}
-        </div>
-        {rec.hasOwnProperty("garnish") ? (
-          <div className="col" onClick={(e) => e.stopPropagation()}>
-            <br />
-            <b>Garnish: </b>
-            <ul>
-              {rec.garnish.map((grn, g) => (
-                <React.Fragment key={g}>
-                  <li>{grn.garnish}</li>
-                </React.Fragment>
-              ))}
-            </ul>
-          </div>
-        ) : (
-          <div></div>
-        )}
-
-        <div className="col" onClick={(e) => e.stopPropagation()}>
           <b>Prep:</b>
           <ul>
             {rec.prep.map((prp, p) => (
@@ -157,7 +112,7 @@ class DrinksView extends React.Component {
           alt="logo"
           src="https://www.whiskycafe.com/wp-content/uploads/2022/02/logo-4.png"
         />
-        <h2>Drink recipes</h2>
+        <h2>Syrup recipes</h2>
         {this.state.passLog ? (
           <div>
             <div>
@@ -177,12 +132,6 @@ class DrinksView extends React.Component {
                   this.ingFilter(e.target.value);
                 }}
               />
-              <div>
-                <CoolButton
-                  title="Cocktail of the Month"
-                  didClick={() => this.comFilter()}
-                />
-              </div>
             </div>
             <CoolButton
               title="Clear Filters"
@@ -209,11 +158,7 @@ class DrinksView extends React.Component {
             <input
               type="password"
               onChange={(e) => {
-                if (CONST.textPass(e.target.value, "peter")) {
-                  this.setState({ passLog: true });
-                }
-                if (CONST.textPass(e.target.value, "showall")) {
-                  this.allFilter();
+                if (CONST.textPass(e.target.value, "siri")) {
                   this.setState({ passLog: true });
                 }
               }}
@@ -226,6 +171,6 @@ class DrinksView extends React.Component {
   }
 }
 
-DrinksView.defaultProps = {};
+SyrupsView.defaultProps = {};
 
-export default DrinksView;
+export default SyrupsView;

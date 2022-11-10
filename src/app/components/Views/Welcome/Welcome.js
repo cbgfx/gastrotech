@@ -20,14 +20,17 @@ class Welcome extends React.Component {
         <div className="container-sm">
           {this.state.passLog ? (
             <div>
-              <Link to="/recipe">
-                <CoolButton title="Recipe" />
+              <Link to="/gelato">
+                <CoolButton title="Gelato" />
               </Link>
               <Link to="/base">
                 <CoolButton title="Bases" />
               </Link>
               <Link to="/drinks">
                 <CoolButton title="Drinks" />
+              </Link>
+              <Link to="/syrup">
+                <CoolButton title="Syrups" />
               </Link>
             </div>
           ) : (
