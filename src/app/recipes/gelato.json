@@ -860,5 +860,19 @@
         "qty": "bag"
       }
     ]
+  },
+  {
+    "name": "Earl Grey Tea",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Cinnamon",
+    "ingredients": [
+      {
+        "quantity": 350,
+        "name": "Home Made Earl Grey Syrup",
+        "qty": "grams"
+      }
+    ]
   }
 ]
