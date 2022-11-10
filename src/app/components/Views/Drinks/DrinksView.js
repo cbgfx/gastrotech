@@ -152,7 +152,6 @@ class DrinksView extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
         <img
           alt="logo"
           src="https://www.whiskycafe.com/wp-content/uploads/2022/02/logo-4.png"
