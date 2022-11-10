@@ -21,7 +21,7 @@ class SyrupsView extends React.Component {
   };
 
   textFilter = (a) => {
-    var filteredItemArray = this.state.mountDataSource.filter((items) => {
+    var filteredItemArray = recipes.filter((items) => {
       return items.name.toLowerCase().includes(a.toLowerCase());
     });
     var sortedFilteredDS = this.sortRecipe(filteredItemArray);
