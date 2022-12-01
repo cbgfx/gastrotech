@@ -1,5 +1,181 @@
 [
   {
+    "name": "Banana Syrup",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Water",
+        "qty": "cups"
+      },
+      {
+        "quantity": "1/3",
+        "name": "Cane Sugar",
+        "qty": "cups"
+      },
+      {
+        "quantity": 2,
+        "name": "Dark Rum",
+        "qty": "oz"
+      },
+      {
+        "quantity": 1,
+        "name": "Demerara Sugar",
+        "qty": "tbsp"
+      },
+      {
+        "quantity": 5,
+        "name": "Bananas",
+        "qty": ""
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Slice the bananas in disks."
+        },
+        {
+          "step": 2,
+          "description": "Caramelize the bananas with sugar and rum while mixing well."
+        },
+        { "step": 3, "description": "Boil Water." },
+        {
+          "step": 4,
+          "description": "Combine water and caramelized bananas. And simmer for 5 minutes."
+        },
+        { "step": 5, "description": "Let cool and combine with cane sugar." },
+        {
+          "step": 6,
+          "description": "Stir until sugar is completely dissolved."
+        },
+        {
+          "step": 7,
+          "description": "Filter and bottle."
+        }
+    ]
+  },
+  {
+    "name": "Bloody Mix",
+    "ingredients": [
+      {
+        "quantity": 600,
+        "name": "Worcestershire",
+        "qty": "ml"
+      },
+      {
+        "quantity": 100,
+        "name": "Tabasco Chipotle",
+        "qty": "ml"
+      },
+      {
+        "quantity": 100,
+        "name": "Classic Tabasco (Red)",
+        "qty": "ml"
+      },
+      {
+        "quantity": 50,
+        "name": "Green Tabasco (Jalapeño)",
+        "qty": "ml"
+      },
+      {
+        "quantity": 50,
+        "name": "Apple Cider Vinegar",
+        "qty": "ml"
+      },
+      {
+        "quantity": 1,
+        "name": "Salt",
+        "qty": "tablespoon"
+      },
+      {
+        "quantity": 1,
+        "name": "Ground Black Pepper",
+        "qty": "tablespoon"
+      },
+      {
+        "quantity": 1,
+        "name": "Celery Salt",
+        "qty": "tablespoon"
+      }
+    ],
+    "prep":[
+      {
+        "step": "Yield",
+        "description": "(For Blood & Smoke, Bloody Caesar and Bloody Mary) Yields 1 liter"
+      },
+        {
+          "step": 1,
+          "description": "Combine ingredients in a large glass bottle."
+        },
+        {
+          "step": 2,
+          "description": "Shake very well."
+        }
+    ]
+  },
+  {
+    "name": "Coffee Syrup",
+    "ingredients": [
+      {
+        "quantity": 28,
+        "name": "Americano Coffee",
+        "qty": "grams"
+      },
+      {
+        "quantity": "",
+        "name": "Granulated White Sugar",
+        "qty": ""
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Extract 1 Americano using 28g of coffee beans."
+        },
+        {
+          "step": 2,
+          "description": "Weigh the water and match the weight of the coffee with an equal amount of the sugar."
+        },
+        {
+          "step": 3,
+          "description": "Stir until sugar is completely dissolved."
+        }
+    ]
+  },
+  {
+    "name": "Cream of Coconut",
+    "ingredients": [
+      {
+        "quantity": 400,
+        "name": "Unsweetened Full Fat Coconut Milk",
+        "qty": "ml"
+      },
+      {
+        "quantity": 420,
+        "name": "Granulated White Sugar",
+        "qty": "ml"
+      },
+      {
+        "quantity": 1,
+        "name": "Salt",
+        "qty": "pinch"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "In a medium saucepan, combine sugar, and coconut milk and salt."
+        },
+        {
+          "step": 2,
+          "description": "Stir over medium heat until sugar is completely dissolved."
+        },
+        {
+          "step": 3,
+          "description": "Remove from heat and let cool."
+        }
+    ]
+  },
+  {
     "name": "Earl Grey Syrup",
     "ingredients": [
       {
@@ -15,7 +191,7 @@
       {
         "quantity": 9,
         "name": "Earl Grey Tea (or 6 pouches)",
-        "qty": "Tea Spoons"
+        "qty": "teaspoons"
       }
     ],
     "prep":[
@@ -33,6 +209,503 @@
           "description": "Match the weight of the water with an equal amount of sugar."
         },
         { "step": 5, "description": "Stir until sugar completely disolved." }
+    ]
+  },
+  {
+    "name": "Falernum (Sous-Vide)",
+    "ingredients": [
+      {
+        "quantity": 3,
+        "name": "Bacardi White Rum",
+        "qty": "oz"
+      },
+      {
+        "quantity": 10,
+        "name": "Limes",
+        "qty": ""
+      },
+      {
+        "quantity": "1.5",
+        "name": "Fresh Ginger",
+        "qty": "inches"
+      },
+      {
+        "quantity": 8,
+        "name": "Cloves",
+        "qty": ""
+      },
+      {
+        "quantity": "1/4",
+        "name": "Almonds (Blanched & Silvered)",
+        "qty": "cup"
+      },
+      {
+        "quantity": "1/4",
+        "name": "Nutmeg",
+        "qty": "cup"
+      },
+      {
+        "quantity": 2,
+        "name": "Turbinado Sugar",
+        "qty": "tablespoons"
+      },
+      {
+        "quantity": 3,
+        "name": "Granulated White Sugar",
+        "qty": "tablespoons"
+      },
+      {
+        "quantity": 3,
+        "name": "Water",
+        "qty": "tablespoons"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Toast the cloves and almonds for 5 minutes until the almonds turn golden. Set aside to cool."
+        },
+        {
+          "step": 2,
+          "description": "Peel and cut the ginger."
+        },
+        {
+          "step": 3,
+          "description": "Zest the 10 limes."
+        },
+        {
+          "step": 4,
+          "description": "Combine nutmeg, turbinado sugar, granulated sugar, water, lime zest, ginger, almonds, and cloves with the rum in a bag and seal."
+        },
+        {
+          "step": 5,
+          "description": "Place the sealed bag in a sous-vide bath for 2hours at 145F."
+        },
+        {
+          "step": 6,
+          "description": "Strain out solids using a coffee filter and bottle."
+        }
+    ]
+  },
+  {
+    "name": "Falernum (Conventional)",
+    "ingredients": [
+      {
+        "quantity": 3,
+        "name": "Bacardi White Rum",
+        "qty": "oz"
+      },
+      {
+        "quantity": 10,
+        "name": "Limes",
+        "qty": ""
+      },
+      {
+        "quantity": "1.5",
+        "name": "Fresh Ginger",
+        "qty": "inches"
+      },
+      {
+        "quantity": 8,
+        "name": "Cloves",
+        "qty": ""
+      },
+      {
+        "quantity": "1/4",
+        "name": "Almonds (Blanched & Silvered)",
+        "qty": "cup"
+      },
+      {
+        "quantity": "1/4",
+        "name": "Nutmeg",
+        "qty": "cup"
+      },
+      {
+        "quantity": 2,
+        "name": "Turbinado Sugar",
+        "qty": "tablespoons"
+      },
+      {
+        "quantity": 3,
+        "name": "Granulated White Sugar",
+        "qty": "tablespoons"
+      },
+      {
+        "quantity": 3,
+        "name": "Water",
+        "qty": "tablespoons"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Toast the cloves and almonds for 5 minutes until the almonds turn golden. Set aside to cool."
+        },
+        {
+          "step": 2,
+          "description": "Peel and grate the ginger."
+        },
+        {
+          "step": 3,
+          "description": "Zest the 10 limes."
+        },
+        {
+          "step": 4,
+          "description": "Combine both sugars and water in a pan over low heat until the sugar dissolves. Set aside to cool and keep in the fridge until the next day."
+        },
+        {
+          "step": 5,
+          "description": "Combine nutmeg, lime zest, ginger, almonds, and cloves with the rum in a jar. Shake well and set aside to infuse for 24 hours."
+        },
+        {
+          "step": 6,
+          "description": "Strain out solids using a coffee filter."
+        },
+        {
+          "step": 7,
+          "description": "Combine infused rum with the syrup and bottle."
+        }
+    ]
+  },
+  {
+    "name": "Gingerbread Cookie Syrup",
+    "ingredients": [
+      {
+        "quantity": 130,
+        "name": "Demerara Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 20,
+        "name": "Muscovado Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 61,
+        "name": "Honey",
+        "qty": "grams"
+      },
+      {
+        "quantity": 10,
+        "name": "Fresh Ginger",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1,
+        "name": "Ceylon Cinnamon",
+        "qty": "grams"
+      },
+      {
+        "quantity": 4,
+        "name": "Cloves",
+        "qty": ""
+      },
+      {
+        "quantity": 2,
+        "name": "Vanilla bean, split in length",
+        "qty": "cm"
+      },
+      {
+        "quantity": "",
+        "name": "Grated Nutmeg",
+        "qty": ""
+      },
+      {
+        "quantity": 89,
+        "name": "Water",
+        "qty": "grams"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Add all ingredients in a sous-vide bag."
+        },
+        {
+          "step": 2,
+          "description": "Place the bag in a bath at 60⁰ C for 5 hours."
+        },
+        {
+          "step": 3,
+          "description": "Strain through a cheesecloth and bottle."
+        }
+    ]
+  },
+  {
+    "name": "Grenadine",
+    "ingredients": [
+      {
+        "quantity": 3,
+        "name": "Granulated Cane Sugar",
+        "qty": "cups"
+      },
+      {
+        "quantity": 2,
+        "name": "100% Pure Pomegranate Juice",
+        "qty": "cups"
+      },
+      {
+        "quantity": 1,
+        "name": "Pomegranate Molasses",
+        "qty": "teaspoon"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Rose Water",
+        "qty": "teaspoon"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "In a medium saucepan, combine sugar, pomegranate juice, and pomegranate molasses."
+        },
+        {
+          "step": 2,
+          "description": "Stir over medium heat until sugar is completely dissolved."
+        },
+        { "step": 3, "description": "Remove from heat and add rose water." },
+        {
+          "step": 4,
+          "description": "Stir to combine and let cool."
+        }
+    ]
+  },
+  {
+    "name": "Orgeat",
+    "ingredients": [
+      {
+        "quantity": 3,
+        "name": "Granulated White Sugar",
+        "qty": "cups"
+      },
+      {
+        "quantity": 2,
+        "name": "Unsweetened Almond Milk",
+        "qty": "cups"
+      },
+      {
+        "quantity": 1,
+        "name": "Orange Blossom Water",
+        "qty": "teaspoon"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Rose Water",
+        "qty": "teaspoon"
+      },
+      {
+        "quantity": "1/2",
+        "name": "Almond Extract",
+        "qty": "teaspoon"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "In a medium saucepan, combine sugar, and almond milk."
+        },
+        {
+          "step": 2,
+          "description": "Stir over medium heat until sugar is completely dissolved."
+        },
+        { "step": 3, "description": "Remove from heat and add orange blossom water, rose water and almond extract." },
+        {
+          "step": 4,
+          "description": "Stir to combine and let cool."
+        }
+    ]
+  },
+  {
+    "name": "Pineapple Spice Syrup",
+    "ingredients": [
+      {
+        "quantity": 1,
+        "name": "Pineapple",
+        "qty": ""
+      },
+      {
+        "quantity": 400,
+        "name": "Demerara Sugar",
+        "qty": "grams"
+      },
+      {
+        "quantity": 1,
+        "name": "Lime",
+        "qty": "zest"
+      },
+      {
+        "quantity": 2,
+        "name": "Star Anise (cracked into chunks)",
+        "qty": ""
+      },
+      {
+        "quantity": "1/4",
+        "name": "Ground Cloves",
+        "qty": "teaspoon"
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Cut the pineapple."
+        },
+        {
+          "step": 2,
+          "description": "Add the demerara sugar and the other ingredients."
+        },
+        { "step": 3, "description": "Mix well and cover." },
+        {
+          "step": 4,
+          "description": "Place in room temperature away from light for 12 hours."
+        },
+        {
+          "step": 5,
+          "description": "Strain and bottle."
+        }
+    ]
+  },
+  {
+    "name": "Raspberry Syrup",
+    "ingredients": [
+      {
+        "quantity": 250,
+        "name": "Frozen Raspberries",
+        "qty": "grams"
+      },
+      {
+        "quantity": 200,
+        "name": "Water",
+        "qty": "grams"
+      },
+      {
+        "quantity": "",
+        "name": "Cane Sugar",
+        "qty": ""
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Combine the water and raspberries in a small saucepan."
+        },
+        {
+          "step": 2,
+          "description": "Heat over medium heat then simmer for 10 minutes."
+        },
+        { "step": 3, "description": "Strain with cheese cloth and press with a potato ricer." },
+        {
+          "step": 4,
+          "description": "Weigh the water and match the weight of the water with an equal amount of the sugar."
+        },
+        {
+          "step": 5,
+          "description": "Stir until sugar is completely dissolved."
+        }
+    ]
+  },
+  {
+    "name": "Rich Demerara Syrup",
+    "ingredients": [
+      {
+        "quantity": 2,
+        "name": "Water",
+        "qty": "cups"
+      },
+      {
+        "quantity": "",
+        "name": "Demerara Sugar",
+        "qty": ""
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Boil Water."
+        },
+        {
+          "step": 2,
+          "description": "Remove from heat and weigh the water."
+        },
+        { "step": 3, "description": "Double the weight of the water with an equal amount of the sugar." },
+        {
+          "step": 4,
+          "description": "Stir until sugar is completely dissolved."
+        }
+    ]
+  },
+  {
+    "name": "Simple Cane Syrup",
+    "ingredients": [
+      {
+        "quantity": 2,
+        "name": "Water",
+        "qty": "cups"
+      },
+      {
+        "quantity": "",
+        "name": "Cane Sugar",
+        "qty": ""
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Boil Water."
+        },
+        {
+          "step": 2,
+          "description": "Remove from heat and weigh the water."
+        },
+        { "step": 3, "description": "Match the weight of the water with an equal amount of the sugar." },
+        {
+          "step": 4,
+          "description": "Stir until sugar is completely dissolved."
+        }
+    ]
+  },
+  {
+    "name": "Vanilla Syrup",
+    "ingredients": [
+      {
+        "quantity": 2,
+        "name": "Water",
+        "qty": "cups"
+      },
+      {
+        "quantity": 2,
+        "name": "Turbinado Sugar",
+        "qty": "cups"
+      },
+      {
+        "quantity": 1,
+        "name": "Pure Vanilla Extract",
+        "qty": "teaspoon"
+      },
+      {
+        "quantity": 1,
+        "name": "Vanilla Bean",
+        "qty": ""
+      }
+    ],
+    "prep":[
+        {
+          "step": 1,
+          "description": "Split and scrape the vanilla bean."
+        },
+        {
+          "step": 2,
+          "description": "Boil Water."
+        },
+        { "step": 3, "description": "Remove from heat then add brown sugar, vanilla extract, and vanilla bean." },
+        {
+          "step": 4,
+          "description": "Whisk until sugar is fully dissolved."
+        },
+        {
+          "step": 5,
+          "description": "Strain and let cool."
+        }
     ]
   }
 ]
