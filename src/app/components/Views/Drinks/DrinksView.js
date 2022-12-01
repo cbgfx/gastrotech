@@ -3,7 +3,6 @@ import React from "react";
 import CoolButton from "../../Reusable_Components/CoolButton";
 import CollapsibleSection from "../../Reusable_Components/CollapsibleSection";
 import Footer from "../../Reusable_Components/Footer";
-import NavBar from "../../Reusable_Components/NavBar/WhiskeyNavBar";
 import recipes from "../../../recipes/cocktails.json";
 import * as CONST from "../../../constants/constants";
 
