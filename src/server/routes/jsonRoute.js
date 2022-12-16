@@ -6,7 +6,6 @@ function routes() {
   const jsonRouter = express.Router();
 
   jsonRouter.route("/confjson").get((req, res) => {
-    console.log("Hit!");
     return res.json(conJson);
   });
   return jsonRouter;

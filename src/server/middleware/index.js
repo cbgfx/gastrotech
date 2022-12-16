@@ -1,5 +1,3 @@
-const mongoose = require("mongoose");
-const User = mongoose.model("User");
 const jwt = require("jsonwebtoken");
 const config = require("../config"); // the index.js file inside the dir will be automatically added
 
@@ -22,13 +20,7 @@ module.exports = {
           return cb({ errorMessage: `Unauthenticated request` });
         }
         // console.log("Decoded....", decoded);
-        User.findOne({ _id: decoded.id }, function (err, dbUser) {
-          if (err || !dbUser) {
-            console.log("no user found");
-            return cb({ errorMessage: `User not found` });
-          }
-          return cb(null, dbUser); // success
-        });
+        return cb(null, "Success"); // success
       }
     );
   },

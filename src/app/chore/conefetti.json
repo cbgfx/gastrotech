@@ -16,6 +16,7 @@
   { "list": "open", "task": "Place Spoons in Gelato" },
   { "list": "open", "task": "Fill Cleaning buckets with Hertel" },
   { "list": "open", "task": "Clean the counters" },
+  { "list": "close", "task": "Turn off Lights" },
   { "list": "open", "task": "Clean tables outside" },
   { "list": "close", "task": "Turn off Panini Press" }
 ]
