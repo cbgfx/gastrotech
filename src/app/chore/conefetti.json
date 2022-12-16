@@ -2,5 +2,6 @@
   { "list": "mon", "task": "Clean the Gelato Display" },
   { "list": "open", "task": "Fill Cleaning buckets with Hertel" },
   { "list": "close", "task": "Turn off Panini Press" },
+  { "list": "close", "task": "Turn off Lights" },
   { "list": "thu", "task": "Clean Sandwich racks" }
 ]
