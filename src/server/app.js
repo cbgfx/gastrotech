@@ -34,6 +34,8 @@ const supplierRouter = require("./routes/supplierViewRoute")(Supplier);
 
 const mailingServicesRouter = require("./routes/mailingRoute")(User);
 
+const jsonRouter = require("./routes/jsonRoute")();
+
 const adminRouter = require("./routes/adminRoute")(User);
 
 /*
@@ -86,6 +88,7 @@ app.use("/api", userRouter);
 app.use("/api", supplierRouter);
 app.use("/api", mailingServicesRouter);
 app.use("/api", adminRouter);
+app.use("/api", jsonRouter);
 
 // app.get("/", (req, res) => {
 //   res.send("Something went wrong, please contact dev@npc-tracker.com");
