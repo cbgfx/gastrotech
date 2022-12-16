@@ -1,6 +1,21 @@
 [
   { "list": "mon", "task": "Clean the Gelato Display" },
+  { "list": "mon", "task": "Clean Cone Racks" },
+  { "list": "mon", "task": "Clean the Sandwich Serving Fridge" },
+  { "list": "tue", "task": "Wipe down Sandwich display" },
+  { "list": "wed", "task": "Scrub Dish Racks" },
+  { "list": "thu", "task": "Clean Panini Station" },
+  { "list": "sun", "task": "Clean the Coffee Machine" },
+  { "list": "sun", "task": "Remove Gelato from Display" },
+  { "list": "sun", "task": "Turn off Gelato Display" },
+  { "list": "open", "task": "Fill Cleaning buckets with Bleach" },
+  { "list": "open", "task": "Place Rags in the bucket for 10 mins" },
+  { "list": "open", "task": "Turn on all the lights" },
+  { "list": "open", "task": "Turn on the music" },
+  { "list": "open", "task": "Turn on Panini Press" },
+  { "list": "open", "task": "Place Spoons in Gelato" },
   { "list": "open", "task": "Fill Cleaning buckets with Hertel" },
-  { "list": "close", "task": "Turn off Panini Press" },
-  { "list": "thu", "task": "Clean Sandwich racks" }
+  { "list": "open", "task": "Clean the counters" },
+  { "list": "open", "task": "Clean tables outside" },
+  { "list": "close", "task": "Turn off Panini Press" }
 ]
