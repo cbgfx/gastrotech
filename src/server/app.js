@@ -1,9 +1,10 @@
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
-
+const bodyParser = require("body-parser");
 const app = express();
 
+var port= 3000;
 
 // const MongoClient = require('mongodb').MongoClient;
 // const client = new MongoClient(uri, { useNewUrlParser: true });
@@ -13,8 +14,7 @@ const app = express();
 //   client.close();
 // });
 
-const mailingServicesRouter = require("./routes/mailingRoute")();
-const jsonRouter = required("./routes/jsonRoute")();
+const jsonRouter = require("./routes/jsonRoute")();
 
 /*
 // Added to fix a React Router bug, where it freaks out on startup, and instead all initial requests will now be routed to index.html
@@ -62,7 +62,6 @@ if (process.env.NODE_ENV != `production`) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); // don't support parsing of application/x-www-form-urlencoded post data
 
-app.use("/api", mailingServicesRouter);
 app.use("/api", jsonRouter);
 
 // app.get("/", (req, res) => {
