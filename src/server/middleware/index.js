@@ -1,5 +1,3 @@
-const mongoose = require("mongoose");
-const User = mongoose.model("User");
 const jwt = require("jsonwebtoken");
 const config = require("../config"); // the index.js file inside the dir will be automatically added
 
