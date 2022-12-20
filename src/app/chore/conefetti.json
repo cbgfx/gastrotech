@@ -8,6 +8,7 @@
   { "list": "sun", "task": "Clean the Coffee Machine" },
   { "list": "sun", "task": "Remove Gelato from Display" },
   { "list": "sun", "task": "Turn off Gelato Display" },
+
   { "list": "open", "task": "Turn on all the lights" },
   { "list": "open", "task": "Rags in dish soap, bleach and water (10mins)" },
   { "list": "open", "task": "Turn on Panini Press (490F)" },
@@ -19,6 +20,7 @@
   { "list": "open", "task": "Clean the Surfaces" },
   { "list": "open", "task": "Clean tables outside" },
   { "list": "open", "task": "Ready condiments bar" },
+
   { "list": "close", "task": "Turn off Panini Press" },
   { "list": "close", "task": "Fill up Stock" },
   { "list": "close", "task": "Clean Coffee Machine" },
@@ -37,5 +39,17 @@
   { "list": "close", "task": "Clean Sink" },
   { "list": "close", "task": "Rinse & Strain Towels (place near sink)" },
   { "list": "close", "task": "Mop Floor" },
-  { "list": "close", "task": "Turn off Lights" }
+  { "list": "close", "task": "Turn off Lights" },
+
+  { "list": "stock", "task": "Take Out Containers (50)" },
+  { "list": "stock", "task": "Cups" },
+  { "list": "stock", "task": "Fancy Cones (10 / 10)" },
+  { "list": "stock", "task": "Diet Coke (10)" },
+  { "list": "stock", "task": "Coca-Cola (20)" },
+  { "list": "stock", "task": "Ginger Ale (10)" },
+  { "list": "stock", "task": "NESTEA (10)" },
+  { "list": "stock", "task": "San Pellegrino (15)" },
+  { "list": "stock", "task": "Watrer (20)" },
+  { "list": "stock", "task": "Napkins" },
+  { "list": "stock", "task": "Gelato Spoons" }
 ]
