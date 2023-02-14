@@ -215,17 +215,34 @@
     "type": "Base",
     "ingredients": [
       {
-        "quantity": 700,
+        "quantity": 500,
         "name": "Milk",
         "qty": "ml"
       },
       {
-        "quantity": 200,
+        "quantity": 140,
         "name": "Cream",
         "qty": "ml"
       },
       {
-        "quantity": 175,
+        "quantity": 125,
+        "name": "Sugar",
+        "qty": "Grams"
+      }
+    ]
+  },
+  {
+    "name": "Home Sorbet",
+    "yield": 1,
+    "type": "Base",
+    "ingredients": [
+      {
+        "quantity": 555,
+        "name": "Water",
+        "qty": "ml"
+      },
+      {
+        "quantity": 220,
         "name": "Sugar",
         "qty": "Grams"
       }

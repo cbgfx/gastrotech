@@ -243,7 +243,7 @@
     "ingredients": [
       {
         "quantity": 300,
-        "name": "Whisky of Choice",
+        "name": "Wee Beastie",
         "qty": "grams"
       }
     ]
@@ -541,6 +541,20 @@
       {
         "quantity": 700,
         "name": "Hazelnut Regina",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Halva / Halawa",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "3 Layers of Halva",
+    "ingredients": [
+      {
+        "quantity": 300,
+        "name": "Halawa",
         "qty": "grams"
       }
     ]
