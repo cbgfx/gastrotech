@@ -16,6 +16,7 @@
   { "list": "open", "task": "Turn on the music" },
   { "list": "open", "task": "Open Awning" },
   { "list": "open", "task": "Fill Cleaning buckets with Hertel & Hot Water" },
+  { "list": "open", "task": "Turn on TVs, Launch Posterbooking App" },
   { "list": "open", "task": "Unlock Doors" },
   { "list": "open", "task": "Clean the Surfaces" },
   { "list": "open", "task": "Clean tables outside" },
@@ -40,6 +41,8 @@
   { "list": "close", "task": "Rinse & Strain Towels (place near sink)" },
   { "list": "close", "task": "Mop Floor" },
   { "list": "close", "task": "Turn off Lights" },
+  { "list": "close", "task": "Turn on alarm (*0)" },
+  { "list": "close", "task": "Make sure the door is closed" },
 
   { "list": "stock", "task": "Take Out Containers (50)" },
   { "list": "stock", "task": "Cups" },
