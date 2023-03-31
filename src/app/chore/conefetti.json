@@ -4,6 +4,7 @@
   { "list": "mon", "task": "Clean the Sandwich Serving Fridge" },
   { "list": "tue", "task": "Wipe down Sandwich display" },
   { "list": "wed", "task": "Scrub Dish Racks" },
+  { "list": "wed", "task": "Clean Gelato Spoon Box" },
   { "list": "thu", "task": "Clean Panini Station" },
   { "list": "sun", "task": "Clean the Coffee Machine" },
   { "list": "sun", "task": "Remove Gelato from Display" },
@@ -12,6 +13,7 @@
   { "list": "open", "task": "Turn on all the lights" },
   { "list": "open", "task": "Rags in dish soap, bleach and water (10mins)" },
   { "list": "open", "task": "Turn on Panini Press (490F)" },
+  { "list": "open", "task": "Place receipt from MEV Printer into Cash Enveloppe." },
   { "list": "open", "task": "Place Spoons upright in Gelato" },
   { "list": "open", "task": "Turn on the music" },
   { "list": "open", "task": "Open Awning" },
@@ -56,5 +58,5 @@
   { "list": "stock", "task": "San Pellegrino (15)" },
   { "list": "stock", "task": "Watrer (20)" },
   { "list": "stock", "task": "Napkins" },
-  { "list": "stock", "task": "Gelato Spoons" }
+  { "list": "stock", "task": "Gelato Spoons (FILL)" }
 ]
