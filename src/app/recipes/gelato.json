@@ -888,5 +888,19 @@
         "qty": "grams"
       }
     ]
+  },
+  {
+    "name": "Marron Glacee",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Mix in Marron Glacee paste",
+    "ingredients": [
+      {
+        "quantity": 375,
+        "name": "Marron Glacee Paste",
+        "qty": "grams"
+      }
+    ]
   }
 ]
