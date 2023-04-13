@@ -13,7 +13,7 @@ export const inputStyle = {
     borderColor: "#342741",
     fontWeight: "bolder",
     width: "40em",
-  },
+  }
 };
 
 export const textStyle = {

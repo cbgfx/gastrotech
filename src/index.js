@@ -1,13 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
 
 import * as urls from "./app/constants/urls";
-
-import reducers from "./app/store/reducers";
 
 import history from "./history"; // added so we can handle programatic navigation
 
@@ -18,6 +13,7 @@ import GelatoView from "./app/components/Views/Gelato/GelatoView";
 import BaseView from "./app/components/Views/Gelato/BaseView";
 import DrinksView from "./app/components/Views/Drinks/DrinksView";
 import SyrupView from "./app/components/Views/Syrups/SyrupView";
+import QRView from "./app/components/Views/QRCode/QRView";
 
 /*
 const RouteGuard = (Component) => ({ match }) => (
@@ -43,19 +39,15 @@ export const App = () => (
       <Route path={urls.base.route} element={<BaseView />} />
       <Route path={urls.drinks.route} element={<DrinksView />} />
       <Route path={urls.syrup.route} element={<SyrupView />} />
+      <Route path={urls.qr.route} element={<QRView />} />
 
       {/* <Route path={urls.randomNameGenerator.route} exact component={RandomNameGenerator} /> */}
     </Routes>
   </BrowserRouter>
 );
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
-
 // render the App component in the root div inside the public/index.html file
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+    <App />,
   document.querySelector("#root")
 );

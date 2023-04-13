@@ -81,7 +81,7 @@ class BaseView extends React.Component {
               <tbody>
                 {this.state.filteredDataSource.map((rec, i) => (
                   <React.Fragment key={i}>
-                    <tr onClick={() => this.clickedTD(rec)}>
+                    <tr>
                       <td>{rec.name}</td>
                       <td>
                         <ul>

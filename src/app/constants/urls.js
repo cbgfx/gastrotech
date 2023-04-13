@@ -39,6 +39,10 @@ export const gelato = {
   route: "/gelato",
 };
 
+export const qr = {
+  route: "/qr",
+};
+
 export const base = {
   route: "/base",
 };

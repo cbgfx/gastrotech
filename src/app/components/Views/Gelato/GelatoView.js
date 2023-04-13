@@ -186,7 +186,7 @@ class GelatoView extends React.Component {
           <tbody>
             {this.state.filteredDataSource.map((rec, i) => (
               <React.Fragment key={i}>
-                <tr onClick={() => this.clickedTD(rec)}>
+                <tr>
                   <td>{rec.name}</td>
                   <td>{rec.type}</td>
                   {this.state.colYield ? <td>{rec.yield}</td> : null}
