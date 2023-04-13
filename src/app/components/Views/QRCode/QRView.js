@@ -21,13 +21,14 @@ class QRView extends React.Component {
         <div id="qrcode" style={{fontSize: "24px", textAlign: "center"}}>
           <p />
         Carte Cadeau #: {this.state.qr}
-        <p></p>
-        <div style={{ height: "auto", margin: "0 auto", maxWidth: 640, width: "100%" }}>
+        <p />
+        <div style={{ height: "auto", margin: "0 auto", maxWidth: 640, width: "100%",  background: 'white', padding: '16px'  }}>
             <QRCode
             size={256}
             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
             value={this.state.qr}
             viewBox={`0 0 256 256`}
+            title="Carte Cadeau Conefetti"
             />
         </div>
         </div>
