@@ -470,7 +470,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "Coconut shavings on top",
+    "decoration": "Coconut shavings (unsweetened) on top",
     "ingredients": [
       {
         "quantity": 400,
@@ -620,7 +620,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "Chocolate",
-    "decoration": "3 Layers of Brownies / Marshmallwo / Wallnuts / Chocolate Sauce",
+    "decoration": "3 Layers of Brownies / Marshmallow / Wallnuts / Chocolate Sauce",
     "ingredients": [
       {
         "quantity": 7000,
@@ -755,6 +755,20 @@
       {
         "quantity": 500,
         "name": "Tiramisu",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Triple Chocolate",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "Chocolate",
+    "decoration": "3 Layers of White Chocolate / Chocolate Sauce / Chocolate Chips",
+    "ingredients": [
+      {
+        "quantity": 7000,
+        "name": "Chocolate Base",
         "qty": "grams"
       }
     ]
