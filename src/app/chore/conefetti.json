@@ -31,6 +31,7 @@
   { "list": "close", "task": "Fill up Stock" },
   { "list": "close", "task": "Clean Coffee Machine" },
   { "list": "close", "task": "Empty Panini Press Crumb Tray" },
+  { "list": "close", "task": "Clean Cutting Knives and Holder" },
   { "list": "close", "task": "Turn off Music" },
   { "list": "close", "task": "Clean Bathroom (with Vim)" },
   { "list": "close", "task": "Clean tables and arrange chairs" },
@@ -52,14 +53,17 @@
   { "list": "close", "task": "Make sure the door is closed" },
 
   { "list": "stock", "task": "Take Out Containers (50)" },
-  { "list": "stock", "task": "Cups" },
+  { "list": "stock", "task": "Cups (Coffee, Espresso, Milkshake, Gelato)" },
   { "list": "stock", "task": "Sprinkles Cones (30)" },
+  { "list": "stock", "task": "Regular Cones (2 Boxes)" },
+  { "list": "stock", "task": "Waffle Cones (over half a box)" },
+  { "list": "stock", "task": "Receipt Rolls (4 of each)" },
   { "list": "stock", "task": "Diet Coke (24)" },
   { "list": "stock", "task": "Coca-Cola (24)" },
   { "list": "stock", "task": "Ginger Ale (24)" },
   { "list": "stock", "task": "NESTEA (24)" },
   { "list": "stock", "task": "San Pellegrino (12)" },
   { "list": "stock", "task": "Water (28)" },
-  { "list": "stock", "task": "Napkins" },
+  { "list": "stock", "task": "Napkins / Paper Towels" },
   { "list": "stock", "task": "Gelato Spoons (FILL)" }
 ]
