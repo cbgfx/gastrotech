@@ -10,16 +10,13 @@
   { "list": "sun", "task": "Remove Gelato from Display" },
   { "list": "sun", "task": "Turn off Gelato Display" },
 
-  {
-    "list": "open",
-    "task": "Place receipt from MEV Printer into Cash Enveloppe."
-  },
+  { "list": "open", "task": "Place receipt from MEV Printer into Cash Enveloppe."},
   { "list": "open", "task": "Turn on all the lights (AUX on Gelato)" },
-  { "list": "open", "task": "Rags in Hertel soap, bleach and water (10mins)" },
+  { "list": "open", "task": "Rags in Dish Soap, bleach and water (10mins)" },
   { "list": "open", "task": "Turn on Panini Press (490F)" },
+  { "list": "open", "task": "Turn on Dishwasher" },
   { "list": "open", "task": "Place Spoons upright in Gelato" },
   { "list": "open", "task": "Turn on the music" },
-  { "list": "open", "task": "Open Awning" },
   { "list": "open", "task": "Fill Cleaning buckets with Hertel & Hot Water" },
   { "list": "open", "task": "Turn on TVs, Launch Posterbooking App" },
   { "list": "open", "task": "Unlock Doors" },
@@ -50,7 +47,6 @@
   { "list": "close", "task": "Mop Floor" },
   { "list": "close", "task": "Turn on alarm (*0)" },
   { "list": "close", "task": "Turn off Lights" },
-  { "list": "close", "task": "Make sure the door is closed" },
 
   { "list": "stock", "task": "Take Out Containers (50)" },
   { "list": "stock", "task": "Cups (Coffee, Espresso, Milkshake, Gelato)" },
