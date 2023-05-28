@@ -494,6 +494,20 @@
     ]
   },
   {
+    "name": "Earl Grey Tea",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Cinnamon",
+    "ingredients": [
+      {
+        "quantity": 750,
+        "name": "Home Made Earl Grey Syrup",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Espresso",
     "yield": 2,
     "type": "Gelato",
@@ -550,6 +564,19 @@
       {
         "quantity": 300,
         "name": "Halawa",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Hibiscus",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 750,
+        "name": "Home Made Hibiscus Syrup",
         "qty": "grams"
       }
     ]
@@ -675,6 +702,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "Chocolate",
+    "decoration": "3 Layers of Melted Nutella",
     "ingredients": [
       {
         "quantity": 350,
@@ -931,20 +959,6 @@
         "quantity": 1,
         "name": "Red Velvet Sprint",
         "qty": "bag"
-      }
-    ]
-  },
-  {
-    "name": "Earl Grey Tea",
-    "yield": 2,
-    "type": "Gelato",
-    "base": "White Sugar",
-    "decoration": "Cinnamon",
-    "ingredients": [
-      {
-        "quantity": 750,
-        "name": "Home Made Earl Grey Syrup",
-        "qty": "grams"
       }
     ]
   },
