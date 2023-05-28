@@ -291,20 +291,6 @@
     ]
   },
   {
-    "name": "Espresso",
-    "yield": 2,
-    "type": "Gelato",
-    "base": "White Sugar",
-    "decoration": "Handfull of Hazeluts on top",
-    "ingredients": [
-      {
-        "quantity": 50,
-        "name": "Ground Coffee",
-        "qty": "grams"
-      }
-    ]
-  },
-  {
     "name": "Banana",
     "yield": 2,
     "type": "Gelato",
@@ -323,34 +309,29 @@
     ]
   },
   {
-    "name": "Turkish Delight",
-    "yield": 2,
+    "name": "Birthday Cake",
+    "yield": 1,
     "type": "Gelato",
-    "base": "White Sugar",
-    "decoration": "Pistachio and Cinnamon",
+    "base": "Sprint",
+    "decoration": "3 Layers of Sprinkles",
     "ingredients": [
       {
-        "quantity": 7,
-        "name": "Salep Mix",
-        "qty": "bags"
+        "quantity": 1,
+        "name": "Blue Sprint",
+        "qty": "bag"
       }
     ]
   },
   {
-    "name": "Rose Water",
+    "name": "Biscoff",
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "Graham Crackers",
+    "decoration": "Biscoff Fold in 2 Layer",
     "ingredients": [
       {
-        "quantity": 4,
-        "name": "Salep Mix",
-        "qty": "bags"
-      },
-      {
-        "quantity": 100,
-        "name": "Rose Water",
+        "quantity": 200,
+        "name": "Biscoff",
         "qty": "grams"
       }
     ]
@@ -513,6 +494,20 @@
     ]
   },
   {
+    "name": "Espresso",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Coffee Powder on top",
+    "ingredients": [
+      {
+        "quantity": 2,
+        "name": "of Espresso",
+        "qty": "Full Cappucino Cups"
+      }
+    ]
+  },
+  {
     "name": "Fig & Porto",
     "yield": 2,
     "type": "Gelato",
@@ -560,6 +555,65 @@
     ]
   },
   {
+    "name": "Kraft Mac & Cheese",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "3 Layers of KD Powder",
+    "ingredients": [
+      {
+        "quantity": 200,
+        "name": "KD Powder",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Maple",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 180,
+        "name": "Maple Essence",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Maple Walnut",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "2 Layers of Walnut",
+    "ingredients": [
+      {
+        "quantity": 180,
+        "name": "Maple Essence",
+        "qty": "grams"
+      },
+      {
+        "quantity": 100,
+        "name": "Walnuts",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
+    "name": "Matcha",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 50,
+        "name": "Matcha Powder",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Mint Chocolate",
     "yield": 2,
     "type": "Gelato",
@@ -575,19 +629,6 @@
         "quantity": 10,
         "name": "Green Food Colouring",
         "qty": "drops"
-      }
-    ]
-  },
-  {
-    "name": "Matcha",
-    "yield": 2,
-    "type": "Gelato",
-    "base": "White Sugar",
-    "ingredients": [
-      {
-        "quantity": 50,
-        "name": "Matcha Powder",
-        "qty": "grams"
       }
     ]
   },
@@ -718,6 +759,43 @@
     ]
   },
   {
+    "name": "Red Bean Paste",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 250,
+        "name": "Red Bean Paste",
+        "qty": "grams"
+      },
+      {
+        "quantity": 4,
+        "name": "Red Food colouring",
+        "qty": "drops"
+      }
+    ]
+  },
+  {
+    "name": "Rose Water",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "Graham Crackers",
+    "ingredients": [
+      {
+        "quantity": 4,
+        "name": "Salep Mix",
+        "qty": "bags"
+      },
+      {
+        "quantity": 100,
+        "name": "Rose Water",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Strawberry",
     "yield": 2,
     "type": "Gelato",
@@ -774,35 +852,16 @@
     ]
   },
   {
-    "name": "Maple Walnut",
+    "name": "Turkish Delight",
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
-    "decoration": "2 Layers of Walnut",
+    "decoration": "Pistachio and Cinnamon",
     "ingredients": [
       {
-        "quantity": 180,
-        "name": "Maple Essence",
-        "qty": "grams"
-      },
-      {
-        "quantity": 100,
-        "name": "Walnuts",
-        "qty": "grams"
-      }
-    ]
-  },
-  {
-    "name": "Kraft Mac & Cheese",
-    "yield": 2,
-    "type": "Gelato",
-    "base": "White Sugar",
-    "decoration": "3 Layers of KD Powder",
-    "ingredients": [
-      {
-        "quantity": 200,
-        "name": "KD Powder",
-        "qty": "grams"
+        "quantity": 7,
+        "name": "Salep Mix",
+        "qty": "bags"
       }
     ]
   },
@@ -876,20 +935,6 @@
     ]
   },
   {
-    "name": "Birthday Cake",
-    "yield": 1,
-    "type": "Gelato",
-    "base": "Sprint",
-    "decoration": "3 Layers of Sprinkles",
-    "ingredients": [
-      {
-        "quantity": 1,
-        "name": "Blue Sprint",
-        "qty": "bag"
-      }
-    ]
-  },
-  {
     "name": "Earl Grey Tea",
     "yield": 2,
     "type": "Gelato",
@@ -897,7 +942,7 @@
     "decoration": "Cinnamon",
     "ingredients": [
       {
-        "quantity": 350,
+        "quantity": 750,
         "name": "Home Made Earl Grey Syrup",
         "qty": "grams"
       }

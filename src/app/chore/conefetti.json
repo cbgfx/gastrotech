@@ -16,6 +16,7 @@
   { "list": "open", "task": "Turn on Panini Press (490F)" },
   { "list": "open", "task": "Turn on Dishwasher" },
   { "list": "open", "task": "Place Spoons upright in Gelato" },
+  { "list": "open", "task": "Fill up Cold Brew (if less than half)" },
   { "list": "open", "task": "Turn on the music" },
   { "list": "open", "task": "Fill Cleaning buckets with Hertel & Hot Water" },
   { "list": "open", "task": "Turn on TVs, Launch Posterbooking App" },
@@ -58,7 +59,7 @@
   { "list": "stock", "task": "Coca-Cola (24)" },
   { "list": "stock", "task": "Ginger Ale (24)" },
   { "list": "stock", "task": "NESTEA (24)" },
-  { "list": "stock", "task": "San Pellegrino (12)" },
+  { "list": "stock", "task": "San Pellegrino (20)" },
   { "list": "stock", "task": "Water (28)" },
   { "list": "stock", "task": "Napkins / Paper Towels" },
   { "list": "stock", "task": "Gelato Spoons (FILL)" }
