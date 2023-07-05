@@ -421,6 +421,19 @@
     ]
   },
   {
+    "name": "Carrot Cake",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 350,
+        "name": "Carrot Cake Mix",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Choco-Chino",
     "yield": 2,
     "type": "Gelato",
