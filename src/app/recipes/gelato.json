@@ -425,6 +425,7 @@
     "yield": 2,
     "type": "Gelato",
     "base": "White Sugar",
+    "decoration": "Color to Orange",
     "ingredients": [
       {
         "quantity": 150,
@@ -903,6 +904,19 @@
         "quantity": 7,
         "name": "Salep Mix",
         "qty": "bags"
+      }
+    ]
+  },
+  {
+    "name": "Ube",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "ingredients": [
+      {
+        "quantity": 60,
+        "name": "Butterfly Ube Extract",
+        "qty": "grams"
       }
     ]
   },
