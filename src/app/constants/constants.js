@@ -10,22 +10,18 @@ export const SvgIconType = {
   Duplicate: "Duplicate",
   Profile: "Profile",
   Add: "Add",
-  Dices: "Dices",
   Email: "E-Mail",
   PassKey: "Password",
   UserName: "UserName",
-  Robot: "Robot",
-  Question: "Question",
-  Share: "Share",
 };
 
 export const UserField = {
   Username: "username",
   Name: "name",
   Email: "email",
-  Tier: "tier",
-  Verified: "verified",
+  shopID: "shopID",
 };
+
 
 export function textPass(input, password) {
   if (input.toLowerCase() === password.toLowerCase()) {

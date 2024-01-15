@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const path = require("path");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -16,28 +17,6 @@ var port = process.env.PORT || 3000;
 
 const jsonRouter = require("./routes/jsonRoute")();
 
-/*
-// Added to fix a React Router bug, where it freaks out on startup, and instead all initial requests will now be routed to index.html
-// Basically, since all routing is happening client side via React-Router, and not server side, the app gets confused
-// So we have to redirect it to a dummy page aka 'index.html', so React-Router can take over and properly decide how to route
-// Ideadlly, we should be fine with app.get('/*',(req,res)) to catch all the routes...Buuuuut we're not. So I listed all the possible routes below :\
-if (process.env.NODE_ENV == `production`) {
-  app.use(express.static(path.resolve(__dirname, "../../dist")));
-  app.use(express.static(path.resolve(__dirname, "../../public")));
-
-  var filePath = "index.html";
-  var resolvedPath = path.resolve(filePath);
-  console.log("\n \n \n RESOLVED PATH :~> ", resolvedPath);
-
-  app.get("/", (req, res) => {
-    res.sendFile(resolvedPath, function (err) {
-      if (err) {
-        res.status(500).send(err);
-      }
-      res.sendFile(resolvedPath);
-    });
-  });
-*/
 
 // Avoid using CORS in production for security
 if (process.env.NODE_ENV != `production`) {
@@ -77,8 +56,6 @@ var resolvedPath = path.resolve(filePath);
 console.log("\n Resolved Path: ", resolvedPath);
 
 app.get("*", (req, res) => {
-  // console.log("SERVER WOOOOORKINNNNG");
-  // return res.sendStatus(200);
   return res.sendFile(resolvedPath, function (err) {
     if (err) {
       console.log("\n \n \n Error resolving PATH : ", err);
