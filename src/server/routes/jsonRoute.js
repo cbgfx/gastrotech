@@ -33,8 +33,6 @@ function routes() {
         order: req.body.order
       }
 
-      MongoClient.db('stock').collection.insertOne(newStockAddition);
-
     } else {
       console.log("Not authenticated, slut whore bitch cunt")
     }
