@@ -3,6 +3,8 @@ const fs = require('fs');
 
 const conJson = require("../../../src/app/chore/conefetti.json");
 const whisJson = require("../../../src/app/chore/whisky.json");
+const { MongoClient } = require("mongodb");
+//con stuff
 const authent = "7guzJtWeNRmx";
 
 function routes() {
@@ -21,25 +23,17 @@ function routes() {
   });
 
   jsonRouter.route("/writeStock").post((req, res) => {
-    
+  
     if (req.query.auth == authent) {
-      console.log("writing cunts")
-      let book = {
-        title: "1984",
-        author: "George Orwell",
-        read: true
-      };
+      const newStockAddition = {
+        storeID: req.body.storeID,
+        pan: req.body.pan,
+        gName: req.body.gName,
+        gType: req.body.gType,
+        order: req.body.order
+      }
 
-      let data = fs.readFileSync('confStock.json');
-      let stockList = JSON.parse(data);
-
-      stockList.push(book);
-
-      fs.writeFile('confStock.json', JSON.stringify(stockList), function(err) {
-        if (err) {
-          console.log(err);
-        }
-      });
+      MongoClient.db('stock').collection.insertOne(newStockAddition);
 
     } else {
       console.log("Not authenticated, slut whore bitch cunt")
