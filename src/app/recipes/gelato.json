@@ -309,6 +309,20 @@
     ]
   },
   {
+    "name": "Baklava",
+    "yield": 2,
+    "type": "Gelato",
+    "base": "White Sugar",
+    "decoration": "3 Layers of Baklava and Honey",
+    "ingredients": [
+      {
+        "quantity": 200,
+        "name": "Baklava",
+        "qty": "grams"
+      }
+    ]
+  },
+  {
     "name": "Birthday Cake",
     "yield": 1,
     "type": "Gelato",
