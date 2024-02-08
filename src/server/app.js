@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 const app = express();
 
@@ -31,9 +31,9 @@ const db = mongoose.connect(dbURL);
 // }
 // run().catch(console.dir);
 
+const jsonRouter = require("./routes/jsonRoute")();
 const Display = require("./models/displayModel");
 const displayRouter = require("./routes/displayRoute")(Display);
-const jsonRouter = require("./routes/jsonRoute")();
 
 
 

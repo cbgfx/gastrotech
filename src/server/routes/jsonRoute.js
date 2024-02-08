@@ -9,7 +9,6 @@ function routes() {
   const jsonRouter = express.Router();
 
   jsonRouter.route("/confjson").get((req, res) => {
-    console.log("I received this");
     if (req.query.auth == authent) {
     return res.json(conJson);
     } else {
