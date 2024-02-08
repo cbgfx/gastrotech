@@ -1,39 +1,40 @@
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
+const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 const app = express();
-const { MongoClient, ServerApiVersion } = require('mongodb');
 
-var port = process.env.PORT || 3000;
-
-
-
-const uri = "mongodb+srv://conedev:fQc2jLJkUc5fcTG@cluster0.h4z9q.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URI = "mongodb+srv://conedev:fQc2jLJkUc5fcTG@cluster0.h4z9q.mongodb.net/?retryWrites=true&w=majority";
+const dbURL = MONGODB_URI;
+const port = process.env.PORT || 3000;
+const db = mongoose.connect(dbURL);
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(uri, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  }
-});
-async function run() {
-  try {
-    // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await client.close();
-  }
-}
-run().catch(console.dir);
+// const client = new MongoClient(uri, {
+//   serverApi: {
+//     version: ServerApiVersion.v1,
+//     strict: true,
+//     deprecationErrors: true,
+//   }
+// });
+// async function run() {
+//   try {
+//     // Connect the client to the server	(optional starting in v4.7)
+//     await client.connect();
+//     // Send a ping to confirm a successful connection
+//     await client.db("admin").command({ ping: 1 });
+//     console.log("Pinged your deployment. You successfully connected to MongoDB!");
+//   } finally {
+//     // Ensures that the client will close when you finish/error
+//     await client.close();
+//   }
+// }
+// run().catch(console.dir);
 
-
+const Display = require("./models/displayModel");
+const displayRouter = require("./routes/displayRoute")(Display);
 const jsonRouter = require("./routes/jsonRoute")();
+
 
 
 // Avoid using CORS in production for security
@@ -60,6 +61,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); // don't support parsing of application/x-www-form-urlencoded post data
 
 app.use("/api", jsonRouter);
+app.use("/api", displayRouter);
 
 // app.get("/", (req, res) => {
 //   res.send("Something went wrong, please contact dev@npc-tracker.com");
