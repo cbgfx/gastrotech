@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 const app = express();
 
-const MONGODB_URI = "mongodb+srv://conedev:fQc2jLJkUc5fcTG@cluster0.h4z9q.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URI = "mongodb+srv://conedev:fQc2jLJkUc5fcTG@cluster0.h4z9q.mongodb.net/inventory?retryWrites=true&w=majority";
 const dbURL = MONGODB_URI;
 const port = process.env.PORT || 3000;
 const db = mongoose.connect(dbURL);

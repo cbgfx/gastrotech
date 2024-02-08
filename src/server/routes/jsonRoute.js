@@ -12,7 +12,7 @@ function routes() {
     if (req.query.auth == authent) {
     return res.json(conJson);
     } else {
-      console.log("errorrrrr bitches");
+      console.log("no AuthoriTAI");
     }
   });
 

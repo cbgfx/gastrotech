@@ -6,49 +6,43 @@ function routes(Display) {
     const displayViewRouter = express.Router();
 
     displayViewRouter
-        .route("/displayRouter")
+        .route("/display")
 
-        .get((req, res) => {
-            console.log("Received Get Request...")
+        .get(async (req, res) => {
             if (req.query.auth == authent) {
-            const query = { storeID: req.query.storeID };
+                const query = { storeID: req.query.storeID };
 
-            Display.find(query, (err, displays) => {
-                if (err) {
-                    return res.send(err);
-                }
-                return res.json(displays);
-            }).sort({ order: 1 });
-        } else {
-            console.log("No Authoritayyy");
-        }
+               const allDisplay = await Display.find(query).sort({order: 1})
+                    return res.json(allDisplay);
+             } else {
+                console.log("No Authoritayyy");
+             }
         });
 
     displayViewRouter
         .route("/display/create")
 
         .post((req, res) => {
-            const display = new Display(req.body);
-
-            display.save((err, newDisplay) => {
-                if (err) {
-                    return res.status(400).send({ errorMessage: `Could not create new Pan.` });
-                }
-                return res.status(201).json(newDisplays);
+            console.log(req.body.storeID, "batched:", req.body.gName);
+            const newDisplay = new Display(req.body);
+            newDisplay.save(newDisplay)
+            return res.status(201).json(newDisplay);
             });
-        });
 
     displayViewRouter
         .route("/display/delete")
 
         .delete((req, res) => {
-            const query = { _id: new mongodb.ObjectID(req.query.gName) }
-            Display.deleteOne(query, (e) => {
-                if (e) {
-                    return res.send(e);
-                }
+            if (req.query.auth == authent) {
+            Display.deleteOne({ storeID: req.body.storeID, gName: req.body.gName }).then(function(){
+                console.log("Data deleted"); // Success
                 return res.sendStatus(204);
-            }).sort({ order: 1 });
+            }).catch(function(error){
+                console.log(error); // Failure
+            });
+            } else {
+                console.log("No Authoritay!!")
+            }
         });
 
     return displayViewRouter;
