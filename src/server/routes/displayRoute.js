@@ -44,6 +44,27 @@ function routes(Display) {
                 console.log("No Authoritay!!")
             }
         });
+    
+        displayViewRouter
+        .route("/display/edit")
+
+        .delete((req, res) => {
+            if (req.query.auth == authent) {
+                const filter = {storeID: req.body.storeID, gName: req.body.gName};
+                const  update = {gType: req.body.gType};
+
+            Display.findOneAndUdate(filter, update, {
+                new: true
+              }).then(function(){
+                console.log("Data updated"); // Success
+                return res.sendStatus(204);
+            }).catch(function(error){
+                console.log(error); // Failure
+            });
+            } else {
+                console.log("No Authoritay!!")
+            }
+        });
 
     return displayViewRouter;
 }
